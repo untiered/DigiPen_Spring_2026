@@ -9,28 +9,40 @@
 
 Vector3 ProjectPointOnPlane(const Vector3& point, const Vector3& normal, float planeDistance)
 {
-    // first project the point onto the planes normal vector
-    // projection of u onto v = (u.v)v / |v|^2
-    Vector3 projUv = Dot(point, normal) * normal / Math::Pow(Length(normal), 2);
+    // find distance to plane
+    Vector3 pOnPlane = normal * planeDistance;
 
-    // then subtract the planeDistance from that projections magnitude
-    // then normalize the projection and multiply it by the result
-    Vector3 pointToPlaneVec = Normalized(projUv) * (Length(projUv) - planeDistance);
+    // find distance to plane
+    float distanceToPlane = (point - pOnPlane).Dot(normal);
 
     // then subtract that from the point
-    return point - pointToPlaneVec;
-
-  ///******Student:Assignment1******/
-  //Warn("Assignment1: Required function un-implemented");
-  //return Vector3::cZAxis;
+    return point - normal * distanceToPlane;
 }
 
 bool BarycentricCoordinates(const Vector3& point, const Vector3& a, const Vector3& b,
                             float& u, float& v, float epsilon)
 {
-  /******Student:Assignment1******/
-  Warn("Assignment1: Required function un-implemented");
-  return false;
+    /******Student:Assignment1******/
+    Warn("Assignment1: Required function un-implemented");
+    return false;
+
+    // calculate u and v
+    Vector3 ab = b - a;
+    Vector3 ba = a - b;
+    float projP_ab = (point - a).Dot(ab.Normalized());
+
+    u = projP_ab / ab.Length();
+    v = 1 - u;
+
+    // check if degenerate
+    if (a == b) return false;
+
+    // check if on the line
+    Vector3 expandedA = a - ba.Normalized() * epsilon;
+    Vector3 expandedB = b + ab.Normalized() * epsilon;
+    Vector3 projP_expandedAB = expandedB - expandedA;
+    Vector3 projP_expandedBA = expandedA - expandedB;
+    if ((point-expandedA).Dot(expandedAB) != 1 || )
 }
 
 bool BarycentricCoordinates(const Vector3& point, const Vector3& a, const Vector3& b, const Vector3& c,
@@ -43,23 +55,42 @@ bool BarycentricCoordinates(const Vector3& point, const Vector3& a, const Vector
 
 IntersectionType::Type PointPlane(const Vector3& point, const Vector4& plane, float epsilon)
 {
-  /******Student:Assignment1******/
-  Warn("Assignment1: Required function un-implemented");
-  return IntersectionType::NotImplemented;
+    /******Student:Assignment1******/
+    Warn("Assignment1: Required function un-implemented");
+    return IntersectionType::NotImplemented;
+    Vector3 normal = Vector3(plane.x, plane.y, plane.z);
+    Vector3 projPn = Dot(point, normal) * normal / Math::Pow(Length(normal), 2);
+    float pLength = Length(projPn);
+
+    // if length of projection onto the plane's normal vector is less than or equal to epsilon
+    if (pLength <= epsilon)
+    {
+        // if the length is 0, we are coplanar
+        if (pLength == 0) return IntersectionType::Coplanar;
+        return IntersectionType::Inside;
+    }
+    return IntersectionType::Outside;
 }
 
 bool PointSphere(const Vector3& point, const Vector3& sphereCenter, float sphereRadius)
 {
-  /******Student:Assignment1******/
-  Warn("Assignment1: Required function un-implemented");
-  return false;
+    /******Student:Assignment1******/
+    Warn("Assignment1: Required function un-implemented");
+    return false;
+    return Length(point - sphereCenter) <= sphereRadius;
 }
 
 bool PointAabb(const Vector3& point, const Vector3& aabbMin, const Vector3& aabbMax)
 {
-  /******Student:Assignment1******/
-  Warn("Assignment1: Required function un-implemented");
-  return false;
+    /******Student:Assignment1******/
+    Warn("Assignment1: Required function un-implemented");
+    return false;
+    return point.x >= aabbMin.x
+        && point.y >= aabbMin.y
+        && point.z >= aabbMin.z
+        && point.x <= aabbMax.x
+        && point.y <= aabbMax.y
+        && point.z <= aabbMax.z;
 }
 
 bool RayPlane(const Vector3& rayStart, const Vector3& rayDir,

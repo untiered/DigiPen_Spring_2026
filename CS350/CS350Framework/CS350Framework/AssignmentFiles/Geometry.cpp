@@ -22,54 +22,53 @@ Vector3 ProjectPointOnPlane(const Vector3& point, const Vector3& normal, float p
 bool BarycentricCoordinates(const Vector3& point, const Vector3& a, const Vector3& b,
                             float& u, float& v, float epsilon)
 {
-    /******Student:Assignment1******/
-    Warn("Assignment1: Required function un-implemented");
-    return false;
-
-    // calculate u and v
-    Vector3 ab = b - a;
-    Vector3 ba = a - b;
-    float projP_ab = (point - a).Dot(ab.Normalized());
-
-    u = projP_ab / ab.Length();
-    v = 1 - u;
-
     // check if degenerate
     if (a == b) return false;
+ 
+    // calculate u and v
+    u = (point - b).Dot(a - b) / (a - b).Dot(a - b);
+    v = 1 - u;
 
-    // check if on the line
-    Vector3 expandedA = a - ba.Normalized() * epsilon;
-    Vector3 expandedB = b + ab.Normalized() * epsilon;
-    Vector3 projP_expandedAB = expandedB - expandedA;
-    Vector3 projP_expandedBA = expandedA - expandedB;
-    if ((point-expandedA).Dot(expandedAB) != 1 || )
+    // check if it's within expanded bounds
+    return (u >= -epsilon && u <= 1.0f + epsilon) && (v >= -epsilon && v <= 1.0f + epsilon);
 }
 
 bool BarycentricCoordinates(const Vector3& point, const Vector3& a, const Vector3& b, const Vector3& c,
                             float& u, float& v, float& w, float epsilon)
 {
-  /******Student:Assignment1******/
-  Warn("Assignment1: Required function un-implemented");
-  return false;
+    // check for degenerate
+    if (a == b || a == c || b == c || (a-b).Cross(a-c).Length() == 0.0f) return false;
+
+    // calculate u,v, and w
+    // calculate signed area of triangle: ABC
+    Vector3 nABC = (c - a).Cross(b - a);
+    float saABC = nABC.Dot(nABC.Normalized());
+
+    // calculate signed area of triangle: PBC
+    Vector3 nPBC = (c - point).Cross(b - point);
+    float saPBC = nPBC.Dot(nABC.Normalized());
+
+    // calculate signed area of triangle: PCA
+    Vector3 nPCA = (a - point).Cross(c - point);
+    float saPCA = nPCA.Dot(nABC.Normalized());
+
+    u = saPBC / saABC;
+    v = saPCA / saABC;
+    w = 1 - u - v;
+
+    // check if within triangle
+    return (u >= -epsilon && u <= (1.0f + epsilon)
+         && v >= -epsilon && v <= (1.0f + epsilon)
+         && w >= -epsilon && w <= (1.0f + epsilon));
 }
 
 IntersectionType::Type PointPlane(const Vector3& point, const Vector4& plane, float epsilon)
 {
-    /******Student:Assignment1******/
-    Warn("Assignment1: Required function un-implemented");
+    float d = point.Dot(Vector3(plane.x, plane.y, plane.z)) - plane.w;
+    if (d <= epsilon && d >= -epsilon) return IntersectionType::Coplanar;
+    if (d > epsilon) return IntersectionType::Inside;
+    if (d < epsilon) return IntersectionType::Outside;
     return IntersectionType::NotImplemented;
-    Vector3 normal = Vector3(plane.x, plane.y, plane.z);
-    Vector3 projPn = Dot(point, normal) * normal / Math::Pow(Length(normal), 2);
-    float pLength = Length(projPn);
-
-    // if length of projection onto the plane's normal vector is less than or equal to epsilon
-    if (pLength <= epsilon)
-    {
-        // if the length is 0, we are coplanar
-        if (pLength == 0) return IntersectionType::Coplanar;
-        return IntersectionType::Inside;
-    }
-    return IntersectionType::Outside;
 }
 
 bool PointSphere(const Vector3& point, const Vector3& sphereCenter, float sphereRadius)

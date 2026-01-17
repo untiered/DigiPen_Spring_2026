@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 ///
-/// Authors: Joshua Davis
-/// Copyright 2015, DigiPen Institute of Technology
+/// Authors: Evan Gray
+/// Copyright 2026, DigiPen Institute of Technology
 ///
 ///////////////////////////////////////////////////////////////////////////////
 #pragma once
@@ -12,8 +12,5 @@
 
 namespace Helpers
 {
-
-void LoadObjFile(std::string fileData, std::vector<Vector3>& outVertices, std::vector<size_t>& outIndices);
-void SaveObjFile(std::string filePath, std::vector<Vector3>& vertices, std::vector<size_t>& indices);
-
+  void LoadObjFile(std::string fileData, std::vector<Vector3>& outVertices, std::vector<size_t>& outIndices);
 }//namespace Helpers

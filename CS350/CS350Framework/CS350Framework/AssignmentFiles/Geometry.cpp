@@ -73,17 +73,11 @@ IntersectionType::Type PointPlane(const Vector3& point, const Vector4& plane, fl
 
 bool PointSphere(const Vector3& point, const Vector3& sphereCenter, float sphereRadius)
 {
-    /******Student:Assignment1******/
-    Warn("Assignment1: Required function un-implemented");
-    return false;
-    return Length(point - sphereCenter) <= sphereRadius;
+    return (point - sphereCenter).Length() <= sphereRadius;
 }
 
 bool PointAabb(const Vector3& point, const Vector3& aabbMin, const Vector3& aabbMax)
 {
-    /******Student:Assignment1******/
-    Warn("Assignment1: Required function un-implemented");
-    return false;
     return point.x >= aabbMin.x
         && point.y >= aabbMin.y
         && point.z >= aabbMin.z
@@ -95,20 +89,41 @@ bool PointAabb(const Vector3& point, const Vector3& aabbMin, const Vector3& aabb
 bool RayPlane(const Vector3& rayStart, const Vector3& rayDir,
               const Vector4& plane, float& t, float epsilon)
 {
-  ++Application::mStatistics.mRayPlaneTests;
-  /******Student:Assignment1******/
-  Warn("Assignment1: Required function un-implemented");
-  return false;
+    ++Application::mStatistics.mRayPlaneTests;
+
+    Vector3 normal = Vector3(plane.x, plane.y, plane.z);
+    float n_rayDir_DotNrm = rayDir.Dot(normal);
+    if (n_rayDir_DotNrm < -epsilon || n_rayDir_DotNrm > epsilon)
+    {
+        Vector3 p0 = normal * plane.w;
+        t = (p0 - rayStart).Dot(normal) / n_rayDir_DotNrm;
+        return t >= 0.0f;
+    }
+    return false;
 }
 
 bool RayTriangle(const Vector3& rayStart, const Vector3& rayDir,
                  const Vector3& triP0, const Vector3& triP1, const Vector3& triP2,
                  float& t, float triExpansionEpsilon)
 {
-  ++Application::mStatistics.mRayTriangleTests;
-  /******Student:Assignment1******/
-  Warn("Assignment1: Required function un-implemented");
-  return false;
+    ++Application::mStatistics.mRayTriangleTests;
+
+    // build a plane
+    Plane plane;
+    plane.Set(triP0, triP1, triP2);
+    float tempT = 0.0f;
+
+    // check if its on the plane
+    if (!RayPlane(rayStart, rayDir, plane.mData, tempT)) return false;
+    
+    // check if its in the triangle
+    float u, v, w;
+    if (BarycentricCoordinates(rayStart + (rayDir.Normalized() * t), triP0, triP1, triP2, u, v, w, triExpansionEpsilon))
+    {
+        t = tempT;
+        return true;
+    }
+    return false;
 }
 
 bool RaySphere(const Vector3& rayStart, const Vector3& rayDir,
@@ -189,17 +204,17 @@ IntersectionType::Type FrustumAabb(const Vector4 planes[6],
 bool SphereSphere(const Vector3& sphereCenter0, float sphereRadius0,
                   const Vector3& sphereCenter1, float sphereRadius1)
 {
-  ++Application::mStatistics.mSphereSphereTests;
-  /******Student:Assignment1******/
-  Warn("Assignment1: Required function un-implemented");
-  return false;
+    ++Application::mStatistics.mSphereSphereTests;
+    return PointSphere(sphereCenter1, sphereCenter0, sphereRadius0 + sphereRadius1);
 }
 
 bool AabbAabb(const Vector3& aabbMin0, const Vector3& aabbMax0,
               const Vector3& aabbMin1, const Vector3& aabbMax1)
 {
-  ++Application::mStatistics.mAabbAabbTests;
-  /******Student:Assignment1******/
-  Warn("Assignment1: Required function un-implemented");
-  return false;
+    ++Application::mStatistics.mAabbAabbTests;
+
+    if (aabbMax0.x < aabbMin1.x || aabbMax1.x < aabbMin0.x) return false;
+    if (aabbMax0.y < aabbMin1.y || aabbMax1.y < aabbMin0.y) return false;
+    if (aabbMax0.z < aabbMin1.z || aabbMax1.z < aabbMin0.z) return false;
+    return true;
 }

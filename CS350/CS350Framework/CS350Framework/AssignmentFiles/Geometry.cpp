@@ -130,10 +130,49 @@ bool RaySphere(const Vector3& rayStart, const Vector3& rayDir,
                const Vector3& sphereCenter, float sphereRadius,
                float& t)
 {
-  ++Application::mStatistics.mRaySphereTests;
-  /******Student:Assignment1******/
-  Warn("Assignment1: Required function un-implemented");
-  return false;
+    ++Application::mStatistics.mRaySphereTests;
+
+    // check if start is within sphere
+    if (PointSphere(rayStart, sphereCenter, sphereRadius))
+    {
+        t = 0.0f;
+        return true;
+    }
+
+    // check for intersection
+    // C = sphereCenter
+    // S = rayStart
+    // D = rayDir
+    // r = sphereRadius
+
+    // s_c = (rayStart - sphereCenter)
+    // a = D^2
+    // b = 2D(s_c)
+    // c = C^2 + S^2 - 2CS - r^2
+
+    Vector3 s_c = rayStart - sphereCenter;
+    float a = rayDir.Dot(rayDir);
+    float b = (2.0f * rayDir).Dot(s_c);
+    float c = sphereCenter.Dot(sphereCenter) + rayStart.Dot(rayStart) - (2.0f * sphereCenter.Dot(rayStart)) - (sphereRadius * sphereRadius);
+
+    float descrim = (b * b) - (4.0f * a * c);
+    float tTemp = 0.0f;
+    if (descrim == 0.0f)
+    {
+        // 1 solution
+        tTemp = (-b + Math::Sqrt(descrim)) / (2.0f * a);
+    } else if (descrim > 0.0f) {
+        // 2 solutions
+        float tTemp1 = (-b + Math::Sqrt(descrim)) / (2.0f * a);
+        float tTemp2 = (-b - Math::Sqrt(descrim)) / (2.0f * a);
+        tTemp = Math::Min(tTemp1, tTemp2);
+    } else {
+        // 0 solutions
+        return false;
+    }
+    if (tTemp < 0.0f) return false;
+    t = tTemp;
+    return true;
 }
 
 bool RayAabb(const Vector3& rayStart, const Vector3& rayDir,

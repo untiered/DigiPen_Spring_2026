@@ -241,28 +241,63 @@ IntersectionType::Type PlaneTriangle(const Vector4& plane,
                                      const Vector3& triP0, const Vector3& triP1, const Vector3& triP2,
                                      float epsilon)
 {
-  ++Application::mStatistics.mPlaneTriangleTests;
-  /******Student:Assignment1******/
-  Warn("Assignment1: Required function un-implemented");
-  return IntersectionType::NotImplemented;
+    ++Application::mStatistics.mPlaneTriangleTests;
+
+    // get a point on the plane
+    Vector3 normal = Vector3(plane.x, plane.y, plane.z);
+    Vector3 pop = normal * plane.w;
+
+    // calculate distance from plane for each point of the triangle
+    float dist0 = (triP0 - pop).Dot(normal);
+    float dist1 = (triP1 - pop).Dot(normal);
+    float dist2 = (triP2 - pop).Dot(normal);
+
+    // check intersection type
+    if (Math::Abs(dist0) <= epsilon && Math::Abs(dist1) <= epsilon && Math::Abs(dist2) <= epsilon) return IntersectionType::Coplanar;
+    if (dist0 <= epsilon && dist1 <= epsilon && dist2 <= epsilon) return IntersectionType::Outside;
+    if (dist0 >= -epsilon && dist1 >= -epsilon && dist2 >= -epsilon) return IntersectionType::Inside;
+    return IntersectionType::Overlaps;
 }
 
 IntersectionType::Type PlaneSphere(const Vector4& plane,
                                    const Vector3& sphereCenter, float sphereRadius)
 {
-  ++Application::mStatistics.mPlaneSphereTests;
-  /******Student:Assignment1******/
-  Warn("Assignment1: Required function un-implemented");
-  return IntersectionType::NotImplemented;
+    ++Application::mStatistics.mPlaneSphereTests;
+
+    // calculate distance from center of sphere to plane
+    Vector3 normal = Vector3(plane.x, plane.y, plane.z);
+    Vector3 pop = normal * plane.w;
+    float d = (sphereCenter - pop).Dot(normal);
+    if (d > sphereRadius) return IntersectionType::Inside;
+    if (d < -sphereRadius) return IntersectionType::Outside;
+    return IntersectionType::Overlaps;
 }
 
 IntersectionType::Type PlaneAabb(const Vector4& plane,
                                  const Vector3& aabbMin, const Vector3& aabbMax)
 {
-  ++Application::mStatistics.mPlaneAabbTests;
-  /******Student:Assignment1******/
-  Warn("Assignment1: Required function un-implemented");
-  return IntersectionType::NotImplemented;
+    ++Application::mStatistics.mPlaneAabbTests;
+
+    // build variables
+    Vector3 normal = Vector3(plane.x, plane.y, plane.z);
+    Vector3 pop = normal * plane.w;
+    Vector3 pMin = Vector3();
+    pMin.x = (normal.x > 0.0f) ? aabbMin.x : aabbMax.x;
+    pMin.y = (normal.y > 0.0f) ? aabbMin.y : aabbMax.y;
+    pMin.z = (normal.z > 0.0f) ? aabbMin.z : aabbMax.z;
+    Vector3 pMax = Vector3();
+    pMax.x = (normal.x > 0.0f) ? aabbMax.x : aabbMin.x;
+    pMax.y = (normal.y > 0.0f) ? aabbMax.y : aabbMin.y;
+    pMax.z = (normal.z > 0.0f) ? aabbMax.z : aabbMin.z;
+    
+    // check if min is inside
+    if ((pMin - pop).Dot(normal) > 0.0f) return IntersectionType::Inside;
+
+    // check if max is outside
+    if ((pMax - pop).Dot(normal) < 0.0f) return IntersectionType::Outside;
+
+    // must be overlapping
+    return IntersectionType::Overlaps;
 }
 
 IntersectionType::Type FrustumTriangle(const Vector4 planes[6],

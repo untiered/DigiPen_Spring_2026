@@ -7,7 +7,7 @@
 - the "start" and "main test level" buttons in the "level selection" menu have basic rectangular hitboxes. they should be polished to the same level as the buttons in the main menu.
 - wasd only actually cause movement to take place ONCE the mech is facing that direction. this means you have to wait for the mech to slowely rotate until facing that direction before your input will cause any actual movement to take place. this feels horrible IMO.
 - the mech can jump. is this what we want?
-- the camera cant look up or down. this feels horrible IMO.
+- the camera cant look up or down (all the way). this feels horrible IMO.
 - the camera feels like its too close to the player character IMO. when looking from certain angles, a LARGE portion of the screen is blocked by the mech itself.
 - if you "jump" and (while in the air) look as far down(or up) as possible, after landing, your movement commands will only be about 5% as effective as they would be otherwise.
 - the tutorial contains an orange door that is breakable. but there are two other orange doors lying in that same room which LOOK IDENTICAL, but are NOT breakable. this seems weird.

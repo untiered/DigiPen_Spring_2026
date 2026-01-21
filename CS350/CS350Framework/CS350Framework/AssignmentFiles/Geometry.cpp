@@ -304,28 +304,82 @@ IntersectionType::Type FrustumTriangle(const Vector4 planes[6],
                                        const Vector3& triP0, const Vector3& triP1, const Vector3& triP2,
                                        float epsilon)
 {
-  ++Application::mStatistics.mFrustumTriangleTests;
-  /******Student:Assignment1******/
-  Warn("Assignment1: Required function un-implemented");
-  return IntersectionType::NotImplemented;
+    ++Application::mStatistics.mFrustumTriangleTests;
+
+    // check each plane
+    IntersectionType::Type type0 = PlaneTriangle(planes[0], triP0, triP1, triP2, epsilon);
+    IntersectionType::Type type1 = PlaneTriangle(planes[1], triP0, triP1, triP2, epsilon);
+    IntersectionType::Type type2 = PlaneTriangle(planes[2], triP0, triP1, triP2, epsilon);
+    IntersectionType::Type type3 = PlaneTriangle(planes[3], triP0, triP1, triP2, epsilon);
+    IntersectionType::Type type4 = PlaneTriangle(planes[4], triP0, triP1, triP2, epsilon);
+    IntersectionType::Type type5 = PlaneTriangle(planes[5], triP0, triP1, triP2, epsilon);
+
+    // check if outside
+    if (type0 == IntersectionType::Outside || type1 == IntersectionType::Outside ||
+        type2 == IntersectionType::Outside || type3 == IntersectionType::Outside ||
+        type4 == IntersectionType::Outside || type5 == IntersectionType::Outside) return IntersectionType::Outside;
+
+    // check if inside
+    if (type0 == IntersectionType::Inside && type1 == IntersectionType::Inside &&
+        type2 == IntersectionType::Inside && type3 == IntersectionType::Inside &&
+        type4 == IntersectionType::Inside && type5 == IntersectionType::Inside) return IntersectionType::Inside;
+
+    // check for overlap
+    return IntersectionType::Overlaps;
 }
 
 IntersectionType::Type FrustumSphere(const Vector4 planes[6],
                                      const Vector3& sphereCenter, float sphereRadius, size_t& lastAxis)
 {
-  ++Application::mStatistics.mFrustumSphereTests;
-  /******Student:Assignment1******/
-  Warn("Assignment1: Required function un-implemented");
-  return IntersectionType::NotImplemented;
+    ++Application::mStatistics.mFrustumSphereTests;
+
+    // check the sphere against each plane
+    IntersectionType::Type type0 = PlaneSphere(planes[0], sphereCenter, sphereRadius);
+    IntersectionType::Type type1 = PlaneSphere(planes[1], sphereCenter, sphereRadius);
+    IntersectionType::Type type2 = PlaneSphere(planes[2], sphereCenter, sphereRadius);
+    IntersectionType::Type type3 = PlaneSphere(planes[3], sphereCenter, sphereRadius);
+    IntersectionType::Type type4 = PlaneSphere(planes[4], sphereCenter, sphereRadius);
+    IntersectionType::Type type5 = PlaneSphere(planes[5], sphereCenter, sphereRadius);
+
+    // check if outside
+    if (type0 == IntersectionType::Outside || type1 == IntersectionType::Outside ||
+        type2 == IntersectionType::Outside || type3 == IntersectionType::Outside ||
+        type4 == IntersectionType::Outside || type5 == IntersectionType::Outside) return IntersectionType::Outside;
+
+    // check if inside
+    if (type0 == IntersectionType::Inside && type1 == IntersectionType::Inside &&
+        type2 == IntersectionType::Inside && type3 == IntersectionType::Inside &&
+        type4 == IntersectionType::Inside && type5 == IntersectionType::Inside) return IntersectionType::Inside;
+
+    // check for overlap
+    return IntersectionType::Overlaps;
 }
 
 IntersectionType::Type FrustumAabb(const Vector4 planes[6],
                                    const Vector3& aabbMin, const Vector3& aabbMax, size_t& lastAxis)
 {
-  ++Application::mStatistics.mFrustumAabbTests;
-  /******Student:Assignment1******/
-  Warn("Assignment1: Required function un-implemented");
-  return IntersectionType::NotImplemented;
+    ++Application::mStatistics.mFrustumAabbTests;
+
+    // check the sphere against each plane
+    IntersectionType::Type type0 = PlaneAabb(planes[0], aabbMin, aabbMax);
+    IntersectionType::Type type1 = PlaneAabb(planes[1], aabbMin, aabbMax);
+    IntersectionType::Type type2 = PlaneAabb(planes[2], aabbMin, aabbMax);
+    IntersectionType::Type type3 = PlaneAabb(planes[3], aabbMin, aabbMax);
+    IntersectionType::Type type4 = PlaneAabb(planes[4], aabbMin, aabbMax);
+    IntersectionType::Type type5 = PlaneAabb(planes[5], aabbMin, aabbMax);
+
+    // check if outside
+    if (type0 == IntersectionType::Outside || type1 == IntersectionType::Outside ||
+        type2 == IntersectionType::Outside || type3 == IntersectionType::Outside ||
+        type4 == IntersectionType::Outside || type5 == IntersectionType::Outside) return IntersectionType::Outside;
+
+    // check if inside
+    if (type0 == IntersectionType::Inside && type1 == IntersectionType::Inside &&
+        type2 == IntersectionType::Inside && type3 == IntersectionType::Inside &&
+        type4 == IntersectionType::Inside && type5 == IntersectionType::Inside) return IntersectionType::Inside;
+
+    // check for overlap
+    return IntersectionType::Overlaps;
 }
 
 bool SphereSphere(const Vector3& sphereCenter0, float sphereRadius0,

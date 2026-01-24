@@ -192,7 +192,7 @@ bool Aabb::Contains(const Aabb& aabb) const
 
 void Aabb::Expand(const Vector3& point)
 {
-  for(size_t i = 0; i < 3; ++i)
+  for(uint32_t i = 0; i < 3; ++i)
   {
     mMin[i] = Math::Min(mMin[i], point[i]);
     mMax[i] = Math::Max(mMax[i], point[i]);
@@ -202,7 +202,7 @@ void Aabb::Expand(const Vector3& point)
 Aabb Aabb::Combine(const Aabb& lhs, const Aabb& rhs)
 {
   Aabb result;
-  for(size_t i = 0; i < 3; ++i)
+  for(uint32_t i = 0; i < 3; ++i)
   {
     result.mMin[i] = Math::Min(lhs.mMin[i], rhs.mMin[i]);
     result.mMax[i] = Math::Max(lhs.mMax[i], rhs.mMax[i]);
@@ -288,7 +288,7 @@ Plane::Plane(const Vector3& normal, const Vector3& point)
 void Plane::Set(const Vector3& p0, const Vector3& p1, const Vector3& p2)
 {
     // build the normal
-    Vector3 n_normal = Normalized(Cross(p2 - p0, p2 - p1));
+    Vector3 n_normal = Cross(p2 - p0, p2 - p1).Normalized();
     
     // find d
     float d = n_normal.Dot(p0);

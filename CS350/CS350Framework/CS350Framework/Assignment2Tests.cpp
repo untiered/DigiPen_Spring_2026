@@ -6788,7 +6788,7 @@ void BoundingSphereSpatialPartitionRayCastTest1(const std::string& testName, int
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -6822,7 +6822,7 @@ void BoundingSphereSpatialPartitionRayCastTest2(const std::string& testName, int
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -6859,7 +6859,7 @@ void BoundingSphereSpatialPartitionRayCastTest3(const std::string& testName, int
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -6891,7 +6891,7 @@ void BoundingSphereSpatialPartitionFrustumCastTest1(const std::string& testName,
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -6920,7 +6920,7 @@ void BoundingSphereSpatialPartitionSelfQuery1(const std::string& testName, int d
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -6949,7 +6949,7 @@ void BoundingSphereSpatialPartitionSelfQuery2(const std::string& testName, int d
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -8717,7 +8717,7 @@ void SphereSpatialPartitionRayCastFuzzTest1(const std::string& testName, int deb
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -8780,7 +8780,7 @@ void SphereSpatialPartitionRayCastFuzzTest2(const std::string& testName, int deb
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -8843,7 +8843,7 @@ void SphereSpatialPartitionRayCastFuzzTest3(const std::string& testName, int deb
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -8900,7 +8900,7 @@ void SphereSpatialPartitionRayCastFuzzTest4(const std::string& testName, int deb
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -8969,7 +8969,7 @@ void SphereSpatialPartitionRayCastFuzzTest5(const std::string& testName, int deb
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -9025,7 +9025,7 @@ void SphereSpatialPartitionRayCastFuzzTest6(const std::string& testName, int deb
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -9078,7 +9078,7 @@ void SphereSpatialPartitionRayCastFuzzTest7(const std::string& testName, int deb
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -9139,7 +9139,7 @@ void SphereSpatialPartitionRayCastFuzzTest8(const std::string& testName, int deb
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -9198,7 +9198,7 @@ void SphereSpatialPartitionRayCastFuzzTest9(const std::string& testName, int deb
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -9260,7 +9260,7 @@ void SphereSpatialPartitionRayCastFuzzTest10(const std::string& testName, int de
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -9329,7 +9329,7 @@ void SphereSpatialPartitionRayCastFuzzTest11(const std::string& testName, int de
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -9385,7 +9385,7 @@ void SphereSpatialPartitionRayCastFuzzTest12(const std::string& testName, int de
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -9447,7 +9447,7 @@ void SphereSpatialPartitionRayCastFuzzTest13(const std::string& testName, int de
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -9508,7 +9508,7 @@ void SphereSpatialPartitionRayCastFuzzTest14(const std::string& testName, int de
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -9577,7 +9577,7 @@ void SphereSpatialPartitionRayCastFuzzTest15(const std::string& testName, int de
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -9632,7 +9632,7 @@ void SphereSpatialPartitionRayCastFuzzTest16(const std::string& testName, int de
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -9686,7 +9686,7 @@ void SphereSpatialPartitionRayCastFuzzTest17(const std::string& testName, int de
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -9751,7 +9751,7 @@ void SphereSpatialPartitionRayCastFuzzTest18(const std::string& testName, int de
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -9827,7 +9827,7 @@ void SphereSpatialPartitionRayCastFuzzTest19(const std::string& testName, int de
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -9891,7 +9891,7 @@ void SphereSpatialPartitionRayCastFuzzTest20(const std::string& testName, int de
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -9946,7 +9946,7 @@ void SphereSpatialPartitionRayCastFuzzTest21(const std::string& testName, int de
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -10026,7 +10026,7 @@ void SphereSpatialPartitionRayCastFuzzTest22(const std::string& testName, int de
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -10096,7 +10096,7 @@ void SphereSpatialPartitionRayCastFuzzTest23(const std::string& testName, int de
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -10164,7 +10164,7 @@ void SphereSpatialPartitionRayCastFuzzTest24(const std::string& testName, int de
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -10224,7 +10224,7 @@ void SphereSpatialPartitionRayCastFuzzTest25(const std::string& testName, int de
     PrintRayCastResults(spatialPartition, ray, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mRaySphereTests", Application::mStatistics.mRaySphereTests);
     }
 }
 
@@ -10286,7 +10286,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest1(const std::string& testName, int
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -10373,7 +10373,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest2(const std::string& testName, int
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -10442,7 +10442,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest3(const std::string& testName, int
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -10531,7 +10531,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest4(const std::string& testName, int
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -10619,7 +10619,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest5(const std::string& testName, int
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -10685,7 +10685,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest6(const std::string& testName, int
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -10785,7 +10785,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest7(const std::string& testName, int
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -10877,7 +10877,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest8(const std::string& testName, int
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -10935,7 +10935,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest9(const std::string& testName, int
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -11009,7 +11009,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest10(const std::string& testName, in
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -11067,7 +11067,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest11(const std::string& testName, in
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -11154,7 +11154,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest12(const std::string& testName, in
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -11248,7 +11248,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest13(const std::string& testName, in
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -11310,7 +11310,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest14(const std::string& testName, in
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -11395,7 +11395,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest15(const std::string& testName, in
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -11475,7 +11475,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest16(const std::string& testName, in
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -11576,7 +11576,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest17(const std::string& testName, in
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -11628,7 +11628,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest18(const std::string& testName, in
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -11686,7 +11686,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest19(const std::string& testName, in
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -11762,7 +11762,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest20(const std::string& testName, in
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -11817,7 +11817,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest21(const std::string& testName, in
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -11871,7 +11871,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest22(const std::string& testName, in
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -11942,7 +11942,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest23(const std::string& testName, in
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -12001,7 +12001,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest24(const std::string& testName, in
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -12056,7 +12056,7 @@ void SphereSpatialPartitionFrustumCastFuzzTest25(const std::string& testName, in
     PrintFrustumCastResults(spatialPartition, frustum, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mFrustumSphereTests", Application::mStatistics.mFrustumSphereTests);
     }
 }
 
@@ -12131,7 +12131,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest1(const std::string& testName, int d
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -12199,7 +12199,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest2(const std::string& testName, int d
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -12282,7 +12282,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest3(const std::string& testName, int d
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -12374,7 +12374,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest4(const std::string& testName, int d
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -12427,7 +12427,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest5(const std::string& testName, int d
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -12478,7 +12478,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest6(const std::string& testName, int d
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -12573,7 +12573,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest7(const std::string& testName, int d
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -12628,7 +12628,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest8(const std::string& testName, int d
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -12679,7 +12679,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest9(const std::string& testName, int d
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -12741,7 +12741,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest10(const std::string& testName, int 
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -12803,7 +12803,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest11(const std::string& testName, int 
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -12854,7 +12854,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest12(const std::string& testName, int 
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -12910,7 +12910,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest13(const std::string& testName, int 
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -12965,7 +12965,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest14(const std::string& testName, int 
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -13019,7 +13019,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest15(const std::string& testName, int 
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -13074,7 +13074,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest16(const std::string& testName, int 
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -13158,7 +13158,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest17(const std::string& testName, int 
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -13218,7 +13218,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest18(const std::string& testName, int 
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -13299,7 +13299,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest19(const std::string& testName, int 
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -13353,7 +13353,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest20(const std::string& testName, int 
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -13436,7 +13436,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest21(const std::string& testName, int 
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -13525,7 +13525,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest22(const std::string& testName, int 
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -13622,7 +13622,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest23(const std::string& testName, int 
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -13688,7 +13688,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest24(const std::string& testName, int 
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 
@@ -13740,7 +13740,7 @@ void SphereSpatialPartitionSelfQueryFuzzTest25(const std::string& testName, int 
     PrintSpatialPartitionSelfQuery(spatialPartition, file);
     if (file != NULL)
     {
-        fprintf(file, "  Statistics (%s): %d", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
+        fprintf(file, "  Statistics (%s): %zd", "mSphereSphereTests", Application::mStatistics.mSphereSphereTests);
     }
 }
 

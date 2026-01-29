@@ -4,6 +4,18 @@
 /// Copyright 2015, DigiPen Institute of Technology
 ///
 ///////////////////////////////////////////////////////////////////////////////
+
+/* Start Header ------------------------------------------------------
+Copyright (C) 2025 DigiPen Institute of Technology.
+File Name: Geometry.hpp
+Purpose: This file provides an interface for testing various types of collisions between primitive shapes.
+Language: ISO C++ 14 Standard.
+Platform: Legacy MSVC, x64/x86, Windows 10 OS.
+Project: r.marqueztwisdale_CS350_1.
+Author: Roman Marquez-Twisdale, r.marqueztwisdale@digipen.edu, 0065807.
+Creation date: 01/26/2026
+End Header -------------------------------------------------------*/
+
 #pragma once
 
 #include "Math/Math.hpp"

@@ -4,6 +4,18 @@
 /// Copyright 2015, DigiPen Institute of Technology
 ///
 ///////////////////////////////////////////////////////////////////////////////
+
+/* Start Header ------------------------------------------------------
+Copyright (C) 2025 DigiPen Institute of Technology.
+File Name: Shapes.cpp
+Purpose: This file provides an implementation for each primitive shape used in this project.
+Language: ISO C++ 14 Standard.
+Platform: Legacy MSVC, x64/x86, Windows 10 OS.
+Project: r.marqueztwisdale_CS350_1.
+Author: Roman Marquez-Twisdale, r.marqueztwisdale@digipen.edu, 0065807.
+Creation date: 01/26/2026
+End Header -------------------------------------------------------*/
+
 #include "Precompiled.hpp"
 
 //-----------------------------------------------------------------------------LineSegment
@@ -289,6 +301,10 @@ void Plane::Set(const Vector3& p0, const Vector3& p1, const Vector3& p2)
 {
     // build the normal
     Vector3 n_normal = Cross(p2 - p0, p2 - p1).Normalized();
+    /*if (!n_normal.AttemptNormalize())
+    {
+        printf("Error in Plane::Set(): Attempted to normalize the 0 vector.\n");
+    }*/
     
     // find d
     float d = n_normal.Dot(p0);
@@ -299,7 +315,11 @@ void Plane::Set(const Vector3& p0, const Vector3& p1, const Vector3& p2)
 void Plane::Set(const Vector3& normal, const Vector3& point)
 {
     // build the normal
-    Vector3 n_normal = Normalized(normal);
+    Vector3 n_normal = normal.Normalized();
+    /*if (!n_normal.AttemptNormalize())
+    {
+        printf("Error in Plane::Set(): Attempted to normalize the 0 vector.\n");
+    }*/
 
     // find d
     float d = n_normal.Dot(point);

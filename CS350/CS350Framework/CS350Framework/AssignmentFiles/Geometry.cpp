@@ -35,7 +35,11 @@ bool BarycentricCoordinates(const Vector3& point, const Vector3& a, const Vector
                             float& u, float& v, float epsilon)
 {
     // check if degenerate
-    if (a == b) return false;
+    if (a == b)
+    {
+        u = v = 0.0f;
+        return false;
+    }
  
     // calculate u and v
     u = (point - b).Dot(a - b) / (a - b).Dot(a - b);
@@ -49,7 +53,11 @@ bool BarycentricCoordinates(const Vector3& point, const Vector3& a, const Vector
                             float& u, float& v, float& w, float epsilon)
 {
     // check for degenerate
-    if (a == b || a == c || b == c || (a-b).Cross(a-c).Length() == 0.0f) return false;
+    if (a == b || a == c || b == c || (a - b).Cross(a - c).Length() == 0.0f)
+    {
+        u = v = w = 0.0f;
+        return false;
+    }
 
     // calculate u,v, and w
     // calculate signed area of triangle: ABC

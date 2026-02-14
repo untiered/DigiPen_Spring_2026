@@ -301,10 +301,6 @@ void Plane::Set(const Vector3& p0, const Vector3& p1, const Vector3& p2)
 {
     // build the normal
     Vector3 n_normal = Cross(p2 - p0, p2 - p1).Normalized();
-    /*if (!n_normal.AttemptNormalize())
-    {
-        printf("Error in Plane::Set(): Attempted to normalize the 0 vector.\n");
-    }*/
     
     // find d
     float d = n_normal.Dot(p0);
@@ -316,10 +312,6 @@ void Plane::Set(const Vector3& normal, const Vector3& point)
 {
     // build the normal
     Vector3 n_normal = normal.Normalized();
-    /*if (!n_normal.AttemptNormalize())
-    {
-        printf("Error in Plane::Set(): Attempted to normalize the 0 vector.\n");
-    }*/
 
     // find d
     float d = n_normal.Dot(point);

@@ -38,6 +38,7 @@ void Model::DebugDraw()
 
 void Model::DisplayProperties(TwBar* bar)
 {
+    if (!mOwner->mApplication) return;
   std::string name = mOwner->mName;
   std::string groupName = "group=" + name + ".Model";
 
@@ -57,7 +58,8 @@ void Model::UpdateBoundingVolumes(bool recompute)
 
   UpdateAabb();
   UpdateBoundingSphere();
-
+  
+  if (!mOwner->mApplication) return;
   mOwner->mApplication->UpdateGameObject(mOwner);
 }
 

@@ -93,7 +93,7 @@ private:
   Application* mApplication;
 
   // ROMAN'S HELPER
-  std::vector<LineSegment> MakeDisc(Vector3 const& normal, Vector3 const& C, float r, float sections);
+  //std::vector<LineSegment> MakeDisc(Vector3 const& normal, Vector3 const& C, float r, float sections);
 };
 
 extern DebugDrawer* gDebugDrawer;

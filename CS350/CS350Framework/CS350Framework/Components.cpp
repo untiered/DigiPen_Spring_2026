@@ -107,6 +107,7 @@ void GameObject::Add(Component* component)
 
 void GameObject::Union()
 {
+    if (!mApplication) return;
   mApplication->Union(this);
 }
 

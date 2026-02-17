@@ -21,357 +21,415 @@ End Header -------------------------------------------------------*/
 //-----------------------------------------------------------------------------LineSegment
 LineSegment::LineSegment()
 {
-  mStart = mEnd = Vector3::cZero;
+	mStart = mEnd = Vector3::cZero;
 }
 
 LineSegment::LineSegment(Math::Vec3Param start, Math::Vec3Param end)
 {
-  mStart = start;
-  mEnd = end;
+	mStart = start;
+	mEnd = end;
 }
 
 DebugShape& LineSegment::DebugDraw() const
 {
-  return gDebugDrawer->DrawLine(*this);
+	return gDebugDrawer->DrawLine(*this);
 }
 
 //-----------------------------------------------------------------------------Ray
 Ray::Ray()
 {
-  mStart = mDirection = Vector3::cZero;
+	mStart = mDirection = Vector3::cZero;
 }
 
 Ray::Ray(Math::Vec3Param start, Math::Vec3Param dir)
 {
-  mStart = start;
-  mDirection = dir;
+	mStart = start;
+	mDirection = dir;
 }
 
 Ray Ray::Transform(const Math::Matrix4& transform) const
 {
-  Ray transformedRay;
-  transformedRay.mStart = Math::TransformPoint(transform, mStart);
-  transformedRay.mDirection = Math::TransformNormal(transform, mDirection);
-  return transformedRay;
+	Ray transformedRay;
+	transformedRay.mStart = Math::TransformPoint(transform, mStart);
+	transformedRay.mDirection = Math::TransformNormal(transform, mDirection);
+	return transformedRay;
 }
 
 Vector3 Ray::GetPoint(float t) const
 {
-  return mStart + mDirection * t;
+	return mStart + mDirection * t;
 }
 
 DebugShape& Ray::DebugDraw(float t) const
 {
-  return gDebugDrawer->DrawRay(*this, t);
+	return gDebugDrawer->DrawRay(*this, t);
 }
 
 //-----------------------------------------------------------------------------PCA Helpers
 Matrix3 ComputeCovarianceMatrix(const std::vector<Vector3>& points)
 {
-  /******Student:Assignment2******/
-  Warn("Assignment2: Required function un-implemented");
-  return Matrix3::cIdentity;
+	/******Student:Assignment2******/
+	Warn("Assignment2: Required function un-implemented");
+	return Matrix3::cIdentity;
 }
 
 Matrix3 ComputeJacobiRotation(const Matrix3& matrix)
 {
-  /******Student:Assignment2******/
-  // Compute the jacobi rotation matrix that will turn the largest (magnitude) off-diagonal element of the input
-  // matrix into zero. Note: the input matrix should always be (near) symmetric.
-  Warn("Assignment2: Required function un-implemented");
-  return Matrix3::cIdentity;
+	/******Student:Assignment2******/
+	// Compute the jacobi rotation matrix that will turn the largest (magnitude) off-diagonal element of the input
+	// matrix into zero. Note: the input matrix should always be (near) symmetric.
+	Warn("Assignment2: Required function un-implemented");
+	return Matrix3::cIdentity;
 }
 
 void ComputeEigenValuesAndVectors(const Matrix3& covariance, Vector3& eigenValues, Matrix3& eigenVectors, int maxIterations)
 {
-  /******Student:Assignment2******/
-  // Iteratively rotate off the largest off-diagonal elements until the resultant matrix is diagonal or maxIterations.
-  Warn("Assignment2: Required function un-implemented");
+	/******Student:Assignment2******/
+	// Iteratively rotate off the largest off-diagonal elements until the resultant matrix is diagonal or maxIterations.
+	Warn("Assignment2: Required function un-implemented");
 }
 
 
 //-----------------------------------------------------------------------------Sphere
 Sphere::Sphere()
 {
-  mCenter = Vector3::cZero;
-  mRadius = 0;
+	mCenter = Vector3::cZero;
+	mRadius = 0;
 }
 
 Sphere::Sphere(const Vector3& center, float radius)
 {
-  mCenter = center;
-  mRadius = radius;
+	mCenter = center;
+	mRadius = radius;
 }
 
 void Sphere::ComputeCentroid(const std::vector<Vector3>& points)
 {
-  /******Student:Assignment2******/
-  // The centroid method is roughly describe as: find the centroid (not mean) of all
-  // points and then find the furthest away point from the centroid.
-  Warn("Assignment2: Required function un-implemented");
+	/******Student:Assignment2******/
+	// The centroid method is roughly describe as: find the centroid (not mean) of all
+	// points and then find the furthest away point from the centroid.
+	Warn("Assignment2: Required function un-implemented");
 }
 
 void Sphere::ComputeRitter(const std::vector<Vector3>& points)
 {
-  /******Student:Assignment2******/
-  // The ritter method:
-  // Find the largest spread on each axis.
-  // Find which axis' pair of points are the furthest (euclidean distance) apart.
-  // Choose the center of this line as the sphere center. Now incrementally expand the sphere.
-  Warn("Assignment2: Required function un-implemented");
+	/******Student:Assignment2******/
+	// The ritter method:
+	// Find the largest spread on each axis.
+	// Find which axis' pair of points are the furthest (euclidean distance) apart.
+	// Choose the center of this line as the sphere center. Now incrementally expand the sphere.
+	Warn("Assignment2: Required function un-implemented");
 }
 
 void Sphere::ComputePCA(const std::vector<Vector3>& points)
 {
-  // The PCA method:
-  // Compute the eigen values and vectors. Take the largest eigen vector as the axis of largest spread.
-  // Compute the sphere center as the center of this axis then expand by all points.
-  /******Student:Assignment2******/
-  Warn("Assignment2: Required function un-implemented");
+	// The PCA method:
+	// Compute the eigen values and vectors. Take the largest eigen vector as the axis of largest spread.
+	// Compute the sphere center as the center of this axis then expand by all points.
+	/******Student:Assignment2******/
+	Warn("Assignment2: Required function un-implemented");
 }
 
 
 bool Sphere::ContainsPoint(const Vector3& point)
 {
-  return PointSphere(point, mCenter, mRadius);
+	return PointSphere(point, mCenter, mRadius);
 }
 
 Vector3 Sphere::GetCenter() const
 {
-  return mCenter;
+	return mCenter;
 }
 
 float Sphere::GetRadius() const
 {
-  return mRadius;
+	return mRadius;
 }
 
 bool Sphere::Compare(const Sphere& rhs, float epsilon) const
 {
-  float posDiff = Math::Length(mCenter - rhs.mCenter);
-  float radiusDiff = Math::Abs(mRadius - rhs.mRadius);
+	float posDiff = Math::Length(mCenter - rhs.mCenter);
+	float radiusDiff = Math::Abs(mRadius - rhs.mRadius);
 
-  return posDiff < epsilon && radiusDiff < epsilon;
+	return posDiff < epsilon && radiusDiff < epsilon;
 }
 
 DebugShape& Sphere::DebugDraw() const
 {
-  return gDebugDrawer->DrawSphere(*this);
+	return gDebugDrawer->DrawSphere(*this);
 }
 
 //-----------------------------------------------------------------------------Aabb
 Aabb::Aabb()
 {
-  //set the aabb to an initial bad value (where the min is smaller than the max)
-  mMin.Splat(Math::PositiveMax());
-  mMax.Splat(-Math::PositiveMax());
+	//set the aabb to an initial bad value (where the min is smaller than the max)
+	mMin.Splat(Math::PositiveMax());
+	mMax.Splat(-Math::PositiveMax());
 }
 
 Aabb::Aabb(const Vector3& min, const Vector3& max)
 {
-  mMin = min;
-  mMax = max;
+	mMin = min;
+	mMax = max;
 }
 
 Aabb Aabb::BuildFromCenterAndHalfExtents(const Vector3& center, const Vector3& halfExtents)
 {
-  return Aabb(center - halfExtents, center + halfExtents);
+	return Aabb(center - halfExtents, center + halfExtents);
 }
 
 float Aabb::GetVolume() const
 {
-  /******Student:Assignment2******/
-  // Return the aabb's volume
-  Warn("Assignment2: Required function un-implemented");
-  return 0;
+	/******Student:Assignment2******/
+	// Return the aabb's volume
+
+	Vector3 dim = mMax - mMin;
+	return dim.x * dim.y * dim.z;
 }
 
 float Aabb::GetSurfaceArea() const
 {
-  /******Student:Assignment2******/
-  // Return the aabb's surface area
-  Warn("Assignment2: Required function un-implemented");
-  return 0;
+	/******Student:Assignment2******/
+	// Return the aabb's surface area
+
+	Vector3 dim = mMax - mMin;
+
+	// compute xy surface area
+	float xy_sa = dim.x * dim.y * 2.0f;
+	// compute xz surface area
+	float xz_sa = dim.x * dim.z * 2.0f;
+	// compute yz surface area
+	float yz_sa = dim.y * dim.z * 2.0f;
+
+	return xy_sa + xz_sa + yz_sa;
 }
 
 bool Aabb::Contains(const Aabb& aabb) const
 {
-  /******Student:Assignment2******/
-  // Return if aabb is completely contained in this
-  Warn("Assignment2: Required function un-implemented");
-  return false;
+	/******Student:Assignment2******/
+	// Return if aabb is completely contained in this
+
+	return aabb.mMin.x >= mMin.x
+		&& aabb.mMin.y >= mMin.y
+		&& aabb.mMin.z >= mMin.z
+		&& aabb.mMax.x <= mMax.x
+		&& aabb.mMax.y <= mMax.y
+		&& aabb.mMax.z <= mMax.z;
 }
 
 void Aabb::Expand(const Vector3& point)
 {
-  for(uint32_t i = 0; i < 3; ++i)
-  {
-    mMin[i] = Math::Min(mMin[i], point[i]);
-    mMax[i] = Math::Max(mMax[i], point[i]);
-  }
+	for (uint32_t i = 0; i < 3; ++i)
+	{
+		mMin[i] = Math::Min(mMin[i], point[i]);
+		mMax[i] = Math::Max(mMax[i], point[i]);
+	}
 }
 
 Aabb Aabb::Combine(const Aabb& lhs, const Aabb& rhs)
 {
-  Aabb result;
-  for(uint32_t i = 0; i < 3; ++i)
-  {
-    result.mMin[i] = Math::Min(lhs.mMin[i], rhs.mMin[i]);
-    result.mMax[i] = Math::Max(lhs.mMax[i], rhs.mMax[i]);
-  }
-  return result;
+	Aabb result;
+	for (uint32_t i = 0; i < 3; ++i)
+	{
+		result.mMin[i] = Math::Min(lhs.mMin[i], rhs.mMin[i]);
+		result.mMax[i] = Math::Max(lhs.mMax[i], rhs.mMax[i]);
+	}
+	return result;
 }
 
 bool Aabb::Compare(const Aabb& rhs, float epsilon) const
 {
-  float pos1Diff = Math::Length(mMin - rhs.mMin);
-  float pos2Diff = Math::Length(mMax - rhs.mMax);
+	float pos1Diff = Math::Length(mMin - rhs.mMin);
+	float pos2Diff = Math::Length(mMax - rhs.mMax);
 
-  return pos1Diff < epsilon && pos2Diff < epsilon;
+	return pos1Diff < epsilon && pos2Diff < epsilon;
 }
 
 void Aabb::Transform(const Vector3& scale, const Matrix3& rotation, const Vector3& translation)
 {
-  /******Student:Assignment2******/
-  // Compute aabb of the this aabb after it is transformed.
-  // You should use the optimize method discussed in class (not transforming all 8 points).
-  Warn("Assignment2: Required function un-implemented");
+	/******Student:Assignment2******/
+	// Compute aabb of the this aabb after it is transformed.
+	// You should use the optimize method discussed in class (not transforming all 8 points).
+
+	// get center point
+	Vector3 c3 = mMin + ((mMax - mMin) * 0.5f);
+	Vector4 sc = Vector4(c3.x * scale.x, c3.y * scale.y, c3.z * scale.z, 1.0f);
+	
+	// get the scaled extent vector
+	Vector4 sr = (Vector4(mMax.x - c3.x, 0.0f, 0.0f, 0.0f) * scale.x)
+				+(Vector4(0.0f, mMax.y - c3.y, 0.0f, 0.0f) * scale.y)
+				+(Vector4(0.0f, 0.0f, mMax.z - c3.z, 0.0f) * scale.z);
+		
+	// build an rotation matrix
+	Matrix4 rotM = Math::BuildTransform(Vector3(0.0f, 0.0f, 0.0f), rotation, Vector3(1.0f, 1.0f, 1.0f));
+
+	// rotate the scaled center
+	Vector4 scPrime = Math::Transform(rotM, sc);
+
+	// ABS the matrix
+	rotM[0][0] = Math::Abs(rotM[0][0]);
+	rotM[1][0] = Math::Abs(rotM[1][0]);
+	rotM[2][0] = Math::Abs(rotM[2][0]);
+	rotM[3][0] = Math::Abs(rotM[3][0]);
+
+	rotM[0][1] = Math::Abs(rotM[0][1]);
+	rotM[1][1] = Math::Abs(rotM[1][1]);
+	rotM[2][1] = Math::Abs(rotM[2][1]);
+	rotM[3][1] = Math::Abs(rotM[3][1]);
+
+	rotM[0][2] = Math::Abs(rotM[0][2]);
+	rotM[1][2] = Math::Abs(rotM[1][2]);
+	rotM[2][2] = Math::Abs(rotM[2][2]);
+	rotM[3][2] = Math::Abs(rotM[3][2]);
+
+	rotM[0][3] = Math::Abs(rotM[0][3]);
+	rotM[1][3] = Math::Abs(rotM[1][3]);
+	rotM[2][3] = Math::Abs(rotM[2][3]);
+	rotM[3][3] = Math::Abs(rotM[3][3]);
+
+
+	// ABS rotate the scaled extent
+	Vector4 srPrime = Math::Transform(rotM, sr);
+
+	// update the aabb
+	mMin = Vector3(scPrime.x, scPrime.y, scPrime.z) + translation - Vector3(srPrime.x, srPrime.y, srPrime.z);
+	mMax = Vector3(scPrime.x, scPrime.y, scPrime.z) + translation + Vector3(srPrime.x, srPrime.y, srPrime.z);
 }
 
 Vector3 Aabb::GetMin() const
 {
-  return mMin;
+	return mMin;
 }
 
 Vector3 Aabb::GetMax() const
 {
-  return mMax;
+	return mMax;
 }
 
 Vector3 Aabb::GetCenter() const
 {
-  return (mMin + mMax) * 0.5f;
+	return (mMin + mMax) * 0.5f;
 }
 
 Vector3 Aabb::GetHalfSize() const
 {
-  return (mMax - mMin) * 0.5f;
+	return (mMax - mMin) * 0.5f;
 }
 
 DebugShape& Aabb::DebugDraw() const
 {
-  return gDebugDrawer->DrawAabb(*this);
+	return gDebugDrawer->DrawAabb(*this);
 }
 
 //-----------------------------------------------------------------------------Triangle
 Triangle::Triangle()
 {
-  mPoints[0] = mPoints[1] = mPoints[2] = Vector3::cZero;
+	mPoints[0] = mPoints[1] = mPoints[2] = Vector3::cZero;
 }
 
 Triangle::Triangle(const Vector3& p0, const Vector3& p1, const Vector3& p2)
 {
-  mPoints[0] = p0;
-  mPoints[1] = p1;
-  mPoints[2] = p2;
+	mPoints[0] = p0;
+	mPoints[1] = p1;
+	mPoints[2] = p2;
 }
 
 DebugShape& Triangle::DebugDraw() const
 {
-  return gDebugDrawer->DrawTriangle(*this);
+	return gDebugDrawer->DrawTriangle(*this);
 }
 
 //-----------------------------------------------------------------------------Plane
 Plane::Plane()
 {
-  mData = Vector4::cZero;
+	mData = Vector4::cZero;
 }
 
 Plane::Plane(const Vector3& p0, const Vector3& p1, const Vector3& p2)
 {
-  Set(p0, p1, p2);
+	Set(p0, p1, p2);
 }
 
 Plane::Plane(const Vector3& normal, const Vector3& point)
 {
-  Set(normal, point);
+	Set(normal, point);
 }
 
 void Plane::Set(const Vector3& p0, const Vector3& p1, const Vector3& p2)
 {
-    // build the normal
-    Vector3 n_normal = Cross(p2 - p0, p2 - p1).Normalized();
-    
-    // find d
-    float d = n_normal.Dot(p0);
+	// build the normal
+	Vector3 n_normal = Cross(p2 - p0, p2 - p1).Normalized();
 
-    mData = Vector4(n_normal.x, n_normal.y, n_normal.z, d);
+	// find d
+	float d = n_normal.Dot(p0);
+
+	mData = Vector4(n_normal.x, n_normal.y, n_normal.z, d);
 }
 
 void Plane::Set(const Vector3& normal, const Vector3& point)
 {
-    // build the normal
-    Vector3 n_normal = normal.Normalized();
+	// build the normal
+	Vector3 n_normal = normal.Normalized();
 
-    // find d
-    float d = n_normal.Dot(point);
+	// find d
+	float d = n_normal.Dot(point);
 
-    mData = Vector4(n_normal.x, n_normal.y, n_normal.z, d);
+	mData = Vector4(n_normal.x, n_normal.y, n_normal.z, d);
 }
 
 Vector3 Plane::GetNormal() const
 {
-  return Vector3(mData.x, mData.y, mData.z);
+	return Vector3(mData.x, mData.y, mData.z);
 }
 
 float Plane::GetDistance() const
 {
-  return mData.w;
+	return mData.w;
 }
 
 DebugShape& Plane::DebugDraw(float size) const
 {
-  return DebugDraw(size, size);
+	return DebugDraw(size, size);
 }
 
 DebugShape& Plane::DebugDraw(float sizeX, float sizeY) const
 {
-  return gDebugDrawer->DrawPlane(*this, sizeX, sizeY);
+	return gDebugDrawer->DrawPlane(*this, sizeX, sizeY);
 }
 
 //-----------------------------------------------------------------------------Frustum
 void Frustum::Set(const Vector3& lbn, const Vector3& rbn, const Vector3& rtn, const Vector3& ltn,
-                  const Vector3& lbf, const Vector3& rbf, const Vector3& rtf, const Vector3& ltf)
+	const Vector3& lbf, const Vector3& rbf, const Vector3& rtf, const Vector3& ltf)
 {
-  mPoints[0] = lbn;
-  mPoints[1] = rbn;
-  mPoints[2] = rtn;
-  mPoints[3] = ltn;
-  mPoints[4] = lbf;
-  mPoints[5] = rbf;
-  mPoints[6] = rtf;
-  mPoints[7] = ltf;
+	mPoints[0] = lbn;
+	mPoints[1] = rbn;
+	mPoints[2] = rtn;
+	mPoints[3] = ltn;
+	mPoints[4] = lbf;
+	mPoints[5] = rbf;
+	mPoints[6] = rtf;
+	mPoints[7] = ltf;
 
-  //left
-  mPlanes[0].Set(lbf, ltf, lbn);
-  //right
-  mPlanes[1].Set(rbn, rtf, rbf);
-  //top
-  mPlanes[2].Set(ltn, ltf, rtn);
-  //bot
-  mPlanes[3].Set(rbn, lbf, lbn);
-  //near
-  mPlanes[4].Set(lbn, ltn, rbn);
-  //far
-  mPlanes[5].Set(rbf, rtf, lbf);
+	//left
+	mPlanes[0].Set(lbf, ltf, lbn);
+	//right
+	mPlanes[1].Set(rbn, rtf, rbf);
+	//top
+	mPlanes[2].Set(ltn, ltf, rtn);
+	//bot
+	mPlanes[3].Set(rbn, lbf, lbn);
+	//near
+	mPlanes[4].Set(lbn, ltn, rbn);
+	//far
+	mPlanes[5].Set(rbf, rtf, lbf);
 }
 
 Math::Vector4* Frustum::GetPlanes() const
 {
-  return (Vector4*)mPlanes;
+	return (Vector4*)mPlanes;
 }
 
 DebugShape& Frustum::DebugDraw() const
 {
-  return gDebugDrawer->DrawFrustum(*this);
+	return gDebugDrawer->DrawFrustum(*this);
 }

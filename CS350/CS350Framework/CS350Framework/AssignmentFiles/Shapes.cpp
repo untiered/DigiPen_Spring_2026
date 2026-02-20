@@ -68,9 +68,35 @@ DebugShape& Ray::DebugDraw(float t) const
 //-----------------------------------------------------------------------------PCA Helpers
 Matrix3 ComputeCovarianceMatrix(const std::vector<Vector3>& points)
 {
-	/******Student:Assignment2******/
-	Warn("Assignment2: Required function un-implemented");
-	return Matrix3::cIdentity;
+	///******Student:Assignment2******/
+	//Warn("Assignment2: Required function un-implemented");
+	//return Matrix3::cIdentity;
+
+	Matrix3 cvMatrix = {};
+	
+	unsigned dim = static_cast<unsigned>(points.size());
+	
+	// calculate mean
+	Vector3 mean = {};
+	for (unsigned k = 0; k < dim; ++k)
+		mean += points[k];
+	mean /= static_cast<float>(dim);
+
+	// set each element in the matrix
+	for (unsigned i = 0; i < dim; ++i)
+	{
+		for (unsigned j = 0; j < dim; ++j)
+		{
+			// sum k=0 to n-1: (P^k_i - u_i)(P^k_j - u_j)
+			for (unsigned k = 0; k < dim; ++k)
+			{
+				// calculate matrix element
+				cvMatrix[i][j] += (points[k][i] - mean[i]) * (points[k][j] - mean[j]);
+			}
+			cvMatrix[i][j] /= static_cast<float>(dim); // divide by dim
+		}
+	}
+	return cvMatrix;
 }
 
 Matrix3 ComputeJacobiRotation(const Matrix3& matrix)
@@ -105,10 +131,36 @@ Sphere::Sphere(const Vector3& center, float radius)
 
 void Sphere::ComputeCentroid(const std::vector<Vector3>& points)
 {
-	/******Student:Assignment2******/
-	// The centroid method is roughly describe as: find the centroid (not mean) of all
-	// points and then find the furthest away point from the centroid.
-	Warn("Assignment2: Required function un-implemented");
+	///******Student:Assignment2******/
+	//// The centroid method is roughly describe as: find the centroid (not mean) of all
+	//// points and then find the furthest away point from the centroid.
+	//Warn("Assignment2: Required function un-implemented");
+
+	unsigned n = static_cast<unsigned>(points.size());
+
+	Vector3 max = points[0];
+	Vector3 min = points[0];
+
+	// build aabb
+	for (unsigned i = 1; i < n; ++i)
+	{
+		if (max.x < points[i].x) max.x = points[i].x;
+		if (max.y < points[i].y) max.y = points[i].y;
+		if (max.z < points[i].z) max.z = points[i].z;
+
+		if (min.x > points[i].x) min.x = points[i].x;
+		if (min.y > points[i].y) min.y = points[i].y;
+		if (min.z > points[i].z) min.z = points[i].z;
+	}
+
+	// set centroid
+	mCenter = (min + max) * 0.5f;
+
+	// find radius
+	for (unsigned i = 0; i < n; ++i)
+	{
+		if (mRadius < Math::Distance(mCenter, points[i])) mRadius = Math::Distance(mCenter, points[i]);
+	}
 }
 
 void Sphere::ComputeRitter(const std::vector<Vector3>& points)
@@ -119,6 +171,8 @@ void Sphere::ComputeRitter(const std::vector<Vector3>& points)
 	// Find which axis' pair of points are the furthest (euclidean distance) apart.
 	// Choose the center of this line as the sphere center. Now incrementally expand the sphere.
 	Warn("Assignment2: Required function un-implemented");
+
+
 }
 
 void Sphere::ComputePCA(const std::vector<Vector3>& points)

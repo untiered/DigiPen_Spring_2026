@@ -165,14 +165,56 @@ void Sphere::ComputeCentroid(const std::vector<Vector3>& points)
 
 void Sphere::ComputeRitter(const std::vector<Vector3>& points)
 {
-	/******Student:Assignment2******/
-	// The ritter method:
-	// Find the largest spread on each axis.
-	// Find which axis' pair of points are the furthest (euclidean distance) apart.
-	// Choose the center of this line as the sphere center. Now incrementally expand the sphere.
-	Warn("Assignment2: Required function un-implemented");
+	///******Student:Assignment2******/
+	//// The ritter method:
+	//// Find the largest spread on each axis.
+	//// Find which axis' pair of points are the furthest (euclidean distance) apart.
+	//// Choose the center of this line as the sphere center. Now incrementally expand the sphere.
+	//Warn("Assignment2: Required function un-implemented");
 
+	unsigned n = static_cast<unsigned>(points.size());
 
+	Vector3 max = points[0];
+	Vector3 min = points[0];
+
+	enum Axes { X = 0, Y, Z, DIMS };
+
+	std::vector<std::pair<Vector3, Vector3>> axisPairs(DIMS);
+	for (int i = 0; i < DIMS; ++i) {
+		axisPairs[i].first = points[0];
+		axisPairs[i].second = points[0];
+	}
+
+	// build aabb to find the min and max axis spreads
+	for (unsigned i = 1; i < n; ++i) {
+		if (max.x < points[i].x) max.x = points[i].x; axisPairs[X].second = points[i];
+		if (max.y < points[i].y) max.y = points[i].y; axisPairs[Y].second = points[i];
+		if (max.z < points[i].z) max.z = points[i].z; axisPairs[Z].second = points[i];
+
+		if (min.x > points[i].x) min.x = points[i].x; axisPairs[X].first = points[i];
+		if (min.y > points[i].y) min.y = points[i].y; axisPairs[Y].first = points[i];
+		if (min.z > points[i].z) min.z = points[i].z; axisPairs[Z].first = points[i];
+	}
+
+	// generate the centroid
+	float euclidDist = 0.0f;
+	for (unsigned i = 0; i < DIMS; ++i)
+	{
+		// set the centroid
+		float d = Math::Distance(axisPairs[i].first, axisPairs[i].second);
+		if (d > euclidDist)
+		{
+			euclidDist = d;
+			mCenter = (axisPairs[i].first + axisPairs[i].second) * 0.5f;
+		}
+	}
+
+	// incrementally expand the sphere
+	for (unsigned i = 0; i < n; ++i)
+	{
+		float r = Math::Distance(mCenter, points[i]);
+		if (r > mRadius) mRadius = r;
+	}
 }
 
 void Sphere::ComputePCA(const std::vector<Vector3>& points)

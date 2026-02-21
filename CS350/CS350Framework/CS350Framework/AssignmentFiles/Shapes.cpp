@@ -187,13 +187,13 @@ void Sphere::ComputeRitter(const std::vector<Vector3>& points)
 
 	// build aabb to find the min and max axis spreads
 	for (unsigned i = 1; i < n; ++i) {
-		if (max.x < points[i].x) max.x = points[i].x; axisPairs[X].second = points[i];
-		if (max.y < points[i].y) max.y = points[i].y; axisPairs[Y].second = points[i];
-		if (max.z < points[i].z) max.z = points[i].z; axisPairs[Z].second = points[i];
+		if (max.x < points[i].x) { max.x = points[i].x; axisPairs[X].second = points[i]; }
+		if (max.y < points[i].y) { max.y = points[i].y; axisPairs[Y].second = points[i]; }
+		if (max.z < points[i].z) { max.z = points[i].z; axisPairs[Z].second = points[i]; }
 
-		if (min.x > points[i].x) min.x = points[i].x; axisPairs[X].first = points[i];
-		if (min.y > points[i].y) min.y = points[i].y; axisPairs[Y].first = points[i];
-		if (min.z > points[i].z) min.z = points[i].z; axisPairs[Z].first = points[i];
+		if (min.x > points[i].x) { min.x = points[i].x; axisPairs[X].first = points[i]; }
+		if (min.y > points[i].y) { min.y = points[i].y; axisPairs[Y].first = points[i]; }
+		if (min.z > points[i].z) { min.z = points[i].z; axisPairs[Z].first = points[i]; }
 	}
 
 	// generate the centroid

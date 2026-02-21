@@ -212,8 +212,13 @@ void Sphere::ComputeRitter(const std::vector<Vector3>& points)
 	// incrementally expand the sphere
 	for (unsigned i = 0; i < n; ++i)
 	{
-		float r = Math::Distance(mCenter, points[i]);
-		if (r > mRadius) mRadius = r;
+		float d = Math::Distance(mCenter, points[i]);
+		if (d > mRadius)
+		{
+			// calculate new center and radius
+			mCenter = ((mCenter - (points[i] - mCenter).Normalized()) + points[i]) * 0.5f;
+			mRadius = Math::Distance(points[i], mCenter);
+		}
 	}
 }
 

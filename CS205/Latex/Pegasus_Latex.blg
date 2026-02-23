@@ -1,0 +1,122 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Pegasus_Latex.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+The style file: ACM-Reference-Format.bst
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Database file #1: bibliography.bib
+Repeated entry---line 30 of file bibliography.bib
+ : %@misc{ used_third(2)
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 43 of file bibliography.bib
+ : %@misc{ used_fourth(3)
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 56 of file bibliography.bib
+ : %@misc{ used_fifth(8)
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 68 of file bibliography.bib
+ : %@misc{ used_sixth(9)
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 81 of file bibliography.bib
+ : %@misc{ used_seventh(10)
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 95 of file bibliography.bib
+ : %@misc{ used_eighth(5)
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 107 of file bibliography.bib
+ : %@misc{ used_ninth(6)
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 120 of file bibliography.bib
+ : %@misc{ used_tenth(11)
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 134 of file bibliography.bib
+ : %@misc{ used_eleventh(12)
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 147 of file bibliography.bib
+ : %@misc{ used_twelfth(13)
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 161 of file bibliography.bib
+ : %@misc{ used_thirteenth(14)
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 174 of file bibliography.bib
+ : %@misc{ used_fourteenth(15)
+ :                            ,
+I'm skipping whatever remains of this entry
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Warning--no number and no volume in used_thirteenth(14)
+Warning--page numbers missing in both pages and numpages fields in used_thirteenth(14)
+Warning--no number and no volume in used_tenth(11)
+Warning--page numbers missing in both pages and numpages fields in used_tenth(11)
+Warning--no number and no volume in used_second(4)
+Warning--page numbers missing in both pages and numpages fields in used_second(4)
+Warning--no number and no volume in used_first(7)
+Warning--page numbers missing in both pages and numpages fields in used_first(7)
+Warning--no number and no volume in used_fourteenth(15)
+Warning--page numbers missing in both pages and numpages fields in used_fourteenth(15)
+Warning--no number and no volume in used_fifth(8)
+Warning--page numbers missing in both pages and numpages fields in used_fifth(8)
+Warning--no number and no volume in used_fourth(3)
+Warning--page numbers missing in both pages and numpages fields in used_fourth(3)
+Warning--no number and no volume in used_seventh(10)
+Warning--page numbers missing in both pages and numpages fields in used_seventh(10)
+You've used 14 entries,
+            6273 wiz_defined-function locations,
+            1609 strings with 21389 characters,
+and the built_in function-call counts, 12607 in all, are:
+= -- 1812
+> -- 304
+< -- 0
++ -- 92
+- -- 118
+* -- 794
+:= -- 1182
+add.period$ -- 75
+call.type$ -- 14
+change.case$ -- 80
+chr.to.int$ -- 14
+cite$ -- 30
+duplicate$ -- 1092
+empty$ -- 796
+format.name$ -- 130
+if$ -- 3126
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 32
+newline$ -- 215
+num.names$ -- 98
+pop$ -- 414
+preamble$ -- 1
+purify$ -- 190
+quote$ -- 0
+skip$ -- 379
+stack$ -- 0
+substring$ -- 784
+swap$ -- 64
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 308
+warning$ -- 16
+while$ -- 90
+width$ -- 0
+write$ -- 354
+(There were 12 error messages)

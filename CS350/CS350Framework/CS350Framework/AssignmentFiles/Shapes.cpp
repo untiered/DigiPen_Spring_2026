@@ -208,15 +208,19 @@ void Sphere::ComputeRitter(const std::vector<Vector3>& points)
 			mCenter = (axisPairs[i].first + axisPairs[i].second) * 0.5f;
 		}
 	}
+	
+	// set radius
+	mRadius = euclidDist * 0.5f;
 
 	// incrementally expand the sphere
 	for (unsigned i = 0; i < n; ++i)
 	{
 		float d = Math::Distance(mCenter, points[i]);
-		if (d > mRadius)
+		if (d > mRadius) // check the distance between the current point and the center against the radius
 		{
 			// calculate new center and radius
-			mCenter = ((mCenter - (points[i] - mCenter).Normalized()) + points[i]) * 0.5f;
+			Vector3 b = (mCenter - ((points[i] - mCenter).Normalized() * mRadius));
+			mCenter = (b + points[i]) * 0.5f;
 			mRadius = Math::Distance(points[i], mCenter);
 		}
 	}
@@ -229,6 +233,8 @@ void Sphere::ComputePCA(const std::vector<Vector3>& points)
 	// Compute the sphere center as the center of this axis then expand by all points.
 	/******Student:Assignment2******/
 	Warn("Assignment2: Required function un-implemented");
+
+
 }
 
 

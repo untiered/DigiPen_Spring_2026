@@ -1,0 +1,249 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{14}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[{Apple Support}(2024)]%
+        {used_ninth(6)}
+\bibfield{author}{\bibinfo{person}{{Apple Support}}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{BlastDoor for messages and {IDS}}}.
+\newblock Apple Inc.
+\newblock
+\urldef\tempurl%
+\url{https://support.apple.com/guide/security/blastdoor-for-messages-and-ids-secd3c881cee/web}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Apple Platform Security Guide}.
+
+
+\bibitem[{Arab Center Washington DC}(2021)]%
+        {used_third(2)}
+\bibfield{author}{\bibinfo{person}{{Arab Center Washington DC}}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{The Full Story Behind the {NSO} Hack: The
+  Israeli-Military-Allied Surveillance Industry and Transnational Repression}.
+\newblock
+\urldef\tempurl%
+\url{https://arabcenterdc.org/resource/the-full-story-behind-the-nso-hack-the-israeli-military-allied-surveillance-industry-and-transnational-repression/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed via Arab Center Washington DC}.
+
+
+\bibitem[Beer(2021)]%
+        {used_eighth(5)}
+\bibfield{author}{\bibinfo{person}{Ian Beer}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{A deep dive into an {NSO} zero-click
+  {iMessage} exploit: Remote Code Execution}}.
+\newblock Google Project Zero.
+\newblock
+\urldef\tempurl%
+\url{https://projectzero.google/2021/12/a-deep-dive-into-nso-zero-click.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Chin-Rothmann(2024)]%
+        {used_thirteenth(14)}
+\bibfield{author}{\bibinfo{person}{Corinne Chin-Rothmann}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Limiting Government Use of Commercial Spyware}.
+\newblock \bibinfo{journal}{\emph{Georgetown Journal of International Affairs}}
+  (\bibinfo{date}{4 September} \bibinfo{year}{2024}).
+\newblock
+\urldef\tempurl%
+\url{https://gjia.georgetown.edu/2024/09/04/cyber-mercenaries-limiting-government-use-of-commercial-spyware/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[{European Parliament}(2023)]%
+        {used_eleventh(12)}
+\bibfield{author}{\bibinfo{person}{{European Parliament}}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{The impact of {Pegasus} on fundamental
+  rights and democratic processes}}.
+\newblock \bibinfo{type}{Study}. \bibinfo{institution}{Directorate-General for
+  Internal Policies of the Union}.
+\newblock
+\urldef\tempurl%
+\url{https://www.europarl.europa.eu/RegData/etudes/STUD/2022/740514/IPOL_STU(2022)740514_EN.pdf}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{PE 740.514}.
+
+
+\bibitem[{Human Rights Watch}(2022)]%
+        {used_tenth(11)}
+\bibfield{author}{\bibinfo{person}{{Human Rights Watch}}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Human Rights Watch Among Pegasus Spyware Targets}.
+\newblock \bibinfo{journal}{\emph{Human Rights Watch}} (\bibinfo{date}{26
+  January} \bibinfo{year}{2022}).
+\newblock
+\urldef\tempurl%
+\url{https://www.hrw.org/news/2022/01/26/human-rights-watch-among-pegasus-spyware-targets}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Kaldani and Prokopets(2022)]%
+        {used_twelfth(13)}
+\bibfield{author}{\bibinfo{person}{Tamar Kaldani} {and} \bibinfo{person}{Zoia
+  Prokopets}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Pegasus spyware and its implications on
+  human rights}}.
+\newblock \bibinfo{type}{Report}. \bibinfo{institution}{Council of Europe}.
+\newblock
+\urldef\tempurl%
+\url{https://rm.coe.int/pegasus-spyware-report-en/1680a6f5d8}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Kirchgaessner et~al\mbox{.}(2021)]%
+        {used_second(4)}
+\bibfield{author}{\bibinfo{person}{Stephanie Kirchgaessner},
+  \bibinfo{person}{Paul Lewis}, \bibinfo{person}{David Pegg},
+  \bibinfo{person}{Sam Cutler}, \bibinfo{person}{Nina Lakhani}, {and}
+  \bibinfo{person}{Michael Safi}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Revealed: leak uncovers global abuse of
+  cyber-surveillance weapon}.
+\newblock \bibinfo{journal}{\emph{The Guardian}} (\bibinfo{date}{18 July}
+  \bibinfo{year}{2021}).
+\newblock
+\urldef\tempurl%
+\url{https://www.theguardian.com/world/2021/jul/18/revealed-leak-uncovers-global-abuse-of-cyber-surveillance-weapon-nso-group-pegasus}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Lozovsky(2021)]%
+        {used_first(7)}
+\bibfield{author}{\bibinfo{person}{Ilya Lozovsky}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Where {NSO} Group Came From — and Why It’s Just
+  the Tip of the Iceberg}.
+\newblock \bibinfo{journal}{\emph{OCCRP}} (\bibinfo{date}{18 July}
+  \bibinfo{year}{2021}).
+\newblock
+\urldef\tempurl%
+\url{https://www.occrp.org/en/project/the-pegasus-project/where-nso-group-came-from-and-why-its-just-the-tip-of-the-iceberg}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{The Pegasus Project}.
+
+
+\bibitem[Rankin(2023)]%
+        {used_fourteenth(15)}
+\bibfield{author}{\bibinfo{person}{Jennifer Rankin}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{EU} urged to tighten spyware safeguards in wake of
+  {Pegasus} revelations}.
+\newblock \bibinfo{journal}{\emph{The Guardian}} (\bibinfo{date}{9 May}
+  \bibinfo{year}{2023}).
+\newblock
+\urldef\tempurl%
+\url{https://www.theguardian.com/world/2023/may/09/eu-parliament-report-calls-for-tighter-regulation-of-spyware}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Satter(2025)]%
+        {used_fifth(8)}
+\bibfield{author}{\bibinfo{person}{Raphael Satter}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{{US} court orders Spyware Company {NSO} to stop
+  targeting {WhatsApp}, reduces damages}.
+\newblock \bibinfo{journal}{\emph{Reuters}} (\bibinfo{date}{18 October}
+  \bibinfo{year}{2025}).
+\newblock
+\urldef\tempurl%
+\url{https://www.reuters.com/sustainability/society-equity/us-court-orders-spyware-company-nso-stop-targeting-whatsapp-reduces-damages-2025-10-18/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Travère(2024)]%
+        {used_fourth(3)}
+\bibfield{author}{\bibinfo{person}{Arthur Travère}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{The rise and fall of {NSO} Group}.
+\newblock \bibinfo{journal}{\emph{Forbidden Stories}} (\bibinfo{date}{13 June}
+  \bibinfo{year}{2024}).
+\newblock
+\urldef\tempurl%
+\url{https://forbiddenstories.org/the-rise-and-fall-of-nso-group/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Wheeler et~al\mbox{.}(2026)]%
+        {used_seventh(10)}
+\bibfield{author}{\bibinfo{person}{Tom Wheeler}, \bibinfo{person}{Runa
+  Sandvik}, {and} \bibinfo{person}{Matt Tait}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{Lessons for policymakers from the {NSO} Group
+  Saga}.
+\newblock \bibinfo{journal}{\emph{Brookings}} (\bibinfo{date}{15 January}
+  \bibinfo{year}{2026}).
+\newblock
+\urldef\tempurl%
+\url{https://www.brookings.edu/articles/lessons-for-policymakers-from-the-nso-group-saga/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[{Wikipedia contributors}(2026)]%
+        {used_sixth(9)}
+\bibfield{author}{\bibinfo{person}{{Wikipedia contributors}}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Entity List}.
+\newblock
+\urldef\tempurl%
+\url{https://en.wikipedia.org/wiki/Entity_List}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed February 22, 2026}.
+
+
+\end{thebibliography}

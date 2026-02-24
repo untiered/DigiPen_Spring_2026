@@ -55,4 +55,9 @@ public:
   void FilloutData(std::vector<SpatialPartitionQueryData>& results) const override;
 
   // Add your implementation here
+  std::vector<SpatialPartitionData*> mData;
+  std::vector<unsigned> mFreeList;
+  // Also you should not do a linear search to find an object during update and removal,
+  // this operation must be constant time!
+  // All cast operations should be linear time and SelfQuery should be no worse than quadratic time.
 };

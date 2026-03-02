@@ -11,7 +11,7 @@ File Name: DebugDraw.cpp
 Purpose: This file provides an implementation for draw operations related to debugging primitive shapes.
 Language: ISO C++ 14 Standard.
 Platform: Legacy MSVC, x64/x86, Windows 10 OS.
-Project: r.marqueztwisdale_CS350_1.
+Project: r.marqueztwisdale_CS350_2.
 Author: Roman Marquez-Twisdale, r.marqueztwisdale@digipen.edu, 0065807.
 Creation date: 01/26/2026
 End Header -------------------------------------------------------*/
@@ -147,7 +147,6 @@ DebugShape& DebugDrawer::DrawPoint(const Vector3& point)
 
 DebugShape& DebugDrawer::DrawLine(const LineSegment& line)
 {
-	/******Student:Assignment2******/
 	// Draw a simple line
 	DebugShape& shape = GetNewShape();
 	shape.mSegments.push_back(line);
@@ -156,7 +155,6 @@ DebugShape& DebugDrawer::DrawLine(const LineSegment& line)
 
 DebugShape& DebugDrawer::DrawRay(const Ray& ray, float t)
 {
-	/******Student:Assignment2******/
 	// Draw a ray to a given t-length. The ray must have an arrow head for visualization
 	DebugShape& shape = GetNewShape();
 	Vector3 rayEnd = ray.mStart + (ray.mDirection * t);
@@ -189,7 +187,6 @@ DebugShape& DebugDrawer::DrawRay(const Ray& ray, float t)
 
 DebugShape& DebugDrawer::DrawSphere(const Sphere& sphere)
 {
-	/******Student:Assignment2******/
 	// Draw a sphere with 4 rings: x-axis, y-axis, z-axis, and the horizon disc.
 	// Note: To access the camera's position for the horizon disc calculation use mApplication->mCamera.mTranslation
 	DebugShape& shape = GetNewShape();
@@ -219,7 +216,6 @@ DebugShape& DebugDrawer::DrawSphere(const Sphere& sphere)
 
 DebugShape& DebugDrawer::DrawAabb(const Aabb& aabb)
 {
-	/******Student:Assignment2******/
 	// Draw all edges of an aabb. Make sure to not mis-match edges!
 	DebugShape& shape = GetNewShape();
 
@@ -270,7 +266,6 @@ DebugShape& DebugDrawer::DrawAabb(const Aabb& aabb)
 
 DebugShape& DebugDrawer::DrawTriangle(const Triangle& triangle)
 {
-	/******Student:Assignment2******/
 	// Draw the 3 edges of a triangles
 	DebugShape& shape = GetNewShape();
 	shape.mSegments.push_back(LineSegment(triangle.mPoints[0], triangle.mPoints[1]));
@@ -281,7 +276,6 @@ DebugShape& DebugDrawer::DrawTriangle(const Triangle& triangle)
 
 DebugShape& DebugDrawer::DrawPlane(const Plane& plane, float sizeX, float sizeY)
 {
-	/******Student:Assignment2******/
 	// Draw a quad with a normal at the plane's center.
 	DebugShape& shape = GetNewShape();
 	
@@ -314,7 +308,6 @@ DebugShape& DebugDrawer::DrawPlane(const Plane& plane, float sizeX, float sizeY)
 
 DebugShape& DebugDrawer::DrawQuad(const Vector3& p0, const Vector3& p1, const Vector3& p2, const Vector3& p3)
 {
-	/******Student:Assignment2******/
 	// Draw the4 edges of a quad. Make sure to look at this and make sure the quad is not bow-tied.
 	DebugShape& shape = GetNewShape();
 
@@ -329,7 +322,6 @@ DebugShape& DebugDrawer::DrawQuad(const Vector3& p0, const Vector3& p1, const Ve
 
 DebugShape& DebugDrawer::DrawFrustum(const Frustum& frustum)
 {
-	/******Student:Assignment2******/
 	// Draw the 6 faces of the frustum using the 8 frustum points.
 	// See Frustum.Set for the point order. For example, Points[4] is left-bottom-far.
 	DebugShape& shape = GetNewShape();

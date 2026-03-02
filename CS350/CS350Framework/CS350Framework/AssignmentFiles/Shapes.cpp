@@ -11,9 +11,9 @@ File Name: Shapes.cpp
 Purpose: This file provides an implementation for each primitive shape used in this project.
 Language: ISO C++ 14 Standard.
 Platform: Legacy MSVC, x64/x86, Windows 10 OS.
-Project: r.marqueztwisdale_CS350_1.
+Project: r.marqueztwisdale_CS350_2.
 Author: Roman Marquez-Twisdale, r.marqueztwisdale@digipen.edu, 0065807.
-Creation date: 01/26/2026
+Creation date: 02/24/2026
 End Header -------------------------------------------------------*/
 
 #include "Precompiled.hpp"
@@ -68,35 +68,35 @@ DebugShape& Ray::DebugDraw(float t) const
 //-----------------------------------------------------------------------------PCA Helpers
 Matrix3 ComputeCovarianceMatrix(const std::vector<Vector3>& points)
 {
-	///******Student:Assignment2******/
-	//Warn("Assignment2: Required function un-implemented");
-	//return Matrix3::cIdentity;
+	/******Student:Assignment2******/
+	Warn("Assignment2: Required function un-implemented");
+	return Matrix3::cIdentity;
 
-	Matrix3 cvMatrix = {};
-	
-	unsigned dim = static_cast<unsigned>(points.size());
-	
-	// calculate mean
-	Vector3 mean = {};
-	for (unsigned k = 0; k < dim; ++k)
-		mean += points[k];
-	mean /= static_cast<float>(dim);
+	//Matrix3 cvMatrix = {};
+	//
+	//unsigned dim = static_cast<unsigned>(points.size());
+	//
+	//// calculate mean
+	//Vector3 mean = {};
+	//for (unsigned k = 0; k < dim; ++k)
+	//	mean += points[k];
+	//mean /= static_cast<float>(dim);
 
-	// set each element in the matrix
-	for (unsigned i = 0; i < dim; ++i)
-	{
-		for (unsigned j = 0; j < dim; ++j)
-		{
-			// sum k=0 to n-1: (P^k_i - u_i)(P^k_j - u_j)
-			for (unsigned k = 0; k < dim; ++k)
-			{
-				// calculate matrix element
-				cvMatrix[i][j] += (points[k][i] - mean[i]) * (points[k][j] - mean[j]);
-			}
-			cvMatrix[i][j] /= static_cast<float>(dim); // divide by dim
-		}
-	}
-	return cvMatrix;
+	//// set each element in the matrix
+	//for (unsigned i = 0; i < dim; ++i)
+	//{
+	//	for (unsigned j = 0; j < dim; ++j)
+	//	{
+	//		// sum k=0 to n-1: (P^k_i - u_i)(P^k_j - u_j)
+	//		for (unsigned k = 0; k < dim; ++k)
+	//		{
+	//			// calculate matrix element
+	//			cvMatrix[i][j] += (points[k][i] - mean[i]) * (points[k][j] - mean[j]);
+	//		}
+	//		cvMatrix[i][j] /= static_cast<float>(dim); // divide by dim
+	//	}
+	//}
+	//return cvMatrix;
 }
 
 Matrix3 ComputeJacobiRotation(const Matrix3& matrix)
@@ -131,11 +131,6 @@ Sphere::Sphere(const Vector3& center, float radius)
 
 void Sphere::ComputeCentroid(const std::vector<Vector3>& points)
 {
-	///******Student:Assignment2******/
-	//// The centroid method is roughly describe as: find the centroid (not mean) of all
-	//// points and then find the furthest away point from the centroid.
-	//Warn("Assignment2: Required function un-implemented");
-
 	unsigned n = static_cast<unsigned>(points.size());
 
 	Vector3 max = points[0];
@@ -165,13 +160,6 @@ void Sphere::ComputeCentroid(const std::vector<Vector3>& points)
 
 void Sphere::ComputeRitter(const std::vector<Vector3>& points)
 {
-	///******Student:Assignment2******/
-	//// The ritter method:
-	//// Find the largest spread on each axis.
-	//// Find which axis' pair of points are the furthest (euclidean distance) apart.
-	//// Choose the center of this line as the sphere center. Now incrementally expand the sphere.
-	//Warn("Assignment2: Required function un-implemented");
-
 	unsigned n = static_cast<unsigned>(points.size());
 
 	Vector3 max = points[0];
@@ -287,18 +275,12 @@ Aabb Aabb::BuildFromCenterAndHalfExtents(const Vector3& center, const Vector3& h
 
 float Aabb::GetVolume() const
 {
-	/******Student:Assignment2******/
-	// Return the aabb's volume
-
 	Vector3 dim = mMax - mMin;
 	return dim.x * dim.y * dim.z;
 }
 
 float Aabb::GetSurfaceArea() const
 {
-	/******Student:Assignment2******/
-	// Return the aabb's surface area
-
 	Vector3 dim = mMax - mMin;
 
 	// compute xy surface area
@@ -313,9 +295,6 @@ float Aabb::GetSurfaceArea() const
 
 bool Aabb::Contains(const Aabb& aabb) const
 {
-	/******Student:Assignment2******/
-	// Return if aabb is completely contained in this
-
 	return aabb.mMin.x >= mMin.x
 		&& aabb.mMin.y >= mMin.y
 		&& aabb.mMin.z >= mMin.z
@@ -354,10 +333,6 @@ bool Aabb::Compare(const Aabb& rhs, float epsilon) const
 
 void Aabb::Transform(const Vector3& scale, const Matrix3& rotation, const Vector3& translation)
 {
-	/******Student:Assignment2******/
-	// Compute aabb of the this aabb after it is transformed.
-	// You should use the optimize method discussed in class (not transforming all 8 points).
-
 	// get center point
 	Vector3 c3 = mMin + ((mMax - mMin) * 0.5f);
 	Vector4 sc = Vector4(c3.x * scale.x, c3.y * scale.y, c3.z * scale.z, 1.0f);

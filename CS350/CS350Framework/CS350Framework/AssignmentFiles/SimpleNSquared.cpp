@@ -4,6 +4,18 @@
 /// Copyright 2015, DigiPen Institute of Technology
 ///
 ///////////////////////////////////////////////////////////////////////////////
+
+/* Start Header ------------------------------------------------------
+Copyright (C) 2025 DigiPen Institute of Technology.
+File Name: SimpleNSquared.cpp
+Purpose: A primitive implementation for two different types of spatial partitions.
+Language: ISO C++ 14 Standard.
+Platform: Legacy MSVC, x64/x86, Windows 10 OS.
+Project: r.marqueztwisdale_CS350_2.
+Author: Roman Marquez-Twisdale, r.marqueztwisdale@digipen.edu, 0065807.
+Creation date: 02/24/2026
+End Header -------------------------------------------------------*/
+
 #include "Precompiled.hpp"
 
 //-----------------------------------------------------------------------------NSquaredSpatialPartition
@@ -101,8 +113,6 @@ BoundingSphereSpatialPartition::BoundingSphereSpatialPartition()
 
 void BoundingSphereSpatialPartition::InsertData(SpatialPartitionKey& key, SpatialPartitionData& data)
 {
-	//Warn("Assignment2: Required function un-implemented");
-	
 	// Insert the given data into the spatial partition
 	if (mFreeList.empty())										// removals have been resolved
 	{
@@ -122,16 +132,13 @@ void BoundingSphereSpatialPartition::InsertData(SpatialPartitionKey& key, Spatia
 
 void BoundingSphereSpatialPartition::UpdateData(SpatialPartitionKey& key, SpatialPartitionData& data)
 {
-	//Warn("Assignment2: Required function un-implemented");
 	// Also you should not do a linear search to find an object during update and removal,
-	// this operation must be constant time!
-	
+	// this operation must be constant time!	
 	mData[key.mUIntKey] = &data;
 }
 
 void BoundingSphereSpatialPartition::RemoveData(SpatialPartitionKey& key)
 {
-	//Warn("Assignment2: Required function un-implemented");
 	// Also you should not do a linear search to find an object during update and removal,
 	// this operation must be constant time!
 
@@ -149,7 +156,7 @@ void BoundingSphereSpatialPartition::DebugDraw(int level, const Math::Matrix4& t
 	// Make sure modify the actual debug shape and not a copy!
 	// For this assignment ‘level’ is not used.
 
-	for (size_t i = 0; i < mData.size(); ++i)
+	/*for (size_t i = 0; i < mData.size(); ++i)
 	{
 		if (!mData[i]) continue;
 
@@ -157,14 +164,12 @@ void BoundingSphereSpatialPartition::DebugDraw(int level, const Math::Matrix4& t
 		ds.Color(color);
 		ds.SetMaskBit(bitMask);
 		ds.SetTransform(transform);
-	}
+	}*/
 }
 
 void BoundingSphereSpatialPartition::CastRay(const Ray& ray, CastResults& results)
 {
-	//Warn("Assignment2: Required function un-implemented");
 	// All cast operations should be linear time.
-
 	for (size_t i = 0; i < mData.size(); ++i)
 	{
 		// dont process empty slots
@@ -185,9 +190,7 @@ void BoundingSphereSpatialPartition::CastRay(const Ray& ray, CastResults& result
 
 void BoundingSphereSpatialPartition::CastFrustum(const Frustum& frustum, CastResults& results)
 {
-	//Warn("Assignment2: Required function un-implemented");
 	// All cast operations should be linear time.
-
 	for (size_t i = 0; i < mData.size(); ++i)
 	{
 		// dont process empty slots
@@ -206,9 +209,7 @@ void BoundingSphereSpatialPartition::CastFrustum(const Frustum& frustum, CastRes
 
 void BoundingSphereSpatialPartition::SelfQuery(QueryResults& results)
 {
-	//Warn("Assignment2: Required function un-implemented");
-	// SelfQuery should be no worse than quadratic time.
-
+	// SelfQuery should be no worse than quadratic time. 
 	for (size_t i = 0; i < mData.size(); ++i)
 	{
 		if (!mData[i]) continue;

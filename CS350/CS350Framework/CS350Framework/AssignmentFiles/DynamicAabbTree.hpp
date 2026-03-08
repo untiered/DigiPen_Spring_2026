@@ -34,4 +34,21 @@ public:
   static const float mFatteningFactor;
 
   // Add your implementation here
+private:
+	class Node
+	{
+	public:
+		Aabb mAabb;
+		void* mClientData;
+		Node* mLeft;
+		Node* mRight;
+		Node* mParent;
+		size_t mHeight;
+	};
+
+	Node* SelectNode(Node* insertingNode, Node* node0, Node* node1);
+
+	void BacktrackUpdate(Node* leafNode);
+	
+	void Balance();
 };

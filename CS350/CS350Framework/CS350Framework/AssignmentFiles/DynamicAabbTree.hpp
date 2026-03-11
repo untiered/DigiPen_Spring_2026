@@ -46,9 +46,12 @@ private:
 		size_t mHeight;
 	};
 
-	Node* SelectNode(Node* insertingNode, Node* node0, Node* node1);
+	Node* mRoot;
 
+	void Balance(Node *alteredNode);
+	void UpdateAfterBalance(Node* oldParent, Node* pivot, Node* grandParent);
+	Node* SelectNode(Aabb const&insertingAabb, Node* node0, Node* node1);
+	Node* ConstructLeafNode(void* clientData, Node* leftChild = nullptr, Node* rightChild = nullptr, Node* parent = nullptr);
 	void BacktrackUpdate(Node* leafNode);
-	
-	void Balance();
+	void RecursiveFillOut(Node* node, std::vector<SpatialPartitionQueryData>& results, int depth, unsigned &dataCount) const;
 };

@@ -14,4 +14,7 @@ Author: Roman Marquez-Twisdale, r.marqueztwisdale@digipen.edu, 0065807.
 Creation date: 03/15/2026
 End Header -------------------------------------------------------*/
 
-OPERATION: normal
+OPERATION:
+I attempted every part of the assignment. for some reason my ray and frustum casting functions were actually slightly more optimal than the expected results. To be blunt, I am extremely burned out for various reasons, and I don't have the time and energy to make my casting function always match the master results.
+
+Also, I failed a few of the fuzz tests, and for similar reasons I will not be fixing these.

@@ -78,4 +78,7 @@ private:
 	void TreeQuery(Node* nodeA, Node* nodeB, QueryResults &results);
 	void TreeQuery(Node* node, QueryResults& results);
 	void SplitNodes(Node* nodeA, Node* nodeB, QueryResults& results);
+
+	// cleanup
+	void ClearTree(Node *node);
 };

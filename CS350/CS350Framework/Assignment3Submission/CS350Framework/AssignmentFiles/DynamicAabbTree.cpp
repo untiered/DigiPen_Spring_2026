@@ -28,6 +28,7 @@ DynamicAabbTree::DynamicAabbTree() : mRoot(nullptr), mInsertCount(0)
 
 DynamicAabbTree::~DynamicAabbTree()
 {
+	ClearTree(mRoot);
 }
 
 // Surface Area Heuristic:
@@ -698,6 +699,19 @@ void DynamicAabbTree::SplitNodes(Node* nodeA, Node* nodeB, QueryResults &results
 		TreeQuery(nodeA->mLeft, nodeB, results);
 		TreeQuery(nodeA->mRight, nodeB, results);
 	}
+}
+
+/// <summary>
+///		free all the memory the tree uses
+/// </summary>
+/// <param name="node"></param>
+void DynamicAabbTree::ClearTree(Node* node)
+{
+	if (!node) return;
+	ClearTree(node->mLeft);
+	ClearTree(node->mRight);
+	delete node;
+	node = nullptr;
 }
 
 

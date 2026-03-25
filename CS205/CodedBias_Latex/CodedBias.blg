@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: CodedBias.aux
+Reallocating 'name_of_file' (item size: 1) to 5 items.
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+The style file: ACM-Reference-Format.bst
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Database file #1: poop.bib
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Warning--no number and no volume in used_seventh(6)
+Warning--page numbers missing in both pages and numpages fields in used_seventh(6)
+Warning--no number and no volume in used_eleventh(10)
+Warning--page numbers missing in both pages and numpages fields in used_eleventh(10)
+Warning--no number and no volume in used_tenth(9)
+Warning--page numbers missing in both pages and numpages fields in used_tenth(9)
+Warning--no number and no volume in used_eighth(7)
+Warning--page numbers missing in both pages and numpages fields in used_eighth(7)
+Warning--no number and no volume in used_ninth(8)
+Warning--page numbers missing in both pages and numpages fields in used_ninth(8)
+You've used 12 entries,
+            6273 wiz_defined-function locations,
+            1602 strings with 21101 characters,
+and the built_in function-call counts, 10955 in all, are:
+= -- 1531
+> -- 264
+< -- 1
++ -- 75
+- -- 103
+* -- 689
+:= -- 1036
+add.period$ -- 69
+call.type$ -- 12
+change.case$ -- 69
+chr.to.int$ -- 11
+cite$ -- 22
+duplicate$ -- 958
+empty$ -- 698
+format.name$ -- 107
+if$ -- 2677
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 24
+newline$ -- 201
+num.names$ -- 83
+pop$ -- 346
+preamble$ -- 1
+purify$ -- 162
+quote$ -- 0
+skip$ -- 338
+stack$ -- 0
+substring$ -- 726
+swap$ -- 63
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 273
+warning$ -- 10
+while$ -- 82
+width$ -- 0
+write$ -- 319
+(There were 10 warnings)

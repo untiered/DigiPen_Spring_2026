@@ -1,0 +1,235 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{12}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[{AlgoFace}(2024)]%
+        {used_third(2)}
+\bibfield{author}{\bibinfo{person}{{AlgoFace}}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Face Recognition vs. Face Analysis: What’s the
+  Difference?}
+\newblock
+\urldef\tempurl%
+\url{https://www.algoface.ai/face-recognition-vs-face-analysis-whats-the-difference/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Technical Blog}.
+
+
+\bibitem[{California Civil Rights Department}(2025)]%
+        {used_sixth(5)}
+\bibfield{author}{\bibinfo{person}{{California Civil Rights Department}}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Civil Rights Council Secures Approval for Regulations
+  to Protect Against Employment Discrimination Related to Artificial
+  Intelligence}.
+\newblock
+\urldef\tempurl%
+\url{https://calcivilrights.ca.gov/2025/06/30/civil-rights-council-secures-approval-for-regulations-to-protect-against-employment-discrimination-related-to-artificial-intelligence/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Press Release}.
+
+
+\bibitem[Gallegos et~al\mbox{.}(2024)]%
+        {used_first(0)}
+\bibfield{author}{\bibinfo{person}{Isabel~O. Gallegos},
+  \bibinfo{person}{Ryan~A. Rossi}, \bibinfo{person}{Joe Barrow},
+  \bibinfo{person}{Md~Mehrab Tanjim}, \bibinfo{person}{Sungchul Kim},
+  \bibinfo{person}{Franck Dernoncourt}, \bibinfo{person}{Tong Yu},
+  \bibinfo{person}{Rui Zhang}, {and} \bibinfo{person}{Nesreen~K. Ahmed}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Bias and Fairness in Large Language Models
+  ({LLMs}): A Survey}.
+\newblock \bibinfo{journal}{\emph{Computational Linguistics}}
+  \bibinfo{volume}{50}, \bibinfo{number}{3} (\bibinfo{date}{September}
+  \bibinfo{year}{2024}), \bibinfo{pages}{1097--1150}.
+\newblock
+\urldef\tempurl%
+\url{https://direct.mit.edu/coli/article/50/3/1097/121961/Bias-and-Fairness-in-Large-Language-Models-A}
+\showURL{%
+\tempurl}
+
+
+\bibitem[{GeeksforGeeks}(2025)]%
+        {used_fourth(3)}
+\bibfield{author}{\bibinfo{person}{{GeeksforGeeks}}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Computer Vision Datasets}.
+\newblock
+\urldef\tempurl%
+\url{https://www.geeksforgeeks.org/computer-vision/computer-vision-datasets-1/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Computer Science Portal for Geeks}.
+
+
+\bibitem[Halder(2025)]%
+        {used_seventh(6)}
+\bibfield{author}{\bibinfo{person}{Saikat Halder}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{{AI} in Credit Scoring and Loan Approval Systems}.
+\newblock \bibinfo{journal}{\emph{Analytics Insight}} (\bibinfo{date}{19
+  December} \bibinfo{year}{2025}).
+\newblock
+\urldef\tempurl%
+\url{https://www.analyticsinsight.net/artificial-intelligence/ai-in-credit-scoring-and-loan-approval-systems}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Latest {AI}, Crypto, Tech News \& Analysis}.
+
+
+\bibitem[Khillar(2022)]%
+        {used_eleventh(10)}
+\bibfield{author}{\bibinfo{person}{Sagar Khillar}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Difference between Face Detection and Face
+  Recognition}.
+\newblock \bibinfo{journal}{\emph{Difference Between}} (\bibinfo{date}{3
+  October} \bibinfo{year}{2022}).
+\newblock
+\urldef\tempurl%
+\url{https://www.differencebetween.net/technology/difference-between-face-detection-and-face-recognition/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Technology News \& Analysis}.
+
+
+\bibitem[{LegalClarity Team}(2025a)]%
+        {used_tenth(9)}
+\bibfield{author}{\bibinfo{person}{{LegalClarity Team}}.}
+  \bibinfo{year}{2025}\natexlab{a}.
+\newblock \showarticletitle{{AI} in Policing: Surveillance, Bias, and Legal
+  Challenges}.
+\newblock \bibinfo{journal}{\emph{LegalClarity}} (\bibinfo{date}{11 December}
+  \bibinfo{year}{2025}).
+\newblock
+\urldef\tempurl%
+\url{https://legalclarity.org/ai-in-policing-surveillance-bias-and-legal-challenges/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Welcome to LegalClarity}.
+
+
+\bibitem[{LegalClarity Team}(2025b)]%
+        {used_eighth(7)}
+\bibfield{author}{\bibinfo{person}{{LegalClarity Team}}.}
+  \bibinfo{year}{2025}\natexlab{b}.
+\newblock \showarticletitle{How Are Police Departments Funded by Taxes?}
+\newblock \bibinfo{journal}{\emph{LegalClarity}} (\bibinfo{date}{6 August}
+  \bibinfo{year}{2025}).
+\newblock
+\urldef\tempurl%
+\url{https://legalclarity.org/how-are-police-departments-funded-by-taxes/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Welcome to LegalClarity}.
+
+
+\bibitem[Lipton(2020)]%
+        {used_ninth(8)}
+\bibfield{author}{\bibinfo{person}{Martin Lipton}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{The Friedman Essay and the True Purpose of the
+  Business Corporation}.
+\newblock \bibinfo{journal}{\emph{The Harvard Law School Forum on Corporate
+  Governance}} (\bibinfo{date}{17 September} \bibinfo{year}{2020}).
+\newblock
+\urldef\tempurl%
+\url{https://corpgov.law.harvard.edu/2020/09/17/the-friedman-essay-and-the-true-purpose-of-the-business-corporation/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Harvard Law School Forum on Corporate Governance}.
+
+
+\bibitem[{Public Broadcasting Service}(2025)]%
+        {used_twelfth(11)}
+\bibfield{author}{\bibinfo{person}{{Public Broadcasting Service}}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Coded Bias}.
+\newblock
+\urldef\tempurl%
+\url{https://www.pbs.org/independentlens/documentaries/coded-bias/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Independent Lens Documentaries}.
+
+
+\bibitem[{U.S. Department of Justice}(2024)]%
+        {used_fifth(4)}
+\bibfield{author}{\bibinfo{person}{{U.S. Department of Justice}}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Artificial Intelligence and Criminal
+  Justice: Final Report}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{Office of
+  Legal Policy}.
+\newblock
+\urldef\tempurl%
+\url{https://www.justice.gov/olp/media/1381796/dl?inline=}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Report to the President of the United States}.
+
+
+\bibitem[{U.S. Government Accountability Office}(2024)]%
+        {used_second(1)}
+\bibfield{author}{\bibinfo{person}{{U.S. Government Accountability Office}}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Facial Recognition Technology: Federal Law
+  Enforcement Agency Efforts Related to Civil Rights and Training}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport} GAO-24-107372.
+  \bibinfo{institution}{U.S. Government Accountability Office}.
+\newblock
+\urldef\tempurl%
+\url{https://www.gao.gov/products/gao-24-107372}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Testimony Before the U.S. Commission on Civil Rights}.
+
+
+\end{thebibliography}

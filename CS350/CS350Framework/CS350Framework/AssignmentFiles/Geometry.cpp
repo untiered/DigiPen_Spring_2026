@@ -111,8 +111,10 @@ bool RayPlane(const Vector3& rayStart, const Vector3& rayDir,
 {
     ++Application::mStatistics.mRayPlaneTests;
 
+    // calculate normal
     Vector3 normal = Vector3(plane.x, plane.y, plane.z);
     float n_rayDir_DotNrm = rayDir.Dot(normal);
+
     if (n_rayDir_DotNrm < -epsilon || n_rayDir_DotNrm > epsilon) // parallel check
     {
         Vector3 p0 = normal * plane.w;

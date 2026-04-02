@@ -27,10 +27,10 @@ TriangleSplitTest2
 TriangleSplitTest3
 ////////////////////////////////////////////////////////////
   Front:
-    Triangle((0.25, 0.00, 0.00), (0.00, 1.00, 0.00), (-0.65, 0.35, 0.00))
-    Triangle((0.25, 0.00, 0.00), (1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
+    Triangle((-0.50, 0.00, 0.00), (0.00, 1.00, 0.00), (-0.50, 0.50, 0.00))
+    Triangle((-0.50, 0.00, 0.00), (1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
   Back:
-    Triangle((0.25, 0.00, 0.00), (-0.65, 0.35, 0.00), (-1.00, 0.00, 0.00))
+    Triangle((-0.50, 0.00, 0.00), (-0.50, 0.50, 0.00), (-1.00, 0.00, 0.00))
   CoplanarFront:
     Empty
   CoplanarBack:
@@ -40,10 +40,10 @@ TriangleSplitTest3
 TriangleSplitTest4
 ////////////////////////////////////////////////////////////
   Front:
-    Triangle((0.50, 0.00, 0.00), (0.00, 1.00, 0.00), (-0.29, 0.71, 0.00))
-    Triangle((0.50, 0.00, 0.00), (1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (0.00, 1.00, 0.00), (0.00, 1.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
   Back:
-    Triangle((0.50, 0.00, 0.00), (-0.29, 0.71, 0.00), (-1.00, 0.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (0.00, 1.00, 0.00), (-1.00, 0.00, 0.00))
   CoplanarFront:
     Empty
   CoplanarBack:
@@ -53,9 +53,9 @@ TriangleSplitTest4
 TriangleSplitTest5
 ////////////////////////////////////////////////////////////
   Front:
-    Triangle((0.50, 0.00, 0.00), (1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
   Back:
-    Triangle((0.50, 0.00, 0.00), (-1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (0.00, 1.00, 0.00), (-1.00, 0.00, 0.00))
   CoplanarFront:
     Empty
   CoplanarBack:
@@ -65,10 +65,10 @@ TriangleSplitTest5
 TriangleSplitTest6
 ////////////////////////////////////////////////////////////
   Front:
-    Triangle((0.50, 0.00, 0.00), (1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
   Back:
-    Triangle((0.50, 0.00, 0.00), (0.00, 1.00, 0.00), (-1.00, 0.00, 0.00))
-    Triangle((0.50, 0.00, 0.00), (0.00, 1.00, 0.00), (0.00, 1.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (0.00, 1.00, 0.00), (-1.00, 0.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (0.00, 1.00, 0.00), (0.00, 1.00, 0.00))
   CoplanarFront:
     Empty
   CoplanarBack:
@@ -78,10 +78,10 @@ TriangleSplitTest6
 TriangleSplitTest7
 ////////////////////////////////////////////////////////////
   Front:
-    Triangle((0.75, 0.00, 0.00), (1.00, 0.00, 0.00), (0.35, 0.65, 0.00))
+    Triangle((0.50, 0.00, 0.00), (1.00, 0.00, 0.00), (0.50, 0.50, 0.00))
   Back:
-    Triangle((0.75, 0.00, 0.00), (0.00, 1.00, 0.00), (-1.00, 0.00, 0.00))
-    Triangle((0.75, 0.00, 0.00), (0.35, 0.65, 0.00), (0.00, 1.00, 0.00))
+    Triangle((0.50, 0.00, 0.00), (0.00, 1.00, 0.00), (-1.00, 0.00, 0.00))
+    Triangle((0.50, 0.00, 0.00), (0.50, 0.50, 0.00), (0.00, 1.00, 0.00))
   CoplanarFront:
     Empty
   CoplanarBack:
@@ -139,10 +139,10 @@ TriangleSplitTest11
 TriangleSplitTest12
 ////////////////////////////////////////////////////////////
   Front:
-    Triangle((0.25, 0.00, 0.00), (-0.65, 0.35, 0.00), (-1.00, 0.00, 0.00))
+    Triangle((-0.50, 0.00, 0.00), (-0.50, 0.50, 0.00), (-1.00, 0.00, 0.00))
   Back:
-    Triangle((0.25, 0.00, 0.00), (0.00, 1.00, 0.00), (-0.65, 0.35, 0.00))
-    Triangle((0.25, 0.00, 0.00), (1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
+    Triangle((-0.50, 0.00, 0.00), (0.00, 1.00, 0.00), (-0.50, 0.50, 0.00))
+    Triangle((-0.50, 0.00, 0.00), (1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
   CoplanarFront:
     Empty
   CoplanarBack:
@@ -152,10 +152,10 @@ TriangleSplitTest12
 TriangleSplitTest13
 ////////////////////////////////////////////////////////////
   Front:
-    Triangle((0.50, 0.00, 0.00), (-0.29, 0.71, 0.00), (-1.00, 0.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (0.00, 1.00, 0.00), (-1.00, 0.00, 0.00))
   Back:
-    Triangle((0.50, 0.00, 0.00), (0.00, 1.00, 0.00), (-0.29, 0.71, 0.00))
-    Triangle((0.50, 0.00, 0.00), (1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (0.00, 1.00, 0.00), (0.00, 1.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
   CoplanarFront:
     Empty
   CoplanarBack:
@@ -165,9 +165,9 @@ TriangleSplitTest13
 TriangleSplitTest14
 ////////////////////////////////////////////////////////////
   Front:
-    Triangle((0.50, 0.00, 0.00), (0.00, 1.00, 0.00), (-1.00, 0.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (0.00, 1.00, 0.00), (-1.00, 0.00, 0.00))
   Back:
-    Triangle((0.50, 0.00, 0.00), (1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
   CoplanarFront:
     Empty
   CoplanarBack:
@@ -177,10 +177,10 @@ TriangleSplitTest14
 TriangleSplitTest15
 ////////////////////////////////////////////////////////////
   Front:
-    Triangle((0.50, 0.00, 0.00), (0.00, 1.00, 0.00), (-1.00, 0.00, 0.00))
-    Triangle((0.50, 0.00, 0.00), (0.00, 1.00, 0.00), (0.00, 1.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (0.00, 1.00, 0.00), (-1.00, 0.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (0.00, 1.00, 0.00), (0.00, 1.00, 0.00))
   Back:
-    Triangle((0.50, 0.00, 0.00), (1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
   CoplanarFront:
     Empty
   CoplanarBack:
@@ -190,10 +190,10 @@ TriangleSplitTest15
 TriangleSplitTest16
 ////////////////////////////////////////////////////////////
   Front:
-    Triangle((0.75, 0.00, 0.00), (0.00, 1.00, 0.00), (-1.00, 0.00, 0.00))
-    Triangle((0.75, 0.00, 0.00), (0.35, 0.65, 0.00), (0.00, 1.00, 0.00))
+    Triangle((0.50, 0.00, 0.00), (0.00, 1.00, 0.00), (-1.00, 0.00, 0.00))
+    Triangle((0.50, 0.00, 0.00), (0.50, 0.50, 0.00), (0.00, 1.00, 0.00))
   Back:
-    Triangle((0.75, 0.00, 0.00), (1.00, 0.00, 0.00), (0.35, 0.65, 0.00))
+    Triangle((0.50, 0.00, 0.00), (1.00, 0.00, 0.00), (0.50, 0.50, 0.00))
   CoplanarFront:
     Empty
   CoplanarBack:
@@ -251,10 +251,10 @@ TriangleSplitTest20
 TriangleSplitTest21
 ////////////////////////////////////////////////////////////
   Front:
-    Triangle((0.50, 0.00, 0.00), (0.00, 1.00, 0.00), (-0.65, 0.35, 0.00))
-    Triangle((0.50, 0.00, 0.00), (1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (0.00, 1.00, 0.00), (-0.50, 0.50, 0.00))
+    Triangle((0.00, 0.00, 0.00), (1.00, 0.00, 0.00), (0.00, 1.00, 0.00))
   Back:
-    Triangle((0.50, 0.00, 0.00), (-0.65, 0.35, 0.00), (-1.00, 0.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (-0.50, 0.50, 0.00), (-1.00, 0.00, 0.00))
   CoplanarFront:
     Empty
   CoplanarBack:
@@ -312,10 +312,10 @@ TriangleSplitTest25
 TriangleSplitTest26
 ////////////////////////////////////////////////////////////
   Front:
-    Triangle((0.50, 0.00, 0.00), (1.00, 0.00, 0.00), (0.35, 0.65, 0.00))
+    Triangle((0.00, 0.00, 0.00), (1.00, 0.00, 0.00), (0.50, 0.50, 0.00))
   Back:
-    Triangle((0.50, 0.00, 0.00), (0.00, 1.00, 0.00), (-1.00, 0.00, 0.00))
-    Triangle((0.50, 0.00, 0.00), (0.35, 0.65, 0.00), (0.00, 1.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (0.00, 1.00, 0.00), (-1.00, 0.00, 0.00))
+    Triangle((0.00, 0.00, 0.00), (0.50, 0.50, 0.00), (0.00, 1.00, 0.00))
   CoplanarFront:
     Empty
   CoplanarBack:
@@ -353,9 +353,9 @@ TriangleSplitTest29
   Back:
     Empty
   CoplanarFront:
-    Empty
-  CoplanarBack:
     Triangle((2.00, 0.00, 0.00), (2.00, 1.00, 0.00), (2.00, 1.00, 1.00))
+  CoplanarBack:
+    Empty
 
 ////////////////////////////////////////////////////////////
 TriangleSplitTest30
@@ -365,9 +365,9 @@ TriangleSplitTest30
   Back:
     Empty
   CoplanarFront:
-    Triangle((2.00, 0.00, 0.00), (2.00, 1.00, 1.00), (2.00, 1.00, 0.00))
-  CoplanarBack:
     Empty
+  CoplanarBack:
+    Triangle((2.00, 0.00, 0.00), (2.00, 1.00, 1.00), (2.00, 1.00, 0.00))
 
 ////////////////////////////////////////////////////////////
 TriangleSplitTest31
@@ -377,9 +377,9 @@ TriangleSplitTest31
   Back:
     Empty
   CoplanarFront:
-    Empty
-  CoplanarBack:
     Triangle((-2.00, 0.00, 0.00), (2.00, 4.00, 0.00), (0.00, 2.00, 2.00))
+  CoplanarBack:
+    Empty
 
 ////////////////////////////////////////////////////////////
 TriangleSplitTest32
@@ -389,17 +389,17 @@ TriangleSplitTest32
   Back:
     Empty
   CoplanarFront:
-    Triangle((-2.00, 0.00, 0.00), (0.00, 2.00, 2.00), (2.00, 4.00, 0.00))
-  CoplanarBack:
     Empty
+  CoplanarBack:
+    Triangle((-2.00, 0.00, 0.00), (0.00, 2.00, 2.00), (2.00, 4.00, 0.00))
 
 ////////////////////////////////////////////////////////////
 TriangleSplitTest33
 ////////////////////////////////////////////////////////////
   Front:
-    Triangle((-1.00, 0.00, 0.00), (0.65, 0.00, -0.65), (1.00, 0.00, -1.00))
+    Triangle((-1.00, 0.00, 0.00), (0.00, 0.00, 0.00), (1.00, 0.00, -1.00))
   Back:
-    Triangle((-1.00, 0.00, 1.00), (-1.00, 0.00, 0.00), (0.65, 0.00, -0.65))
+    Triangle((-1.00, 0.00, 0.00), (-1.00, 0.00, 1.00), (0.00, 0.00, 0.00))
   CoplanarFront:
     Empty
   CoplanarBack:
@@ -408,797 +408,23 @@ TriangleSplitTest33
 ////////////////////////////////////////////////////////////
 SplitPlanePickTest1
 ////////////////////////////////////////////////////////////
-    Bsp Triangle Split Index: 0
-    Scores: 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 
+    Bsp Triangle Split Index: 4
+    Scores: 1.60, 1.20, 0.80, 0.40, 0.00, 0.40, 0.80, 1.20, 1.60, 
 
 ////////////////////////////////////////////////////////////
 SplitPlanePickTest2
 ////////////////////////////////////////////////////////////
-    Bsp Triangle Split Index: 0
-    Scores: 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 
+    Bsp Triangle Split Index: 2
+    Scores: 1.40, 1.00, 0.60, 1.80, 1.00, 1.40, 1.40, 1.40, 
 
 ////////////////////////////////////////////////////////////
 SplitPlanePickTest3
 ////////////////////////////////////////////////////////////
-    Bsp Triangle Split Index: 0
-    Scores: 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 
+    Bsp Triangle Split Index: 4
+    Scores: 0.80, 0.80, 1.00, 1.00, 0.00, 
 
 ////////////////////////////////////////////////////////////
 SplitPlanePickTest4
 ////////////////////////////////////////////////////////////
-    Bsp Triangle Split Index: 0
-    Scores: 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 
-
-////////////////////////////////////////////////////////////
-SplitPlanePickTest5
-////////////////////////////////////////////////////////////
-    Bsp Triangle Split Index: 0
-    Scores: 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 
-
-////////////////////////////////////////////////////////////
-SplitPlanePickTest6
-////////////////////////////////////////////////////////////
-    Bsp Triangle Split Index: 0
-    Scores: 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 340282346638528859811704183484516925440.00, 
-
-////////////////////////////////////////////////////////////
-TestBspTreeStructure1
-////////////////////////////////////////////////////////////
-  Spatial Partition Structure:
-    Empty
-
-////////////////////////////////////////////////////////////
-TestBspTreeStructure2
-////////////////////////////////////////////////////////////
-  Spatial Partition Structure:
-    Empty
-
-////////////////////////////////////////////////////////////
-TestBspTreeStructure3
-////////////////////////////////////////////////////////////
-  Spatial Partition Structure:
-    Empty
-
-////////////////////////////////////////////////////////////
-TestBspTreeStructure4
-////////////////////////////////////////////////////////////
-  Spatial Partition Structure:
-    Empty
-
-////////////////////////////////////////////////////////////
-TestBspTreeStructure5
-////////////////////////////////////////////////////////////
-  Spatial Partition Structure:
-    Empty
-
-////////////////////////////////////////////////////////////
-TestBspTreeStructure6
-////////////////////////////////////////////////////////////
-  Spatial Partition Structure:
-    Empty
-
-////////////////////////////////////////////////////////////
-BspSimpleRayCast1
-////////////////////////////////////////////////////////////
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-
-////////////////////////////////////////////////////////////
-BspSimpleRayCast2
-////////////////////////////////////////////////////////////
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-
-////////////////////////////////////////////////////////////
-BspSimpleRayCast3
-////////////////////////////////////////////////////////////
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-
-////////////////////////////////////////////////////////////
-BspSimpleRayCast4
-////////////////////////////////////////////////////////////
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-
-////////////////////////////////////////////////////////////
-BspSimpleRayCast5
-////////////////////////////////////////////////////////////
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-
-////////////////////////////////////////////////////////////
-BspSimpleRayCast6
-////////////////////////////////////////////////////////////
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-
-////////////////////////////////////////////////////////////
-BspSimpleRayCast7
-////////////////////////////////////////////////////////////
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-
-////////////////////////////////////////////////////////////
-BspSimpleRayCast8
-////////////////////////////////////////////////////////////
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-
-////////////////////////////////////////////////////////////
-BspRayCastStrestTest1
-////////////////////////////////////////////////////////////
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-
-////////////////////////////////////////////////////////////
-BspRayCastStrestTest2
-////////////////////////////////////////////////////////////
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-
-////////////////////////////////////////////////////////////
-BspRayCastStrestTest3
-////////////////////////////////////////////////////////////
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-
-////////////////////////////////////////////////////////////
-BspRayCastStrestTest5
-////////////////////////////////////////////////////////////
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-  false
-  Statistics: RayPlane(0) RayTri(0)
-
-////////////////////////////////////////////////////////////
-BspCsgSimple1
-////////////////////////////////////////////////////////////
-  Original Tree1:
-    Empty
-  Original Tree2:
-    Empty
-  Tree1 Inverted:
-    Empty
-  Tree2 Inverted:
-    Empty
-  Tree1 Clipped to Tree2:
-    Empty
-  Tree2 Clipped to Tree1:
-    Empty
-  Union:
-    Empty
-  Union:
-    Empty
-  Intersection:
-    Empty
-  Tree1 - Tree2:
-    Empty
-  Tree2 - Tree1:
-    Empty
-
-////////////////////////////////////////////////////////////
-BspCsgSimple2
-////////////////////////////////////////////////////////////
-  Original Tree1:
-    Empty
-  Original Tree2:
-    Empty
-  Tree1 Inverted:
-    Empty
-  Tree2 Inverted:
-    Empty
-  Tree1 Clipped to Tree2:
-    Empty
-  Tree2 Clipped to Tree1:
-    Empty
-  Union:
-    Empty
-  Union:
-    Empty
-  Intersection:
-    Empty
-  Tree1 - Tree2:
-    Empty
-  Tree2 - Tree1:
-    Empty
-
-////////////////////////////////////////////////////////////
-BspCsgSimple3
-////////////////////////////////////////////////////////////
-  Original Tree1:
-    Empty
-  Original Tree2:
-    Empty
-  Tree1 Inverted:
-    Empty
-  Tree2 Inverted:
-    Empty
-  Tree1 Clipped to Tree2:
-    Empty
-  Tree2 Clipped to Tree1:
-    Empty
-  Union:
-    Empty
-  Union:
-    Empty
-  Intersection:
-    Empty
-  Tree1 - Tree2:
-    Empty
-  Tree2 - Tree1:
-    Empty
-
-////////////////////////////////////////////////////////////
-BspCsgSimple4
-////////////////////////////////////////////////////////////
-  Original Tree1:
-    Empty
-  Original Tree2:
-    Empty
-  Tree1 Inverted:
-    Empty
-  Tree2 Inverted:
-    Empty
-  Tree1 Clipped to Tree2:
-    Empty
-  Tree2 Clipped to Tree1:
-    Empty
-  Union:
-    Empty
-  Union:
-    Empty
-  Intersection:
-    Empty
-  Tree1 - Tree2:
-    Empty
-  Tree2 - Tree1:
-    Empty
-
-////////////////////////////////////////////////////////////
-BspCsgSimple5
-////////////////////////////////////////////////////////////
-  Original Tree1:
-    Empty
-  Original Tree2:
-    Empty
-  Tree1 Inverted:
-    Empty
-  Tree2 Inverted:
-    Empty
-  Tree1 Clipped to Tree2:
-    Empty
-  Tree2 Clipped to Tree1:
-    Empty
-  Union:
-    Empty
-  Union:
-    Empty
-  Intersection:
-    Empty
-  Tree1 - Tree2:
-    Empty
-  Tree2 - Tree1:
-    Empty
-
-////////////////////////////////////////////////////////////
-BspCsgSimple6
-////////////////////////////////////////////////////////////
-  Original Tree1:
-    Empty
-  Original Tree2:
-    Empty
-  Tree1 Inverted:
-    Empty
-  Tree2 Inverted:
-    Empty
-  Tree1 Clipped to Tree2:
-    Empty
-  Tree2 Clipped to Tree1:
-    Empty
-  Union:
-    Empty
-  Union:
-    Empty
-  Intersection:
-    Empty
-  Tree1 - Tree2:
-    Empty
-  Tree2 - Tree1:
-    Empty
-
-////////////////////////////////////////////////////////////
-BspCsgSimple7
-////////////////////////////////////////////////////////////
-  Original Tree1:
-    Empty
-  Original Tree2:
-    Empty
-  Tree1 Inverted:
-    Empty
-  Tree2 Inverted:
-    Empty
-  Tree1 Clipped to Tree2:
-    Empty
-  Tree2 Clipped to Tree1:
-    Empty
-  Union:
-    Empty
-  Union:
-    Empty
-  Intersection:
-    Empty
-  Tree1 - Tree2:
-    Empty
-  Tree2 - Tree1:
-    Empty
-
-////////////////////////////////////////////////////////////
-BspCsgSimple8
-////////////////////////////////////////////////////////////
-  Original Tree1:
-    Empty
-  Original Tree2:
-    Empty
-  Tree1 Inverted:
-    Empty
-  Tree2 Inverted:
-    Empty
-  Tree1 Clipped to Tree2:
-    Empty
-  Tree2 Clipped to Tree1:
-    Empty
-  Union:
-    Empty
-  Union:
-    Empty
-  Intersection:
-    Empty
-  Tree1 - Tree2:
-    Empty
-  Tree2 - Tree1:
-    Empty
-
-////////////////////////////////////////////////////////////
-BspCsgSimple9
-////////////////////////////////////////////////////////////
-  Original Tree1:
-    Empty
-  Original Tree2:
-    Empty
-  Tree1 Inverted:
-    Empty
-  Tree2 Inverted:
-    Empty
-  Tree1 Clipped to Tree2:
-    Empty
-  Tree2 Clipped to Tree1:
-    Empty
-  Union:
-    Empty
-  Union:
-    Empty
-  Intersection:
-    Empty
-  Tree1 - Tree2:
-    Empty
-  Tree2 - Tree1:
-    Empty
-
-////////////////////////////////////////////////////////////
-BspCsgSimple10
-////////////////////////////////////////////////////////////
-  Original Tree1:
-    Empty
-  Original Tree2:
-    Empty
-  Tree1 Inverted:
-    Empty
-  Tree2 Inverted:
-    Empty
-  Tree1 Clipped to Tree2:
-    Empty
-  Tree2 Clipped to Tree1:
-    Empty
-  Union:
-    Empty
-  Union:
-    Empty
-  Intersection:
-    Empty
-  Tree1 - Tree2:
-    Empty
-  Tree2 - Tree1:
-    Empty
-
-////////////////////////////////////////////////////////////
-BspUnion1
-////////////////////////////////////////////////////////////
-  Union:
-    Empty
-
-////////////////////////////////////////////////////////////
-BspIntersection1
-////////////////////////////////////////////////////////////
-  Intersection:
-    Empty
-
-////////////////////////////////////////////////////////////
-BspSubtraction1
-////////////////////////////////////////////////////////////
-  Subtraction:
-    Empty
-
-////////////////////////////////////////////////////////////
-BspUnion2
-////////////////////////////////////////////////////////////
-  Union:
-    Empty
-
-////////////////////////////////////////////////////////////
-BspIntersection2
-////////////////////////////////////////////////////////////
-  Intersection:
-    Empty
-
-////////////////////////////////////////////////////////////
-BspSubtraction2
-////////////////////////////////////////////////////////////
-  Subtraction:
-    Empty
+    Bsp Triangle Split Index: 10
+    Scores: 2.40, 2.40, 2.40, 2.40, 2.40, 2.40, 2.40, 2.40, 2.

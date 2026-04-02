@@ -74,5 +74,24 @@ public:
   void DebugDraw(int level, const Vector4& color, int bitMask = 0);
 
   // Add your implementation here
+  BspTree() : m_root(nullptr), m_triangles() {}
+private:
+  struct BSPNode {
+	  // connections
+	  BSPNode* m_left;
+	  BSPNode* m_right;
 
+	  // content
+	  Triangle m_splitTri;
+	  Plane m_splitPlane;
+	  TriangleList m_coplanerFront;
+	  TriangleList m_coplanerBack;
+  };
+
+
+  BSPNode* m_root;
+  TriangleList m_triangles;
+
+  void RecursiveConstruct(BSPNode *node, TriangleList const& triangles, float k, float epsilon);
+  void RecursiveFillOut(BSPNode* node, std::vector<BspTreeQueryData>& results, unsigned depth) const;
 };

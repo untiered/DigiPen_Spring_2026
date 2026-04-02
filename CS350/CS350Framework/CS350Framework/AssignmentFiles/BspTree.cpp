@@ -1,4 +1,4 @@
-///////////////////////////////////////////////////////////////////////////////
+﻿///////////////////////////////////////////////////////////////////////////////
 ///
 /// Authors: Joshua Davis
 /// Copyright 2015, DigiPen Institute of Technology
@@ -154,24 +154,72 @@ void BspTree::SplitTriangle(
 	}
 }
 
+// Use the method for calculating score as described in class :
+//		s𝑐𝑜𝑟𝑒 = 𝐾∗𝑁𝑠 + (1−𝐾)∗𝐴𝑏𝑠(𝑁𝑓 −𝑁𝑏),
+// where 𝑁𝑠 is the number of triangles straddling the plane, 𝑁𝑓 is the number in front, and 𝑁𝑏 is the number behind.
+// Build the split plane from the triangle at the testIndex.
+//		Note : Do not include coplanar triangles in the score!
+// Also, be careful of degenerate triangles causing degenerate plane normals.
+// You should return Math::PositiveMax() if the triangle is degenerate.
+// Finally, in the case of a tie in score choose the first triangle of that score(from 0 to size).
 float BspTree::CalculateScore(const TriangleList& triangles, size_t testIndex, float k, float epsilon)
 {
-	/******Student:Assignment4******/
-	Warn("Assignment4: Required function un-implemented");
-	return Math::PositiveMax();
+	Triangle triangle = triangles[testIndex];
+
+	// check if triangle is degenerate
+	Vector3 normal = (triangle.mPoints[2] - triangle.mPoints[0]).Cross(triangle.mPoints[1] - triangle.mPoints[0]);
+	if (normal.Length() <= epsilon) return Math::PositiveMax();
+
+	Plane plane = Plane(normal, triangle.mPoints[0]);
+
+	int Ns = 0;
+	int Nf = 0;
+	int Nb = 0;
+	for (Triangle const&tri : triangles)
+	{
+		IntersectionType::Type type = PlaneTriangle(plane.mData, tri.mPoints[0], tri.mPoints[1], tri.mPoints[2], epsilon);
+		switch (type)
+		{
+		case (IntersectionType::Inside):
+			++Nf;
+			break;
+		case (IntersectionType::Outside):
+			++Nb;
+			break;
+		case (IntersectionType::Overlaps):
+			++Ns;
+		}
+	}
+
+	return (k * Ns) + ((1 - k) * Math::Abs(Nf - Nb));
 }
 
+// Simply choose the triangle that produces the lowest score.
 size_t BspTree::PickSplitPlane(const TriangleList& triangles, float k, float epsilon)
 {
 	/******Student:Assignment4******/
-	Warn("Assignment4: Required function un-implemented");
-	return 0;
+	float lowestScore = Math::PositiveMax();
+	size_t lowestScoreIndex = 0; // TODO: make sure we dont need to ensure that a valid plane was found. if we do, this should be able to convey failure.
+	for (size_t i = 0; i < triangles.size(); ++i)
+	{
+		float newScore = CalculateScore(triangles, i, k, epsilon);
+		if (newScore < lowestScore) // if its equal, dont record it, ties should result in us choosing the first triangle with that score
+		{
+			lowestScore = newScore;
+			lowestScoreIndex = i;
+		}
+	}
+	return lowestScoreIndex;
 }
 
 void BspTree::Construct(const TriangleList& triangles, float k, float epsilon)
 {
 	/******Student:Assignment4******/
-	Warn("Assignment4: Required function un-implemented");
+	if (!m_root)
+	{
+		m_root = new BSPNode();
+	}
+	RecursiveConstruct(m_root, triangles, k, epsilon);
 }
 
 bool BspTree::RayCast(const Ray& ray, float& t, float planeEpsilon, float triExpansionEpsilon, int debuggingIndex)
@@ -221,12 +269,106 @@ void BspTree::Subtract(BspTree* tree, float k, float epsilon)
 void BspTree::FilloutData(std::vector<BspTreeQueryData>& results) const
 {
 	/******Student:Assignment4******/
-	Warn("Assignment4: Required function un-implemented");
+	RecursiveFillOut(m_root, results, 0);
 }
 
 void BspTree::DebugDraw(int level, const Vector4& color, int bitMask)
 {
 	/******Student:Assignment4******/
 	Warn("Assignment4: Required function un-implemented");
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Recursively build the tree by splitting the data set with the best scoring triangle’s plane.
+// Recursion should stop when a there is only 1 triangle remaining.
+// Also note that this is a Node Storing tree, that is all coplanar triangles should be stored in the node.
+//		Important!
+//			Make sure to not pick a split - plane that is almost the zero vector.
+//			If you fail to do this you can end up with every triangle being coplanar.
+//			For this assignment, if the normal’s length is below the construction epsilon then you should not choose that plane.
+void BspTree::RecursiveConstruct(BSPNode *node, TriangleList const& triangles, float k, float epsilon)
+{
+	// base case
+	if (triangles.size() == 1)
+	{
+		node->m_splitTri = triangles[0];
+		node->m_splitPlane = Plane(
+			node->m_splitTri.mPoints[0],
+			node->m_splitTri.mPoints[1],
+			node->m_splitTri.mPoints[2]
+		);
+		return;
+	}
+
+	// create split plane
+	size_t spi = PickSplitPlane(triangles, k, epsilon);
+	node->m_splitTri = triangles[spi]; // TODO: i am assuming PickSplitPlane() always returns a valid result
+	node->m_splitPlane = Plane(
+		node->m_splitTri.mPoints[0],
+		node->m_splitTri.mPoints[1],
+		node->m_splitTri.mPoints[2]
+	);
+	
+	// make a triangle list of all triangles in front
+	TriangleList front;
+	// make a triangle list of all triangles in coplanarFront
+	TriangleList back;
+	
+	// split the triangles
+	for (Triangle const&tri : triangles)
+	{
+		SplitTriangle(
+			node->m_splitPlane,
+			tri,
+			node->m_coplanerFront,
+			node->m_coplanerBack,
+			front,
+			back,
+			epsilon
+		);
+	}
+	
+	// recurse
+	if (back.size() >= 1)
+	{
+		BSPNode* left = new BSPNode(); // should hold the "back" triangles
+		node->m_left = left;
+		RecursiveConstruct(left, back, k, epsilon);
+	}
+	if (front.size() >= 1)
+	{
+		BSPNode* right = new BSPNode(); // should hold the "front" triangles
+		node->m_right = right;
+		RecursiveConstruct(right, front, k, epsilon);
+	}
+}
+
+void BspTree::RecursiveFillOut(BSPNode* node, std::vector<BspTreeQueryData>& results, unsigned depth) const
+{
+	if (!node) return;
+
+	BspTreeQueryData result;
+	result.mDepth = depth;
+	TriangleList list;
+
+	// concatenate coplanar triangle lists
+	list.insert(list.end(), node->m_coplanerBack.begin(), node->m_coplanerBack.end());
+	list.insert(list.end(), node->m_coplanerFront.begin(), node->m_coplanerFront.end());
+	if (node->m_coplanerBack.empty() && node->m_coplanerFront.empty()) list.push_back(node->m_splitTri);
+	result.mTriangles = list;
+	results.push_back(result);
+
+	for (Triangle tri : list)
+	{
+		if (tri.mPoints[0].x == -37.79f && tri.mPoints[0].y == 65.49f && tri.mPoints[0].z == 65.45f)
+		{
+			int i = 0;
+			i;
+		}
+	}
+
+	RecursiveFillOut(node->m_right, results, depth+1);
+	RecursiveFillOut(node->m_left, results, depth+1);
 }
 

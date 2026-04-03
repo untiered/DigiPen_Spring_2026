@@ -1,13 +1,13 @@
 This is BibTeX, Version 0.99e
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: CodedBias.aux
-Reallocating 'name_of_file' (item size: 1) to 5 items.
+Reallocating 'name_of_file' (item size: 1) to 13 items.
 Reallocating 'name_of_file' (item size: 1) to 21 items.
 The style file: ACM-Reference-Format.bst
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-Database file #1: poop.bib
+Database file #1: bibliography.bib
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
@@ -26,7 +26,7 @@ Warning--no number and no volume in used_ninth(8)
 Warning--page numbers missing in both pages and numpages fields in used_ninth(8)
 You've used 12 entries,
             6273 wiz_defined-function locations,
-            1602 strings with 21101 characters,
+            1602 strings with 21109 characters,
 and the built_in function-call counts, 10955 in all, are:
 = -- 1531
 > -- 264

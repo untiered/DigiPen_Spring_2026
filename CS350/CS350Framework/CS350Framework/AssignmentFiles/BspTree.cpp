@@ -222,51 +222,11 @@ void BspTree::Construct(const TriangleList& triangles, float k, float epsilon)
 	RecursiveConstruct(m_root, triangles, k, epsilon);
 }
 
-// Optimized ray - casting should be implemented as described in class (using tMin and tMax).
-// Do not implement the “basic traversal” but rather the 4 main cases with the 3 edge cases.
-// Make sure that you only check the geometry in the plane when the ray hits the thick plane
-// otherwise you will end up with more PlaneTriangle tests.
-// Use planeEpsilon to classify the ray’s start.
-// Use triExpansionEpsilon for RayTriangle, if you don’t use this then some tests will slip between two triangles.
-// Be careful as there are a lot of edge cases with raycasting(all should have a unit test).
 bool BspTree::RayCast(const Ray& ray, float& t, float planeEpsilon, float triExpansionEpsilon, int debuggingIndex)
 {
 	/******Student:Assignment4******/
 	t = Math::PositiveMax();
-	return false;
-
-
-	
-	// case 1: the clipped ray hits the splitplane
-	//	- tMin <= tPlane <= tMax
-	//	- recurse down the near side
-	//	- then recurse through the coplanar triangles
-	//	- then recurse down the far side
-	//	- update tMin and tMax during recursions
-	
-	// case 2: the splitplane is behind the ray
-	//	- tPlane < 0
-	//	- traverse the near side
-	//	- update tMin and tMax during recursions
-	
-	// case 3: the clipped ray cannot reach the splitplane
-	//	- tMax < tPlane
-	//	- traverse the near side
-	//	- update tMin and tMax during recursions
-	
-	// case 4: the splitplane is "effectively" behind the ray
-	//	- only traverse the far side
-	//	- updat tMin and tMax during recursions
-
-	// NOTE: only visit both sides of the nodes geometry if the ray hits the spitplane
-	
-	// edge case 1: the ray start is coplanar
-	//	- visit both sides of the geometry in the plane
-	
-	// edge case 2: the ray is parallel to the splitplane
-	//	- only traverse the near side (assumes we have already dealt with edge case 1)
-	
-	// edge case 3: the ray hits the thickplane
+	return RecursiveRayCast(m_root, ray, 0.0f, Math::PositiveMax(), t, planeEpsilon, triExpansionEpsilon);
 }
 
 void BspTree::AllTriangles(TriangleList& triangles) const
@@ -409,5 +369,82 @@ void BspTree::RecursiveFillOut(BSPNode* node, std::vector<BspTreeQueryData>& res
 
 	RecursiveFillOut(node->m_right, results, depth+1);
 	RecursiveFillOut(node->m_left, results, depth+1);
+}
+
+// Optimized ray - casting should be implemented as described in class (using tMin and tMax).
+// Do not implement the “basic traversal” but rather the 4 main cases with the 3 edge cases.
+// Make sure that you only check the geometry in the plane when the ray hits the thick plane
+// otherwise you will end up with more PlaneTriangle tests.
+// Use planeEpsilon to classify the ray’s start.
+// Use triExpansionEpsilon for RayTriangle, if you don’t use this then some tests will slip between two triangles.
+// Be careful as there are a lot of edge cases with raycasting(all should have a unit test).
+bool BspTree::RecursiveRayCast(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon)
+{
+	if (!node) return false;
+
+	// classify the ray
+	Vector3 rayStart = ray.mStart + (ray.mDirection * tMin);
+	if (RayPlane(ray.mStart, ray.mDirection, node->m_splitPlane.mData, tPlane, planeEpsilon)) // first check if the ray hits the plane
+	{
+		// check the current tMin and tMax values to see if it actually does hit the splitplane
+	}
+	else if (tPlane == Math::PositiveMax()) { // if tPlane was NOT set by RayPlane(), the ray is parallel to the plane
+
+	}
+	else {
+
+	}
+
+	// if RayPlane() doesnt set tPlane, then the ray is considered parallel to the splitplane
+	float tPlane = Math::PositiveMax();
+	RayPlane(ray.mStart, ray.mDirection, node->m_splitPlane.mData, tPlane, planeEpsilon);
+
+	// check the 4 most common cases
+	if (tPlane != Math::PositiveMax()) // only if the ray would intersect with the splitplane
+	{
+		// case 1:
+		// case 2:
+		// case 3:
+		// case 4:
+	}
+	
+	// check the 3 edge cases
+
+
+
+		// case 1: the clipped ray hits the splitplane
+		//	- tMin <= tPlane <= tMax
+		//	- recurse down the near side
+		//	- then recurse through the coplanar triangles
+		//	- then recurse down the far side
+		//	- update tMin and tMax during recursions
+
+		// case 2: the splitplane is behind the ray
+		//	- tPlane < 0
+		//	- traverse the near side
+		//	- update tMin and tMax during recursions
+
+		// case 3: the clipped ray cannot reach the splitplane
+		//	- tMax < tPlane
+		//	- traverse the near side
+		//	- update tMin and tMax during recursions
+
+		// case 4: the splitplane is "effectively" behind the ray
+		//	- only traverse the far side
+		//	- updat tMin and tMax during recursions
+
+		// NOTE: only visit both sides of the nodes geometry if the ray hits the spitplane
+
+		// edge case 1: the ray start is coplanar
+		//	- visit both sides of the geometry in the plane
+
+		// edge case 2: the ray is parallel to the splitplane
+		//	- only traverse the near side (assumes we have already dealt with edge case 1)
+
+		// edge case 3: the ray hits the thickplane
+
+	// recurse according to classification
+
+	return false;
 }
 

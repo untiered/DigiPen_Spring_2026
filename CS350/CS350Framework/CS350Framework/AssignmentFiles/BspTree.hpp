@@ -94,4 +94,5 @@ private:
 
   void RecursiveConstruct(BSPNode *node, TriangleList const& triangles, float k, float epsilon);
   void RecursiveFillOut(BSPNode* node, std::vector<BspTreeQueryData>& results, unsigned depth) const;
+  bool RecursiveRayCast(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon);
 };

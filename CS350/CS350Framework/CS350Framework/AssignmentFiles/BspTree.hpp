@@ -95,4 +95,13 @@ private:
   void RecursiveConstruct(BSPNode *node, TriangleList const& triangles, float k, float epsilon);
   void RecursiveFillOut(BSPNode* node, std::vector<BspTreeQueryData>& results, unsigned depth) const;
   bool RecursiveRayCast(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon);
+  BSPNode* GetNearSide(BSPNode *node, Vector3 rayStart);
+
+  bool RayCast_Case_1(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane, Vector3 const& rayStart);
+  bool RayCast_Case_2(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane, Vector3 const& rayStart);
+  bool RayCast_Case_3(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane, Vector3 const& rayStart);
+  bool RayCast_Case_4(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane, Vector3 const& rayStart);
+
+  void RayCast_EdgeCase_1(BSPNode* node, Vector3 const& rayStart, const Ray& ray, float& t, float triExpansionEpsilon);
+  bool RayCast_EdgeCase_2(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane, Vector3 const& rayStart);
 };

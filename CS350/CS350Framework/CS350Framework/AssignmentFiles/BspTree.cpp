@@ -226,7 +226,8 @@ bool BspTree::RayCast(const Ray& ray, float& t, float planeEpsilon, float triExp
 {
 	/******Student:Assignment4******/
 	t = Math::PositiveMax();
-	return RecursiveRayCast(m_root, ray, 0.0f, Math::PositiveMax(), t, planeEpsilon, triExpansionEpsilon);
+	RecursiveRayCast(m_root, ray, 0.0f, Math::PositiveMax(), t, planeEpsilon, triExpansionEpsilon);
+	return t >= 0.0f && t != Math::PositiveMax();
 }
 
 void BspTree::AllTriangles(TriangleList& triangles) const
@@ -315,11 +316,12 @@ void BspTree::RecursiveConstruct(BSPNode *node, TriangleList const& triangles, f
 	TriangleList back;
 	
 	// split the triangles
-	for (Triangle const&tri : triangles)
+	for (size_t i = 0; i < triangles.size(); ++i)
 	{
+		if (i == spi) continue;
 		SplitTriangle(
 			node->m_splitPlane,
-			tri,
+			triangles[i],
 			node->m_coplanerFront,
 			node->m_coplanerBack,
 			front,
@@ -354,18 +356,9 @@ void BspTree::RecursiveFillOut(BSPNode* node, std::vector<BspTreeQueryData>& res
 	// concatenate coplanar triangle lists
 	list.insert(list.end(), node->m_coplanerBack.begin(), node->m_coplanerBack.end());
 	list.insert(list.end(), node->m_coplanerFront.begin(), node->m_coplanerFront.end());
-	if (node->m_coplanerBack.empty() && node->m_coplanerFront.empty()) list.push_back(node->m_splitTri);
+	list.push_back(node->m_splitTri);
 	result.mTriangles = list;
 	results.push_back(result);
-
-	for (Triangle tri : list)
-	{
-		if (tri.mPoints[0].x == -37.79f && tri.mPoints[0].y == 65.49f && tri.mPoints[0].z == 65.45f)
-		{
-			int i = 0;
-			i;
-		}
-	}
 
 	RecursiveFillOut(node->m_right, results, depth+1);
 	RecursiveFillOut(node->m_left, results, depth+1);
@@ -380,71 +373,118 @@ void BspTree::RecursiveFillOut(BSPNode* node, std::vector<BspTreeQueryData>& res
 // Be careful as there are a lot of edge cases with raycasting(all should have a unit test).
 bool BspTree::RecursiveRayCast(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon)
 {
-	if (!node) return false;
-
-	// classify the ray
-	Vector3 rayStart = ray.mStart + (ray.mDirection * tMin);
-	if (RayPlane(ray.mStart, ray.mDirection, node->m_splitPlane.mData, tPlane, planeEpsilon)) // first check if the ray hits the plane
-	{
-		// check the current tMin and tMax values to see if it actually does hit the splitplane
-	}
-	else if (tPlane == Math::PositiveMax()) { // if tPlane was NOT set by RayPlane(), the ray is parallel to the plane
-
-	}
-	else {
-
-	}
-
-	// if RayPlane() doesnt set tPlane, then the ray is considered parallel to the splitplane
 	float tPlane = Math::PositiveMax();
-	RayPlane(ray.mStart, ray.mDirection, node->m_splitPlane.mData, tPlane, planeEpsilon);
-
-	// check the 4 most common cases
-	if (tPlane != Math::PositiveMax()) // only if the ray would intersect with the splitplane
-	{
-		// case 1:
-		// case 2:
-		// case 3:
-		// case 4:
-	}
+	Vector3 rayStart = ray.mStart + (ray.mDirection * tMin); // the ray start depends on tMin
 	
-	// check the 3 edge cases
+	// check the ray against the splitplane
+	if (RayPlane(rayStart, ray.mDirection, node->m_splitPlane.mData, tPlane, planeEpsilon))
+	{
+		// the ray hits the splitplane, if we get here, tPlane is garanteed to be set and greater than 0
 
+		// TODO: THIS NEEDS TO BE IMPLEMENTED!!!
+		// edge case 3:
+		//	- clip correctly (set the new tMin and tMax)
+		//	- check for intersection against the thick planes
 
+		if (tMin <= tPlane && tPlane <= tMax) return RayCast_Case_1(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane, rayStart);
+		if (tMax < tPlane) return RayCast_Case_3(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane, rayStart);
+		if (0 < tPlane && tPlane < tMin) return RayCast_Case_4(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane, rayStart);
+	}
+	else
+	{
+		// the ray is either parallel or pointing away from the splitplane
+		// if we get here, tPlane might NOT have been set, but if it was, its less than 0
 
-		// case 1: the clipped ray hits the splitplane
-		//	- tMin <= tPlane <= tMax
-		//	- recurse down the near side
-		//	- then recurse through the coplanar triangles
-		//	- then recurse down the far side
-		//	- update tMin and tMax during recursions
-
-		// case 2: the splitplane is behind the ray
-		//	- tPlane < 0
-		//	- traverse the near side
-		//	- update tMin and tMax during recursions
-
-		// case 3: the clipped ray cannot reach the splitplane
-		//	- tMax < tPlane
-		//	- traverse the near side
-		//	- update tMin and tMax during recursions
-
-		// case 4: the splitplane is "effectively" behind the ray
-		//	- only traverse the far side
-		//	- updat tMin and tMax during recursions
-
-		// NOTE: only visit both sides of the nodes geometry if the ray hits the spitplane
-
-		// edge case 1: the ray start is coplanar
-		//	- visit both sides of the geometry in the plane
-
-		// edge case 2: the ray is parallel to the splitplane
-		//	- only traverse the near side (assumes we have already dealt with edge case 1)
-
-		// edge case 3: the ray hits the thickplane
-
-	// recurse according to classification
-
+		if (tPlane == Math::PositiveMax()) return RayCast_EdgeCase_2(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane, rayStart);
+		if (tPlane < 0.0f) return RayCast_Case_2(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane, rayStart);
+	}
 	return false;
+}
+
+BspTree::BSPNode* BspTree::GetNearSide(BSPNode* node, Vector3 rayStart)
+{
+	return nullptr;
+}
+
+// case 1: the clipped ray hits the splitplane
+//	- tMin <= tPlane <= tMax
+//	- recurse down the near side
+//	- then recurse through the coplanar triangles
+//	- then recurse down the far side
+//	- update tMin and tMax during recursions
+bool BspTree::RayCast_Case_1(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane, Vector3 const&rayStart)
+{
+	return false;
+}
+
+// case 2: splitplane is behind the original rayStart
+//	- tPlane < 0
+//	- traverse the near side
+//	- update tMin and tMax during recursions
+bool BspTree::RayCast_Case_2(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane, Vector3 const& rayStart)
+{
+	if (Math::Abs(tPlane) <= planeEpsilon) RayCast_EdgeCase_1(node, rayStart, ray, t, triExpansionEpsilon); // edge case 1
+	// then do stuff
+	return false;
+}
+
+// case 3: splitplane is beyond tMax
+//	- tMax < tPlane
+//	- traverse the near side
+//	- update tMin and tMax during recursions
+bool BspTree::RayCast_Case_3(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane, Vector3 const& rayStart)
+{
+	// do stuff
+	if (Math::Abs(tPlane) <= planeEpsilon) RayCast_EdgeCase_1(node, rayStart, ray, t, triExpansionEpsilon); // edge case 1
+	return false;
+}
+
+// case 4: splitplane is between the actual ray start and the adjusted ray start
+//	- 0 < tPlane < tMin
+//	- only traverse the far side
+//	- update tMin and tMax during recursions
+bool BspTree::RayCast_Case_4(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane, Vector3 const& rayStart)
+{
+	if (Math::Abs(tPlane) <= planeEpsilon) RayCast_EdgeCase_1(node, rayStart, ray, t, triExpansionEpsilon); // edge case 1
+	// then do stuff
+	return false;
+}
+
+// edge case 1: the rayStart is coplanar with the splitplane
+//	- visit both sides of the geometry in the plane
+//	- we must deal with this before testing edge case 2!!!
+void BspTree::RayCast_EdgeCase_1(BSPNode* node, Vector3 const&rayStart, const Ray& ray, float& t, float triExpansionEpsilon)
+{
+	float dist = Math::PositiveMax();
+	for (Triangle const& tri : node->m_coplanerBack)
+	{
+		if (RayTriangle(rayStart, ray.mDirection, tri.mPoints[0], tri.mPoints[1], tri.mPoints[2], dist, triExpansionEpsilon))
+		{
+			if (dist > 0.0f && dist < t) t = dist;
+		}
+	}
+	for (Triangle const& tri : node->m_coplanerBack)
+	{
+		if (RayTriangle(rayStart, ray.mDirection, tri.mPoints[0], tri.mPoints[1], tri.mPoints[2], dist, triExpansionEpsilon))
+		{
+			if (dist > 0.0f && dist < t) t = dist;
+		}
+	}
+	if (RayTriangle(rayStart, ray.mDirection, node->m_splitTri.mPoints[0], node->m_splitTri.mPoints[1], node->m_splitTri.mPoints[2], dist, triExpansionEpsilon))
+	{
+		if (dist > 0.0f && dist < t) t = dist;
+	}
+}
+
+// edge case 2: the ray is parallel to the splitplane
+//	- only traverse the near side
+//	- assumes we have already dealt with edge case 1!!!
+bool BspTree::RayCast_EdgeCase_2(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane, Vector3 const& rayStart)
+{
+	if (Math::Abs(tPlane) <= planeEpsilon) RayCast_EdgeCase_1(node, rayStart, ray, t, triExpansionEpsilon); // edge case 1
+	// then do stuff
+	
+	BSPNode* nearSide = GetNearSide(node, rayStart);
+	return RecursiveRayCast(nearSide, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon);
 }
 

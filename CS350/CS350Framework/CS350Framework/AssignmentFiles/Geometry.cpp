@@ -87,7 +87,7 @@ IntersectionType::Type PointPlane(const Vector3& point, const Vector4& plane, fl
     float d = point.Dot(Vector3(plane.x, plane.y, plane.z)) - plane.w;
     if (d <= epsilon && d >= -epsilon) return IntersectionType::Coplanar;
     if (d > epsilon) return IntersectionType::Inside;
-    if (d < epsilon) return IntersectionType::Outside;
+    if (d < -epsilon) return IntersectionType::Outside;
     return IntersectionType::NotImplemented;
 }
 

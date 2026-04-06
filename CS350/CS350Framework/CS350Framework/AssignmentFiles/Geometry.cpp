@@ -140,7 +140,7 @@ bool RayTriangle(const Vector3& rayStart, const Vector3& rayDir,
     
     // check if its in the triangle
     float u, v, w;
-    if (BarycentricCoordinates(rayStart + (rayDir.Normalized() * t), triP0, triP1, triP2, u, v, w, triExpansionEpsilon))
+    if (BarycentricCoordinates(rayStart + (rayDir.Normalized() * tempT), triP0, triP1, triP2, u, v, w, triExpansionEpsilon))
     {
         t = tempT;
         return true;

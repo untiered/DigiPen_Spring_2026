@@ -74,7 +74,7 @@ public:
   void DebugDraw(int level, const Vector4& color, int bitMask = 0);
 
   // Add your implementation here
-  BspTree() : m_root(nullptr), m_triangles() {}
+  BspTree() : m_root(nullptr) {}
 private:
   struct BSPNode {
 	  // connections
@@ -90,18 +90,19 @@ private:
 
 
   BSPNode* m_root;
-  TriangleList m_triangles;
 
   void RecursiveConstruct(BSPNode *node, TriangleList const& triangles, float k, float epsilon);
   void RecursiveFillOut(BSPNode* node, std::vector<BspTreeQueryData>& results, unsigned depth) const;
   bool RecursiveRayCast(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon);
   void GetSides(BSPNode *node, BSPNode** nearSide, BSPNode** farSide, Vector3 rayStart);
+  float GetTEpsilon(BSPNode *node, Ray const&ray, float planeEpsilon);
 
-  bool RayCast_Case_1(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane, bool coplanar);
+  bool RayCast_Case_1(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane);
   bool RayCast_Case_2(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane);
   bool RayCast_Case_3(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane);
   bool RayCast_Case_4(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane);
 
   void CheckCoplanarGeometry(BSPNode* node, Vector3 const& rayStart, const Ray& ray, float& t, float triExpansionEpsilon);
-  bool RayCast_EdgeCase_2(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane);
+  bool RayCast_EdgeCase_1(BSPNode* node, Vector3 const& rayStart, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon);
+  bool RayCast_EdgeCase_2(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon);
 };

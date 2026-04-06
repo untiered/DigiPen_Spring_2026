@@ -168,7 +168,7 @@ float BspTree::CalculateScore(const TriangleList& triangles, size_t testIndex, f
 
 	// check if triangle is degenerate
 	Vector3 normal = (triangle.mPoints[2] - triangle.mPoints[0]).Cross(triangle.mPoints[1] - triangle.mPoints[0]);
-	if (normal.Length() <= epsilon) return Math::PositiveMax();
+	if (normal.Length() <= 0.0001f) return Math::PositiveMax();
 
 	Plane plane = Plane(normal, triangle.mPoints[0]);
 
@@ -376,14 +376,7 @@ bool BspTree::RecursiveRayCast(BSPNode* node, const Ray& ray, float tMin, float 
 	if (!node) return false;
 
 	// before calling RayPlane() we must check edge case 1
-	Vector3 rayStart = ray.mStart + (ray.mDirection * tMin);
-	bool coplanar = false;
-	if (PointPlane(rayStart, node->m_splitPlane.mData, planeEpsilon) == IntersectionType::Coplanar)
-	{
-		coplanar = true;
-		CheckCoplanarGeometry(node, rayStart, ray, t, triExpansionEpsilon);
-		if (!node->m_left && !node->m_right) return false; // early-out if we are on a leaf
-	}
+	if (RayCast_EdgeCase_1(node, ray.mStart, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon)) return false;
 
 	// check the ray against the splitplane
 	float tPlane = Math::PositiveMax();
@@ -396,9 +389,9 @@ bool BspTree::RecursiveRayCast(BSPNode* node, const Ray& ray, float tMin, float 
 		//	- clip correctly (set the new tMin and tMax)
 		//	- check for intersection against the thick planes
 
-		if (tPlane < tMin) return RayCast_Case_4(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane); // this swaps places depending on whether or not we use an adjusted rayStart
-		if (tPlane > tMax) return RayCast_Case_3(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane);
-		return RayCast_Case_1(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane, coplanar);
+		if (tPlane + GetTEpsilon(node, ray, planeEpsilon) < tMin) return RayCast_Case_4(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane); // this swaps places depending on whether or not we use an adjusted rayStart
+		if (tPlane - GetTEpsilon(node, ray, planeEpsilon) > tMax) return RayCast_Case_3(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane);
+		return RayCast_Case_1(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane);
 	}
 	else
 	{
@@ -409,15 +402,20 @@ bool BspTree::RecursiveRayCast(BSPNode* node, const Ray& ray, float tMin, float 
 		if (tPlane < 0.0f) return RayCast_Case_2(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane);
 
 		// parallel:
-		return RayCast_EdgeCase_2(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane);
+		return RayCast_EdgeCase_2(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon);
 	}
 	return false;
 }
 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// HELPERS:
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// near and far side nodes must be valid pointers
 void BspTree::GetSides(BSPNode* node, BSPNode** nearSide, BSPNode** farSide, Vector3 rayStart)
 {
 	IntersectionType::Type type = PointPlane(rayStart, node->m_splitPlane.mData, 0.0f); // TODO: magic number epsilon???
-	if (type == IntersectionType::Inside) // front
+	if (type == IntersectionType::Inside || type == IntersectionType::Coplanar) // front or coplanar
 	{
 		// right holds front
 		*nearSide = node->m_right;
@@ -431,72 +429,16 @@ void BspTree::GetSides(BSPNode* node, BSPNode** nearSide, BSPNode** farSide, Vec
 	}
 }
 
-// case 1: the clipped ray hits the splitplane
-//	- tMin <= tPlane <= tMax
-//	- recurse down the near side
-//	- then recurse through the coplanar triangles
-//	- then recurse down the far side
-//	- update tMin and tMax during recursions
-bool BspTree::RayCast_Case_1(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane, bool coplanar)
+float BspTree::GetTEpsilon(BSPNode* node, Ray const& ray, float planeEpsilon)
 {
-	BSPNode* nearSide = nullptr;
-	BSPNode* farSide = nullptr;
-	GetSides(node, &nearSide, &farSide, ray.mStart + (ray.mDirection * tMin));
-
-	// recurse near side with tPlane as the new tMax
-	RecursiveRayCast(nearSide, ray, tMin, tPlane, t, planeEpsilon, triExpansionEpsilon);
-
-	// check coplanar geometry if not already checked
-	if (!coplanar) CheckCoplanarGeometry(node, ray.mStart + (ray.mDirection * tMin), ray, t, triExpansionEpsilon);
-
-	// recurse far side with tPlane as the new tMin
-	RecursiveRayCast(farSide, ray, tPlane, tMax, t, planeEpsilon, triExpansionEpsilon);
-	return false;
-}
-
-// case 2: splitplane is behind the original rayStart
-//	- tPlane < 0
-//	- traverse the near side
-//	- update tMin and tMax during recursions
-bool BspTree::RayCast_Case_2(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane)
-{
-	return false;
-
-	if (Math::Abs(tPlane) <= planeEpsilon) CheckCoplanarGeometry(node, ray.mStart, ray, t, triExpansionEpsilon); // edge case 1
-	// then do stuff
-	return false;
-}
-
-// case 3: splitplane is beyond tMax
-//	- tMax < tPlane
-//	- traverse the near side
-//	- update tMin and tMax during recursions
-bool BspTree::RayCast_Case_3(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane)
-{
-	return false;
-
-	// do stuff
-	if (Math::Abs(tPlane) <= planeEpsilon) CheckCoplanarGeometry(node, ray.mStart, ray, t, triExpansionEpsilon); // edge case 1
-	return false;
-}
-
-// case 4: splitplane is between the actual ray start and the adjusted ray start
-//	- 0 < tPlane < tMin
-//	- only traverse the far side
-//	- update tMin and tMax during recursions
-bool BspTree::RayCast_Case_4(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane)
-{
-	return false;
-
-	if (Math::Abs(tPlane) <= planeEpsilon) CheckCoplanarGeometry(node, ray.mStart, ray, t, triExpansionEpsilon); // edge case 1
-	// then do stuff
-	return false;
+	float cosTheta = ray.mDirection.Dot(node->m_splitPlane.GetNormal());
+	return Math::Abs(planeEpsilon / cosTheta);
 }
 
 // edge case 1: the rayStart is coplanar with the splitplane
 //	- visit both sides of the geometry in the plane
 //	- we must deal with this before testing edge case 2!!!
-void BspTree::CheckCoplanarGeometry(BSPNode* node, Vector3 const&rayStart, const Ray& ray, float& t, float triExpansionEpsilon)
+void BspTree::CheckCoplanarGeometry(BSPNode* node, Vector3 const& rayStart, const Ray& ray, float& t, float triExpansionEpsilon)
 {
 	float dist = Math::PositiveMax();
 	for (Triangle const& tri : node->m_coplanerBack)
@@ -506,7 +448,7 @@ void BspTree::CheckCoplanarGeometry(BSPNode* node, Vector3 const&rayStart, const
 			if (dist > 0.0f && dist < t) t = dist;
 		}
 	}
-	for (Triangle const& tri : node->m_coplanerBack)
+	for (Triangle const& tri : node->m_coplanerFront)
 	{
 		if (RayTriangle(rayStart, ray.mDirection, tri.mPoints[0], tri.mPoints[1], tri.mPoints[2], dist, triExpansionEpsilon))
 		{
@@ -519,16 +461,115 @@ void BspTree::CheckCoplanarGeometry(BSPNode* node, Vector3 const&rayStart, const
 	}
 }
 
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// CASES:
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// case 1: the clipped ray hits the splitplane
+//	- tMin <= tPlane <= tMax
+//	- recurse down the near side
+//	- then recurse through the coplanar triangles
+//	- then recurse down the far side
+//	- update tMin and tMax during recursions
+bool BspTree::RayCast_Case_1(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane)
+{
+	BSPNode* nearSide = nullptr;
+	BSPNode* farSide = nullptr;
+	GetSides(node, &nearSide, &farSide, ray.mStart);
+
+	// recurse near side with new tMax
+	RecursiveRayCast(nearSide, ray, tMin, tPlane + GetTEpsilon(node, ray, planeEpsilon), t, planeEpsilon, triExpansionEpsilon);
+
+	// check coplanar geometry if not already checked
+	CheckCoplanarGeometry(node, ray.mStart, ray, t, triExpansionEpsilon);
+
+	// recurse far side with new tMin
+	RecursiveRayCast(farSide, ray, tPlane - GetTEpsilon(node, ray, planeEpsilon), tMax, t, planeEpsilon, triExpansionEpsilon);
+	return false;
+}
+
+// case 2: splitplane is behind the original rayStart
+//	- tPlane < 0
+//	- traverse the near side
+//	- update tMin and tMax during recursions
+bool BspTree::RayCast_Case_2(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane)
+{
+	BSPNode* nearSide = nullptr;
+	BSPNode* farSide = nullptr;
+	GetSides(node, &nearSide, &farSide, ray.mStart);
+	if (!nearSide) return false;
+
+	// recurse near side with new tMax
+	return RecursiveRayCast(nearSide, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon);
+}
+
+// case 3: splitplane is beyond tMax
+//	- tMax < tPlane
+//	- traverse the near side
+//	- update tMin and tMax during recursions
+bool BspTree::RayCast_Case_3(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane)
+{
+	BSPNode* nearSide = nullptr;
+	BSPNode* farSide = nullptr;
+	GetSides(node, &nearSide, &farSide, ray.mStart);
+	if (!nearSide) return false;
+
+	// recurse near side with new tMax
+	return RecursiveRayCast(nearSide, ray, tMin, tPlane + GetTEpsilon(node, ray, planeEpsilon), t, planeEpsilon, triExpansionEpsilon);
+}
+
+// case 4: splitplane is between the actual ray start and the adjusted ray start
+//	- 0 < tPlane < tMin
+//	- only traverse the far side
+//	- update tMin and tMax during recursions
+bool BspTree::RayCast_Case_4(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane)
+{
+	BSPNode* nearSide = nullptr;
+	BSPNode* farSide = nullptr;
+	GetSides(node, &nearSide, &farSide, ray.mStart);
+	if (!farSide) return false;
+
+	// recurse far side with new tMin
+	return RecursiveRayCast(nearSide, ray, tPlane - GetTEpsilon(node, ray, planeEpsilon), tMax, t, planeEpsilon, triExpansionEpsilon);
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// EDGE CASES:
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+bool BspTree::RayCast_EdgeCase_1(BSPNode* node, Vector3 const& rayStart, const Ray& ray, float tMin, float tMax, float &t, float planeEpsilon, float triExpansionEpsilon)
+{
+	if (PointPlane(rayStart, node->m_splitPlane.mData, planeEpsilon) == IntersectionType::Coplanar)
+	{
+		BSPNode* nearSide = nullptr;
+		BSPNode* farSide = nullptr;
+		GetSides(node, &nearSide, &farSide, ray.mStart);
+
+		// recurse near side with new tMax
+		RecursiveRayCast(nearSide, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon);
+
+		// check coplanar geometry if not already checked
+		CheckCoplanarGeometry(node, ray.mStart, ray, t, triExpansionEpsilon);
+
+		// recurse far side with new tMin
+		RecursiveRayCast(farSide, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon);
+		return true;
+	}
+	return false;
+}
+
 // edge case 2: the ray is parallel to the splitplane
 //	- only traverse the near side
 //	- assumes we have already dealt with edge case 1!!!
-bool BspTree::RayCast_EdgeCase_2(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon, float tPlane)
+bool BspTree::RayCast_EdgeCase_2(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon)
 {
 	if (!node->m_left && !node->m_right) return false; // we know edge case 1 was already dealt with
 	
 	BSPNode* nearSide = nullptr;
 	BSPNode* farSide = nullptr;
-	GetSides(node, &nearSide, &farSide, ray.mStart + (ray.mDirection * tMin));
+	GetSides(node, &nearSide, &farSide, ray.mStart);
 	return RecursiveRayCast(nearSide, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon);
 }
 

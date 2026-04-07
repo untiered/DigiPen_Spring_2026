@@ -233,19 +233,19 @@ bool BspTree::RayCast(const Ray& ray, float& t, float planeEpsilon, float triExp
 void BspTree::AllTriangles(TriangleList& triangles) const
 {
 	/******Student:Assignment4******/
-	Warn("Assignment4: Required function un-implemented");
+	RecursiveGetTriangles(m_root, triangles);
 }
 
 void BspTree::Invert()
 {
 	/******Student:Assignment4******/
-	Warn("Assignment4: Required function un-implemented");
+	RecursiveInvert(m_root);
 }
 
 void BspTree::ClipTo(BspTree* tree, float epsilon)
 {
 	/******Student:Assignment4******/
-	Warn("Assignment4: Required function un-implemented");
+	RecursiveClipTo(tree, m_root, epsilon);
 }
 
 void BspTree::Union(BspTree* tree, float k, float epsilon)
@@ -384,13 +384,9 @@ bool BspTree::RecursiveRayCast(BSPNode* node, const Ray& ray, float tMin, float 
 	{
 		// the ray hits the splitplane, if we get here, tPlane is garanteed to be set and greater than 0
 
-		// TODO: THIS NEEDS TO BE IMPLEMENTED!!!
-		// edge case 3:
-		//	- clip correctly (set the new tMin and tMax)
-		//	- check for intersection against the thick planes
-
-		if (tPlane + GetTEpsilon(node, ray, planeEpsilon) < tMin) return RayCast_Case_4(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane); // this swaps places depending on whether or not we use an adjusted rayStart
-		if (tPlane - GetTEpsilon(node, ray, planeEpsilon) > tMax) return RayCast_Case_3(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane);
+		float t_e = GetTEpsilon(node, ray, planeEpsilon);
+		if (tPlane + t_e < tMin) return RayCast_Case_4(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane); // this swaps places depending on whether or not we use an adjusted rayStart
+		if (tPlane - t_e > tMax) return RayCast_Case_3(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane);
 		return RayCast_Case_1(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane);
 	}
 	else
@@ -441,6 +437,10 @@ float BspTree::GetTEpsilon(BSPNode* node, Ray const& ray, float planeEpsilon)
 void BspTree::CheckCoplanarGeometry(BSPNode* node, Vector3 const& rayStart, const Ray& ray, float& t, float triExpansionEpsilon)
 {
 	float dist = Math::PositiveMax();
+	if (RayTriangle(rayStart, ray.mDirection, node->m_splitTri.mPoints[0], node->m_splitTri.mPoints[1], node->m_splitTri.mPoints[2], dist, triExpansionEpsilon))
+	{
+		if (dist > 0.0f && dist < t) t = dist;
+	}
 	for (Triangle const& tri : node->m_coplanerBack)
 	{
 		if (RayTriangle(rayStart, ray.mDirection, tri.mPoints[0], tri.mPoints[1], tri.mPoints[2], dist, triExpansionEpsilon))
@@ -454,10 +454,6 @@ void BspTree::CheckCoplanarGeometry(BSPNode* node, Vector3 const& rayStart, cons
 		{
 			if (dist > 0.0f && dist < t) t = dist;
 		}
-	}
-	if (RayTriangle(rayStart, ray.mDirection, node->m_splitTri.mPoints[0], node->m_splitTri.mPoints[1], node->m_splitTri.mPoints[2], dist, triExpansionEpsilon))
-	{
-		if (dist > 0.0f && dist < t) t = dist;
 	}
 }
 
@@ -477,15 +473,16 @@ bool BspTree::RayCast_Case_1(BSPNode* node, const Ray& ray, float tMin, float tM
 	BSPNode* nearSide = nullptr;
 	BSPNode* farSide = nullptr;
 	GetSides(node, &nearSide, &farSide, ray.mStart);
+	float t_e = GetTEpsilon(node, ray, planeEpsilon);
 
 	// recurse near side with new tMax
-	RecursiveRayCast(nearSide, ray, tMin, tPlane + GetTEpsilon(node, ray, planeEpsilon), t, planeEpsilon, triExpansionEpsilon);
+	RecursiveRayCast(nearSide, ray, tMin, tPlane + t_e, t, planeEpsilon, triExpansionEpsilon);
 
 	// check coplanar geometry if not already checked
 	CheckCoplanarGeometry(node, ray.mStart, ray, t, triExpansionEpsilon);
 
 	// recurse far side with new tMin
-	RecursiveRayCast(farSide, ray, tPlane - GetTEpsilon(node, ray, planeEpsilon), tMax, t, planeEpsilon, triExpansionEpsilon);
+	RecursiveRayCast(farSide, ray, tPlane - t_e, tMax, t, planeEpsilon, triExpansionEpsilon);
 	return false;
 }
 
@@ -516,7 +513,7 @@ bool BspTree::RayCast_Case_3(BSPNode* node, const Ray& ray, float tMin, float tM
 	if (!nearSide) return false;
 
 	// recurse near side with new tMax
-	return RecursiveRayCast(nearSide, ray, tMin, tPlane + GetTEpsilon(node, ray, planeEpsilon), t, planeEpsilon, triExpansionEpsilon);
+	return RecursiveRayCast(nearSide, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon);
 }
 
 // case 4: splitplane is between the actual ray start and the adjusted ray start
@@ -531,7 +528,7 @@ bool BspTree::RayCast_Case_4(BSPNode* node, const Ray& ray, float tMin, float tM
 	if (!farSide) return false;
 
 	// recurse far side with new tMin
-	return RecursiveRayCast(nearSide, ray, tPlane - GetTEpsilon(node, ray, planeEpsilon), tMax, t, planeEpsilon, triExpansionEpsilon);
+	return RecursiveRayCast(farSide, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon);
 }
 
 
@@ -571,5 +568,91 @@ bool BspTree::RayCast_EdgeCase_2(BSPNode* node, const Ray& ray, float tMin, floa
 	BSPNode* farSide = nullptr;
 	GetSides(node, &nearSide, &farSide, ray.mStart);
 	return RecursiveRayCast(nearSide, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon);
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Other:
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void BspTree::RecursiveGetTriangles(BSPNode* node, TriangleList& triangles) const
+{
+	if (!node) return;
+	for (Triangle const&tri : node->m_coplanerBack)
+	{
+		triangles.push_back(tri);
+	}
+
+	for (Triangle const&tri : node->m_coplanerBack)
+	{
+		triangles.push_back(tri);
+	}
+	triangles.push_back(node->m_splitTri);
+	RecursiveGetTriangles(node->m_left, triangles);
+	RecursiveGetTriangles(node->m_right, triangles);
+}
+
+void BspTree::RecursiveInvert(BSPNode* node)
+{
+	if (!node) return;
+	// invert all data in the node
+	
+	// triangles
+	for (Triangle& tri : node->m_coplanerBack)
+	{
+		Math::Swap<Vector3>(tri.mPoints[0], tri.mPoints[1]);
+	}
+	for (Triangle& tri : node->m_coplanerBack)
+	{
+		Math::Swap<Vector3>(tri.mPoints[0], tri.mPoints[1]);
+	}
+	Math::Swap<Vector3>(node->m_splitTri.mPoints[0], node->m_splitTri.mPoints[1]);
+
+	// plane
+	node->m_splitPlane.mData *= -1.0f;
+
+	// children
+	BSPNode* left = node->m_left;
+	node->m_left = node->m_right;
+	node->m_right = left;
+
+	// recurse
+	RecursiveInvert(node->m_left);
+	RecursiveInvert(node->m_right);
+}
+
+// recurse down OUR tree clipping each triangle within it's geometry against the passed-in tree
+void BspTree::RecursiveClipTo(BspTree* tree, BSPNode* node, float epsilon)
+{
+	//if (!node) return;
+
+	//// clip all internal geometry (back/front/coplanar)
+	//for (Triangle & tri : node->m_coplanerBack)
+	//{
+	//	ClipTriangle(tree, tri, node, epsilon);
+	//}
+	//for (Triangle & tri : node->m_coplanerFront)
+	//{
+	//	ClipTriangle(tree, tri, node, epsilon);
+	//}
+	//ClipTriangle(tree, node->m_splitTri, node, epsilon);
+	//
+	//// recurse both sides
+	//RecursiveClipTo(tree, node->m_left, epsilon);
+	//RecursiveClipTo(tree, node->m_right, epsilon);
+}
+
+// traverse down the passed-in tree clipping the triangle against its splitplanes.
+void BspTree::ClipTriangle(BspTree* tree, Triangle &triangle, BSPNode* node, float epsilon)
+{
+	/*BSPNode* tempNode = tree->m_root;
+	while (tempNode)
+	{
+		TriangleList c_front;
+		TriangleList c_back;
+		TriangleList front;
+		TriangleList back;
+		SplitTriangle(tempNode->m_splitPlane, triangle, c_front, c_back, front, back, epsilon);
+
+	}*/
 }
 

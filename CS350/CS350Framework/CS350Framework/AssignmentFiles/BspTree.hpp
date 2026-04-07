@@ -105,4 +105,10 @@ private:
   void CheckCoplanarGeometry(BSPNode* node, Vector3 const& rayStart, const Ray& ray, float& t, float triExpansionEpsilon);
   bool RayCast_EdgeCase_1(BSPNode* node, Vector3 const& rayStart, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon);
   bool RayCast_EdgeCase_2(BSPNode* node, const Ray& ray, float tMin, float tMax, float& t, float planeEpsilon, float triExpansionEpsilon);
+
+
+  void RecursiveGetTriangles(BSPNode *node, TriangleList &triangles) const;
+  void RecursiveInvert(BSPNode* node);
+  void RecursiveClipTo(BspTree *tree, BSPNode* node, float epsilon);
+  void ClipTriangle(BspTree* tree, Triangle &triangle, BSPNode* node, float epsilon);
 };

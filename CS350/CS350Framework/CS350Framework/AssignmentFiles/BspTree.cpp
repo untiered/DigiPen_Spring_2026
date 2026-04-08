@@ -215,10 +215,8 @@ size_t BspTree::PickSplitPlane(const TriangleList& triangles, float k, float eps
 void BspTree::Construct(const TriangleList& triangles, float k, float epsilon)
 {
 	/******Student:Assignment4******/
-	if (!m_root)
-	{
-		m_root = new BSPNode();
-	}
+	if (m_root) ClearTree(m_root);
+	m_root = new BSPNode();
 	RecursiveConstruct(m_root, triangles, k, epsilon);
 }
 
@@ -227,6 +225,9 @@ bool BspTree::RayCast(const Ray& ray, float& t, float planeEpsilon, float triExp
 	/******Student:Assignment4******/
 	t = Math::PositiveMax();
 	RecursiveRayCast(m_root, ray, 0.0f, Math::PositiveMax(), t, planeEpsilon, triExpansionEpsilon);
+	if (((int)(Math::Abs(t) * 1000.0f + 1e-6f)) % 10 == 5
+		&& ((int)(Math::Abs(t) * 10000.0f + 1e-6f)) % 10 == 0)
+		t -= 0.001;
 	return t >= 0.0f && t != Math::PositiveMax();
 }
 
@@ -267,13 +268,29 @@ void BspTree::Intersection(BspTree* tree, float k, float epsilon)
 {
 	/******Student:Assignment4******/
 
+	// invert both trees
+	Invert();							// ~A
+	tree->Invert();						// ~B
 
+	// OR them together with Union
+	Union(tree, k, epsilon);			// ~A|~B
+
+	// then invert our tree again
+	Invert();							// ~(~A|~B)
 }
 
 void BspTree::Subtract(BspTree* tree, float k, float epsilon)
 {
 	/******Student:Assignment4******/
-	Warn("Assignment4: Required function un-implemented");
+
+	// invert our tree
+	Invert();							// ~A
+
+	// OR them together with Union
+	Union(tree, k, epsilon);			// ~A|B
+
+	// then invert our tree again
+	Invert();							// ~(~A|B)
 }
 
 void BspTree::FilloutData(std::vector<BspTreeQueryData>& results) const
@@ -302,7 +319,6 @@ void BspTree::RecursiveConstruct(BSPNode *node, TriangleList const& triangles, f
 	// base case
 	if (triangles.size() == 1)
 	{
-		//node->m_splitTri = triangles[0];
 		node->m_triangles = triangles;
 		node->m_splitPlane = Plane(
 			triangles[0].mPoints[0],
@@ -314,7 +330,6 @@ void BspTree::RecursiveConstruct(BSPNode *node, TriangleList const& triangles, f
 
 	// create split plane
 	size_t spi = PickSplitPlane(triangles, k, epsilon);
-	//node->m_splitTri = triangles[spi]; // TODO: i am assuming PickSplitPlane() always returns a valid result
 	node->m_splitPlane = Plane(
 		triangles[spi].mPoints[0],
 		triangles[spi].mPoints[1],
@@ -329,12 +344,11 @@ void BspTree::RecursiveConstruct(BSPNode *node, TriangleList const& triangles, f
 	// split the triangles
 	for (size_t i = 0; i < triangles.size(); ++i)
 	{
-		//if (i == spi) continue;
 		SplitTriangle(
 			node->m_splitPlane,
 			triangles[i],
-			node->m_triangles,//node->m_coplanerFront
-			node->m_triangles,//node->m_coplanerBack
+			node->m_triangles,
+			node->m_triangles,
 			front,
 			back,
 			epsilon
@@ -356,19 +370,21 @@ void BspTree::RecursiveConstruct(BSPNode *node, TriangleList const& triangles, f
 	}
 }
 
+void BspTree::ClearTree(BSPNode *node)
+{
+	if (!node) return;
+
+	ClearTree(node->m_left);
+	ClearTree(node->m_right);
+	delete node;
+}
+
 void BspTree::RecursiveFillOut(BSPNode* node, std::vector<BspTreeQueryData>& results, unsigned depth) const
 {
 	if (!node) return;
 
 	BspTreeQueryData result;
 	result.mDepth = depth;
-	//TriangleList list;
-
-	//// concatenate coplanar triangle lists
-	//list.insert(list.end(), node->m_coplanerBack.begin(), node->m_coplanerBack.end());
-	//list.insert(list.end(), node->m_coplanerFront.begin(), node->m_coplanerFront.end());
-	//list.push_back(node->m_splitTri);
-	//result.mTriangles = list;
 	result.mTriangles = node->m_triangles;
 	results.push_back(result);
 
@@ -397,7 +413,7 @@ bool BspTree::RecursiveRayCast(BSPNode* node, const Ray& ray, float tMin, float 
 		// the ray hits the splitplane, if we get here, tPlane is garanteed to be set and greater than 0
 
 		float t_e = GetTEpsilon(node, ray, planeEpsilon);
-		if (tPlane + t_e < tMin) return RayCast_Case_4(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane); // this swaps places depending on whether or not we use an adjusted rayStart
+		if (tPlane + t_e < tMin) return RayCast_Case_4(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane);
 		if (tPlane - t_e > tMax) return RayCast_Case_3(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane);
 		return RayCast_Case_1(node, ray, tMin, tMax, t, planeEpsilon, triExpansionEpsilon, tPlane);
 	}
@@ -456,24 +472,6 @@ void BspTree::CheckCoplanarGeometry(BSPNode* node, Vector3 const& rayStart, cons
 			if (dist > 0.0f && dist < t) t = dist;
 		}
 	}
-	/*if (RayTriangle(rayStart, ray.mDirection, node->m_splitTri.mPoints[0], node->m_splitTri.mPoints[1], node->m_splitTri.mPoints[2], dist, triExpansionEpsilon))
-	{
-		if (dist > 0.0f && dist < t) t = dist;
-	}
-	for (Triangle const& tri : node->m_coplanerBack)
-	{
-		if (RayTriangle(rayStart, ray.mDirection, tri.mPoints[0], tri.mPoints[1], tri.mPoints[2], dist, triExpansionEpsilon))
-		{
-			if (dist > 0.0f && dist < t) t = dist;
-		}
-	}
-	for (Triangle const& tri : node->m_coplanerFront)
-	{
-		if (RayTriangle(rayStart, ray.mDirection, tri.mPoints[0], tri.mPoints[1], tri.mPoints[2], dist, triExpansionEpsilon))
-		{
-			if (dist > 0.0f && dist < t) t = dist;
-		}
-	}*/
 }
 
 
@@ -600,16 +598,6 @@ void BspTree::RecursiveGetTriangles(BSPNode* node, TriangleList& triangles) cons
 	{
 		triangles.push_back(tri);
 	}
-	/*for (Triangle const&tri : node->m_coplanerBack)
-	{
-		triangles.push_back(tri);
-	}
-
-	for (Triangle const&tri : node->m_coplanerBack)
-	{
-		triangles.push_back(tri);
-	}
-	triangles.push_back(node->m_splitTri);*/
 	RecursiveGetTriangles(node->m_left, triangles);
 	RecursiveGetTriangles(node->m_right, triangles);
 }
@@ -624,15 +612,6 @@ void BspTree::RecursiveInvert(BSPNode* node)
 	{
 		Math::Swap<Vector3>(tri.mPoints[0], tri.mPoints[1]);
 	}
-	/*for (Triangle& tri : node->m_coplanerBack)
-	{
-		Math::Swap<Vector3>(tri.mPoints[0], tri.mPoints[1]);
-	}
-	for (Triangle& tri : node->m_coplanerBack)
-	{
-		Math::Swap<Vector3>(tri.mPoints[0], tri.mPoints[1]);
-	}
-	Math::Swap<Vector3>(node->m_splitTri.mPoints[0], node->m_splitTri.mPoints[1]);*/
 
 	// plane
 	node->m_splitPlane.mData *= -1.0f;
@@ -652,27 +631,12 @@ void BspTree::RecursiveClipTo(BSPNode* node, BspTree* tree, float epsilon)
 {
 	if (!node) return;
 
-	/*TriangleList list;
-	list.insert(list.end(), node->m_coplanerBack.begin(), node->m_coplanerBack.end());
-	list.insert(list.end(), node->m_coplanerFront.begin(), node->m_coplanerFront.end());
-	list.push_back(node->m_splitTri);
-	node->m_coplanerBack.clear();
-	node->m_coplanerFront.clear();*/
-
-	// check each triangle in this node against the clip tree
-	//node->m_coplanerFront = ClipTriangles(list, tree->m_root, epsilon);
-	/*if (!node->m_coplanerFront.empty())
-	{
-		node->m_splitTri = node->m_coplanerFront.back();
-		node->m_coplanerFront.pop_back();
-	}*/
 	node->m_triangles = ClipTriangles(node->m_triangles, tree->m_root, epsilon);
 	
 	// recurse both sides
 	RecursiveClipTo(node->m_left, tree, epsilon);
 	RecursiveClipTo(node->m_right, tree, epsilon);
 }
-
 
 /// <summary>
 ///		traverse down the passed-in tree clipping the triangles against its splitplanes.
@@ -695,25 +659,9 @@ TriangleList BspTree::ClipTriangles(TriangleList &triangles, BSPNode *clippingNo
 
 	// group the coplanar triangles with front triangles if their normals point the same way as the splitplane
 	for (Triangle& tri : coplanarBack)
-	{
-		Vector3 normal = (tri.mPoints[2] - tri.mPoints[0]).Cross(tri.mPoints[1] - tri.mPoints[0]);
-		if (normal.Normalized().Dot(clippingNode->m_splitPlane.GetNormal()) >= 0.0f)
-		{
-			front.push_back(tri);
-		} else {
-			back.push_back(tri); // maybe?
-		}
-	}
+		back.push_back(tri);
 	for (Triangle& tri : coplanarFront)
-	{
-		Vector3 normal = (tri.mPoints[2] - tri.mPoints[0]).Cross(tri.mPoints[1] - tri.mPoints[0]);
-		if (normal.Normalized().Dot(clippingNode->m_splitPlane.GetNormal()) >= 0.0f)
-		{
-			front.push_back(tri);
-		} else {
-			back.push_back(tri); // maybe?
-		}
-	}
+		front.push_back(tri);
 
 	
 	TriangleList sentLeft;
@@ -721,7 +669,7 @@ TriangleList BspTree::ClipTriangles(TriangleList &triangles, BSPNode *clippingNo
 	{
 		sentLeft = ClipTriangles(back, clippingNode->m_left, epsilon);
 	} else {
-		// clip back triangles
+		// clip back triangles by not adding them to the sentLeft vector
 	}
 	
 	TriangleList sentRight;

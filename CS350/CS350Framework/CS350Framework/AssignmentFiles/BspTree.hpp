@@ -76,16 +76,18 @@ public:
   // Add your implementation here
   BspTree() : m_root(nullptr) {}
 private:
-  struct BSPNode {
+  class BSPNode {
+  public:
 	  // connections
 	  BSPNode* m_left;
 	  BSPNode* m_right;
 
 	  // content
-	  Triangle m_splitTri;
 	  Plane m_splitPlane;
-	  TriangleList m_coplanerFront;
-	  TriangleList m_coplanerBack;
+	  TriangleList m_triangles;
+	  //Triangle m_splitTri;
+	  //TriangleList m_coplanerFront;
+	  //TriangleList m_coplanerBack;
   };
 
 
@@ -109,6 +111,6 @@ private:
 
   void RecursiveGetTriangles(BSPNode *node, TriangleList &triangles) const;
   void RecursiveInvert(BSPNode* node);
-  void RecursiveClipTo(BspTree *tree, BSPNode* node, float epsilon);
-  void ClipTriangle(BspTree* tree, Triangle &triangle, BSPNode* node, float epsilon);
+  void RecursiveClipTo(BSPNode* node, BspTree* tree, float epsilon);
+  TriangleList ClipTriangles(TriangleList &triangles, BSPNode* clippingNode, float epsilon);
 };

@@ -227,8 +227,87 @@ VoronoiRegion::Type Gjk::IdentifyVoronoiRegion(
 	Vector3& searchDirection
 )
 {
+	/*
+														 . 
+												.    0 .
+													 o
+													.  .
+												   .	 .
+												  .		   .	    .
+										   . 	 .			 .   .
+												o  .  .  .  .  o
+											  2	.			   . 1
+												.			   .
+	*/
 	/******Student:Assignment5******/
-	Warn("Assignment5: Required function un-implemented");
+
+	// collect line data
+	Vector3 p01 = FindClosestPoint(q, p0, p1);
+	Vector3 p12 = FindClosestPoint(q, p1, p2);
+	Vector3 p20 = FindClosestPoint(q, p2, p0);
+
+	newSize = 1;
+	// check point regions
+	if (p01 == p0 && p20 == p0)
+	{
+		newIndices[0] = 0;
+		closestPoint = p0;
+		searchDirection = q - closestPoint;
+		return VoronoiRegion::Point0;
+	}
+	if (p01 == p1 && p12 == p1)
+	{
+		newIndices[0] = 1;
+		closestPoint = p1;
+		searchDirection = q - closestPoint;
+		return VoronoiRegion::Point1;
+	}
+	if (p12 == p2 && p20 == p2)
+	{
+		newIndices[0] = 2;
+		closestPoint = p2;
+		searchDirection = q - closestPoint;
+		return VoronoiRegion::Point2;
+	}
+
+	float u, v, w;
+	if (BarycentricCoordinates(q, p0, p1, p2, u, v, w))
+	{
+		newSize = 3;
+		newIndices[0] = 0;
+		newIndices[1] = 1;
+		newIndices[2] = 2;
+		closestPoint = q;
+		searchDirection = Vector3::cZero;
+		return VoronoiRegion::Triangle012;
+	}
+
+	newSize = 2;
+	// check line regions
+	if (w < 0.0f && p01 != p0 && p01 != p1)
+	{
+		newIndices[0] = 0;
+		newIndices[1] = 1;
+		closestPoint = p01;
+		searchDirection = q - closestPoint;
+		return VoronoiRegion::Edge01;
+	}
+	if (u < 0.0f && p12 != p1 && p12 != p2)
+	{
+		newIndices[0] = 1;
+		newIndices[1] = 2;
+		closestPoint = p12;
+		searchDirection = q - closestPoint;
+		return VoronoiRegion::Edge12;
+	}
+	if (v < 0.0f && p20 != p0 && p20 != p2)
+	{
+		newIndices[0] = 0;
+		newIndices[1] = 2;
+		closestPoint = p20;
+		searchDirection = q - closestPoint;
+		return VoronoiRegion::Edge02;
+	}
 	return VoronoiRegion::Unknown;
 }
 
@@ -246,8 +325,65 @@ VoronoiRegion::Type Gjk::IdentifyVoronoiRegion(
 )
 {
 	/******Student:Assignment5******/
-	Warn("Assignment5: Required function un-implemented");
-	return VoronoiRegion::Unknown;
+
+	// collect point data
+	Vector3 p01 = FindClosestPoint(q, p0, p1);
+	Vector3 p02 = FindClosestPoint(q, p0, p2);
+	Vector3 p03 = FindClosestPoint(q, p0, p3);
+	Vector3 p12 = FindClosestPoint(q, p1, p2);
+	Vector3 p23 = FindClosestPoint(q, p2, p3);
+	Vector3 p31 = FindClosestPoint(q, p3, p1);
+
+	// test point regions
+	if (p01 == p0 && p02 == p0 && p03 == p0) return VoronoiRegion::Point0;
+	if (p01 == p1 && p12 == p1 && p31 == p1) return VoronoiRegion::Point1;
+	if (p02 == p2 && p12 == p2 && p23 == p2) return VoronoiRegion::Point2;
+	if (p03 == p3 && p23 == p3 && p31 == p3) return VoronoiRegion::Point3;
+
+	// collect triangle data
+	float u0, v0, w0;
+	bool inTri0 = BarycentricCoordinates(q, p0, p1, p2, u0, v0, w0);
+	float u1, v1, w1;
+	bool inTri1 = BarycentricCoordinates(q, p0, p2, p3, u1, v1, w1);
+	float u2, v2, w2;
+	bool inTri2 = BarycentricCoordinates(q, p0, p3, p1, u2, v2, w2);
+	float u3, v3, w3;
+	bool inTri3 = BarycentricCoordinates(q, p1, p2, p3, u3, v3, w3);
+
+	// check line region 01
+	if (w0 < 0.0f && v2 < 0.0f) return VoronoiRegion::Edge01;
+	// check line region 02
+	if (v0 < 0.0f && w1 < 0.0f) return VoronoiRegion::Edge02;
+	// check line region 03
+	if (v1 < 0.0f && w2 < 0.0f) return VoronoiRegion::Edge03;
+	// check line region 12
+	if (u0 < 0.0f && w3 < 0.0f) return VoronoiRegion::Edge12;
+	// check line region 23
+	if (u1 < 0.0f && u3 < 0.0f) return VoronoiRegion::Edge23;
+	// check line region 31
+	if (u2 < 0.0f && v3 < 0.0f) return VoronoiRegion::Edge13;
+
+	// calculate barycentric coordinates for a tetra
+	Vector3 AD = p0 - p3;
+	Vector3 BD = p1 - p3;
+	Vector3 CD = p2 - p3;
+	Matrix3 matrix = Matrix3(
+		AD.x, BD.x, CD.x,
+		AD.y, BD.y, CD.y,
+		AD.z, BD.z, CD.z
+	);
+	Vector3 uvw = Math::Transform(matrix.Inverted(), q - p3);
+	float t = 1 - uvw.x - uvw.y - uvw.z;
+
+	// check triangle region 012
+	if (t < 0.0f) return VoronoiRegion::Triangle012;
+	// check triangle region 023
+	if (uvw.y < 0.0f) return VoronoiRegion::Triangle023;
+	// check triangle region 031
+	if (uvw.z < 0.0f) return VoronoiRegion::Triangle013;
+	// check triangle region 123
+	if (uvw.x < 0.0f) return VoronoiRegion::Triangle123;
+	return VoronoiRegion::Tetrahedra0123;
 }
 
 Gjk::Gjk()

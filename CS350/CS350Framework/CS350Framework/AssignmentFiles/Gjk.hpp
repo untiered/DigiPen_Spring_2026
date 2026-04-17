@@ -139,4 +139,5 @@ public:
   
 
   // Add your implementation here
+  static Vector3 FindClosestPoint(Vector3 q, Vector3 s0, Vector3 s1);
 };

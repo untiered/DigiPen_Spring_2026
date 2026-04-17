@@ -8,19 +8,31 @@
 
 
 //-----------------------------------------------------------------------------SupportShape
+
+// For GetCenter just compute the centroid of the point set.
 Vector3 SupportShape::GetCenter(const std::vector<Vector3>& localPoints, const Matrix4& transform) const
 {
-  Vector3 center = Vector3::cZero;
   /******Student:Assignment5******/
-  Warn("Assignment5: Required function un-implemented");
-  return center;
+
+  Vector3 centroid = Vector3::cZero;
+  for (Vector3 const&point : localPoints) centroid += point;
+  return centroid / localPoints.size();
 }
 
+// The Support function should just find the point furthest in the given direction with the applied transformation.
+// When there is a tie you should pick the first point,
+// that is only choose a new point if the distance is strictly greater than the old furthest distance.
+// You should not transform every point into world space to test as this is less efficient!
+// You should instead transform the search direction back into local space,
+// do the search there, and then transform the resultant point into world space.
+// Doing the correct local - space test will account for some points for this test!
 Vector3 SupportShape::Support(const Vector3& worldDirection, const std::vector<Vector3>& localPoints, const Matrix4& localToWorldTransform) const
 {
   Vector3 result = Vector3::cZero;
   /******Student:Assignment5******/
-  Warn("Assignment5: Required function un-implemented");
+
+  Vector4 localDir = Math::Transform(localToWorldTransform.Inverted(), Vector4(worldDirection.x, worldDirection.y, worldDirection.z, 0.0f));
+
   return result;
 }
 

@@ -5,7 +5,7 @@
 ///
 ///////////////////////////////////////////////////////////////////////////////
 #include "Precompiled.hpp"
-
+#include <limits>
 
 //-----------------------------------------------------------------------------SupportShape
 
@@ -32,6 +32,13 @@ Vector3 SupportShape::Support(const Vector3& worldDirection, const std::vector<V
   /******Student:Assignment5******/
 
   Vector4 localDir = Math::Transform(localToWorldTransform.Inverted(), Vector4(worldDirection.x, worldDirection.y, worldDirection.z, 0.0f));
+  float dist = std::numeric_limits<float>::lowest();
+  for (Vector3 const& point : localPoints)
+  {
+	  float newDist = point.Dot(Vector3(localDir.x, localDir.y, localDir.z));
+	  if (newDist > dist) dist = newDist;
+
+  }
 
   return result;
 }

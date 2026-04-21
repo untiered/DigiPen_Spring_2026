@@ -6185,8 +6185,8 @@ VoronoiRegionsStress2
   Closest Point: (-0.40, 0.20, -0.80)
   Search Direction: (0.86, -0.05, -0.51)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.15, -1.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.37, 0.18, -0.74)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Point1
   Closest Point: (-0.50, 0.50, -1.00)
   Search Direction: (-0.43, -0.47, -0.78)
@@ -6203,11 +6203,11 @@ VoronoiRegionsStress2
   Closest Point: (-0.46, 0.37, -0.91)
   Search Direction: (0.88, -0.03, -0.48)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.35, -1.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.41, 0.37, -0.83)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.35, -1.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.37, 0.38, -0.75)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Point1
   Closest Point: (-0.50, 0.50, -1.00)
   Search Direction: (-0.47, 0.17, -0.86)
@@ -6437,8 +6437,8 @@ VoronoiRegionsStress2
   Closest Point: (-0.33, -0.02, -0.66)
   Search Direction: (0.87, -0.04, -0.50)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.05, -1.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.29, -0.03, -0.59)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge01
   Closest Point: (-0.44, 0.33, -0.88)
   Search Direction: (-0.63, -0.57, -0.53)
@@ -6452,14 +6452,14 @@ VoronoiRegionsStress2
   Closest Point: (-0.40, 0.20, -0.80)
   Search Direction: (0.82, -0.11, -0.57)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.15, -1.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.38, 0.17, -0.76)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.15, -1.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.33, 0.17, -0.67)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.15, -1.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.29, 0.17, -0.59)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge01
   Closest Point: (-0.48, 0.45, -0.97)
   Search Direction: (-0.76, -0.52, -0.40)
@@ -6470,17 +6470,17 @@ VoronoiRegionsStress2
   Closest Point: (-0.46, 0.37, -0.91)
   Search Direction: (0.84, -0.07, -0.53)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.35, -1.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.42, 0.36, -0.84)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.35, -1.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.37, 0.37, -0.76)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.35, -1.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.33, 0.37, -0.68)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.35, -1.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.28, 0.37, -0.59)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Point1
   Closest Point: (-0.50, 0.50, -1.00)
   Search Direction: (-0.89, 0.32, -0.32)
@@ -6497,11 +6497,11 @@ VoronoiRegionsStress2
   Closest Point: (-0.37, 0.56, -0.76)
   Search Direction: (0.88, -0.02, -0.48)
   Reduced to 2 indices: 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.55, -1.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.32, 0.57, -0.68)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.55, -1.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.28, 0.57, -0.59)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Point1
   Closest Point: (-0.50, 0.50, -1.00)
   Search Direction: (-0.47, 0.86, -0.17)
@@ -6689,8 +6689,8 @@ VoronoiRegionsStress2
   Closest Point: (-0.26, -0.23, -0.51)
   Search Direction: (0.88, -0.03, -0.48)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.25, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.21, -0.23, -0.43)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge01
   Closest Point: (-0.37, 0.11, -0.74)
   Search Direction: (-0.81, -0.49, -0.33)
@@ -6704,14 +6704,14 @@ VoronoiRegionsStress2
   Closest Point: (-0.33, -0.02, -0.66)
   Search Direction: (0.83, -0.09, -0.55)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.05, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.30, -0.04, -0.60)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.05, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.25, -0.03, -0.52)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.05, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.21, -0.03, -0.43)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge01
   Closest Point: (-0.41, 0.24, -0.83)
   Search Direction: (-0.92, -0.37, -0.10)
@@ -6722,38 +6722,38 @@ VoronoiRegionsStress2
   Closest Point: (-0.38, 0.15, -0.77)
   Search Direction: (0.88, -0.03, -0.48)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.15, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.34, 0.16, -0.69)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.15, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.29, 0.16, -0.60)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.15, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.25, 0.17, -0.52)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.15, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.20, 0.17, -0.43)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge01
   Closest Point: (-0.46, 0.37, -0.91)
   Search Direction: (-0.94, -0.10, 0.32)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.35, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.43, 0.35, -0.86)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.35, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.38, 0.35, -0.77)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.35, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.33, 0.36, -0.69)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.35, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.29, 0.36, -0.60)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.35, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.24, 0.37, -0.52)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.35, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.20, 0.37, -0.44)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge12
   Closest Point: (-0.46, 0.52, -0.94)
   Search Direction: (-0.88, 0.17, 0.44)
@@ -6761,20 +6761,20 @@ VoronoiRegionsStress2
   Closest Point: (-0.42, 0.54, -0.86)
   Search Direction: (-0.74, 0.62, 0.26)
   Reduced to 2 indices: 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.55, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.38, 0.55, -0.77)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.55, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.33, 0.56, -0.69)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.55, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.28, 0.56, -0.61)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.55, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.24, 0.57, -0.52)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.55, -0.85)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.19, 0.57, -0.44)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge12
   Closest Point: (-0.44, 0.53, -0.90)
   Search Direction: (-0.64, 0.75, 0.17)
@@ -6938,11 +6938,11 @@ VoronoiRegionsStress2
   Closest Point: (-0.20, -0.40, -0.40)
   Search Direction: (0.82, -0.11, -0.57)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.45, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.18, -0.43, -0.36)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.45, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.13, -0.43, -0.27)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge01
   Closest Point: (-0.30, -0.10, -0.60)
   Search Direction: (-0.91, -0.40, -0.14)
@@ -6956,14 +6956,14 @@ VoronoiRegionsStress2
   Closest Point: (-0.26, -0.23, -0.51)
   Search Direction: (0.84, -0.07, -0.53)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.25, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.22, -0.24, -0.44)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.25, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.17, -0.23, -0.36)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.25, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.13, -0.23, -0.28)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge01
   Closest Point: (-0.34, 0.03, -0.68)
   Search Direction: (-0.96, -0.25, 0.11)
@@ -6971,83 +6971,83 @@ VoronoiRegionsStress2
   Closest Point: (-0.33, -0.02, -0.66)
   Search Direction: (-0.96, -0.29, 0.05)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.05, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.31, -0.05, -0.61)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.05, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.26, -0.04, -0.53)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.05, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.21, -0.04, -0.45)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.05, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.17, -0.03, -0.36)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.05, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.12, -0.03, -0.28)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge01
   Closest Point: (-0.38, 0.15, -0.77)
   Search Direction: (-0.90, -0.02, 0.43)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.15, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.35, 0.15, -0.70)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.15, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.30, 0.15, -0.62)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.15, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.26, 0.16, -0.53)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.15, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.21, 0.16, -0.45)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.15, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.16, 0.17, -0.36)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.15, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.12, 0.17, -0.28)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.35, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.39, 0.34, -0.79)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.35, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.34, 0.35, -0.70)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.35, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.30, 0.35, -0.62)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.35, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.25, 0.36, -0.53)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.35, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.21, 0.36, -0.45)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.35, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.16, 0.36, -0.37)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.35, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.11, 0.37, -0.28)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.55, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.38, 0.54, -0.79)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.55, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.34, 0.55, -0.70)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.55, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.29, 0.55, -0.62)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.55, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.25, 0.56, -0.54)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.55, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.20, 0.56, -0.45)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.55, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.16, 0.56, -0.37)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.55, -0.65)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.11, 0.57, -0.28)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge12
   Closest Point: (-0.36, 0.56, -0.75)
   Search Direction: (-0.79, 0.54, 0.30)
@@ -7190,11 +7190,11 @@ VoronoiRegionsStress2
   Closest Point: (-0.13, -0.62, -0.26)
   Search Direction: (0.83, -0.09, -0.55)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.65, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.10, -0.64, -0.20)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.65, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.05, -0.63, -0.12)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge01
   Closest Point: (-0.23, -0.32, -0.46)
   Search Direction: (-0.95, -0.31, 0.01)
@@ -7208,14 +7208,14 @@ VoronoiRegionsStress2
   Closest Point: (-0.18, -0.45, -0.37)
   Search Direction: (0.88, -0.03, -0.48)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.45, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.14, -0.44, -0.29)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.45, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.09, -0.44, -0.20)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.45, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.05, -0.43, -0.12)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge01
   Closest Point: (-0.27, -0.19, -0.54)
   Search Direction: (-0.96, -0.16, 0.24)
@@ -7223,104 +7223,104 @@ VoronoiRegionsStress2
   Closest Point: (-0.26, -0.23, -0.51)
   Search Direction: (-0.94, -0.10, 0.32)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.25, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.23, -0.25, -0.46)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.25, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.18, -0.25, -0.37)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.25, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.13, -0.24, -0.29)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.25, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.09, -0.24, -0.20)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.25, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.04, -0.23, -0.12)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.05, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.31, -0.06, -0.63)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.05, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.27, -0.05, -0.54)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.05, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.22, -0.05, -0.46)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.05, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.18, -0.05, -0.37)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.05, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.13, -0.04, -0.29)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.05, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.08, -0.04, -0.21)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.05, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.04, -0.03, -0.12)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.15, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.31, 0.14, -0.63)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.15, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.26, 0.15, -0.54)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.15, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.22, 0.15, -0.46)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.15, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.17, 0.15, -0.38)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.15, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.13, 0.16, -0.29)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.15, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.08, 0.16, -0.21)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.15, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.03, 0.17, -0.13)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.35, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.30, 0.34, -0.63)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.35, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.26, 0.34, -0.55)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.35, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.21, 0.35, -0.46)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.35, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.17, 0.35, -0.38)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.35, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.12, 0.36, -0.30)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.35, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.08, 0.36, -0.21)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.35, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.03, 0.37, -0.13)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.55, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.30, 0.54, -0.63)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.55, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.25, 0.54, -0.55)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.55, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.21, 0.55, -0.47)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.55, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.16, 0.55, -0.38)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.55, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.12, 0.56, -0.30)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.55, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.07, 0.56, -0.21)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.55, -0.45)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.03, 0.57, -0.13)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge12
   Closest Point: (-0.28, 0.60, -0.61)
   Search Direction: (-0.85, 0.36, 0.38)
@@ -7442,11 +7442,11 @@ VoronoiRegionsStress2
   Closest Point: (-0.06, -0.83, -0.11)
   Search Direction: (0.84, -0.07, -0.53)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.85, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.02, -0.84, -0.04)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.85, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.03, -0.83, 0.04)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge01
   Closest Point: (-0.16, -0.53, -0.31)
   Search Direction: (-0.96, -0.24, 0.13)
@@ -7457,17 +7457,17 @@ VoronoiRegionsStress2
   Closest Point: (-0.13, -0.62, -0.26)
   Search Direction: (-0.96, -0.29, 0.05)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.65, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.11, -0.65, -0.21)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.65, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.06, -0.64, -0.13)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.65, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.01, -0.64, -0.05)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.65, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.03, -0.63, 0.04)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge01
   Closest Point: (-0.20, -0.40, -0.40)
   Search Direction: (-0.94, -0.10, 0.32)
@@ -7475,125 +7475,125 @@ VoronoiRegionsStress2
   Closest Point: (-0.18, -0.45, -0.37)
   Search Direction: (-0.90, -0.02, 0.43)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.45, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.15, -0.45, -0.30)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.45, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.10, -0.45, -0.22)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.45, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.06, -0.44, -0.13)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.45, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.00, -0.44, -0.05)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.45, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.04, -0.43, 0.04)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.25, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.23, -0.26, -0.47)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.25, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.19, -0.26, -0.39)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.25, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.14, -0.25, -0.30)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.25, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.10, -0.25, -0.22)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.25, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.05, -0.24, -0.13)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.25, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.00, -0.24, -0.05)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.25, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.04, -0.24, 0.03)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.05, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.23, -0.06, -0.47)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.05, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.18, -0.06, -0.39)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.05, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.14, -0.05, -0.30)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.05, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.09, -0.05, -0.22)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.05, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.05, -0.04, -0.14)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.05, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.00, -0.04, -0.05)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.05, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.04, -0.04, 0.03)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.15, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.22, 0.14, -0.47)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.15, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.18, 0.14, -0.39)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.15, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.13, 0.15, -0.31)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.15, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.09, 0.15, -0.22)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.15, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.04, 0.16, -0.14)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.15, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.00, 0.16, -0.06)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.15, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.05, 0.16, 0.03)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.35, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.22, 0.34, -0.48)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.35, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.17, 0.34, -0.39)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.35, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.13, 0.35, -0.31)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.35, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.08, 0.35, -0.23)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.35, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.04, 0.36, -0.14)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.35, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.00, 0.36, -0.06)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.35, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.05, 0.36, 0.03)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.55, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.22, 0.54, -0.48)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.55, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.17, 0.54, -0.40)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.55, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.12, 0.55, -0.31)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.55, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.08, 0.55, -0.23)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.55, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.03, 0.56, -0.14)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.55, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.01, 0.56, -0.06)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.55, -0.25)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.06, 0.56, 0.02)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge12
   Closest Point: (-0.20, 0.63, -0.46)
   Search Direction: (-0.88, 0.23, 0.42)
@@ -7709,11 +7709,11 @@ VoronoiRegionsStress2
   Closest Point: (-0.06, -0.83, -0.11)
   Search Direction: (-0.94, -0.10, 0.32)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.85, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.03, -0.85, -0.06)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.85, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.02, -0.85, 0.03)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.05, -0.83, 0.09)
   Search Direction: (0.91, -0.07, -0.40)
@@ -7724,149 +7724,149 @@ VoronoiRegionsStress2
   Closest Point: (-0.13, -0.62, -0.26)
   Search Direction: (-0.93, -0.06, 0.37)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.65, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.11, -0.66, -0.23)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.65, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.07, -0.65, -0.14)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.65, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.02, -0.65, -0.06)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.65, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.02, -0.65, 0.03)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.65, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.07, -0.64, 0.11)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.11, -0.63, 0.18)
   Search Direction: (0.89, -0.04, -0.46)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.45, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.15, -0.46, -0.31)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.45, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.11, -0.46, -0.23)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.45, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.06, -0.45, -0.14)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.45, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.02, -0.45, -0.06)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.45, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.03, -0.45, 0.02)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.45, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.07, -0.44, 0.11)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.45, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.12, -0.44, 0.19)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.25, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.15, -0.26, -0.31)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.25, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.10, -0.26, -0.23)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.25, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.06, -0.26, -0.15)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.25, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.01, -0.25, -0.06)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.25, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.03, -0.25, 0.02)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.25, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.08, -0.24, 0.10)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.25, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.12, -0.24, 0.19)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.05, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.15, -0.06, -0.32)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.05, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.10, -0.06, -0.23)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.05, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.05, -0.06, -0.15)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.05, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.00, -0.05, -0.07)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.05, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.04, -0.05, 0.02)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.05, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.08, -0.04, 0.10)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.05, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.13, -0.04, 0.19)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.15, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.14, 0.14, -0.32)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.15, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.10, 0.14, -0.24)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.15, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.05, 0.14, -0.15)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.15, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.00, 0.15, -0.07)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.15, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.04, 0.15, 0.02)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.15, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.09, 0.16, 0.10)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.15, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.13, 0.16, 0.18)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.35, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.14, 0.34, -0.32)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.35, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.09, 0.34, -0.24)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.35, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.05, 0.34, -0.15)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.35, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.00, 0.35, -0.07)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.35, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.05, 0.35, 0.01)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.35, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.09, 0.36, 0.10)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.35, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.14, 0.36, 0.18)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.55, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.13, 0.54, -0.32)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.55, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.09, 0.54, -0.24)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.55, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.04, 0.54, -0.16)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.55, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.00, 0.55, -0.07)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.55, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.05, 0.55, 0.01)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.55, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.10, 0.56, 0.09)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.55, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.14, 0.56, 0.18)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge12
   Closest Point: (-0.12, 0.67, -0.31)
   Search Direction: (-0.88, 0.13, 0.45)
@@ -7883,11 +7883,11 @@ VoronoiRegionsStress2
   Closest Point: (0.05, 0.75, 0.00)
   Search Direction: (0.88, -0.02, -0.48)
   Reduced to 2 indices: 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.75, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.10, 0.76, 0.09)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.75, -0.05)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.15, 0.76, 0.18)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge12
   Closest Point: (-0.10, 0.68, -0.28)
   Search Direction: (-0.84, 0.42, 0.35)
@@ -7976,11 +7976,11 @@ VoronoiRegionsStress2
   Closest Point: (-0.06, -0.83, -0.11)
   Search Direction: (-0.91, -0.03, 0.41)
   Reduced to 2 indices: 0 1   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.85, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.03, -0.86, -0.07)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.85, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.01, -0.86, 0.01)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.05, -0.84, 0.08)
   Search Direction: (-0.77, -0.09, 0.63)
@@ -7994,17 +7994,17 @@ VoronoiRegionsStress2
   Closest Point: (0.09, -0.71, 0.15)
   Search Direction: (0.96, -0.29, 0.00)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.65, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.07, -0.67, -0.16)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.65, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.03, -0.66, -0.07)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.65, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.02, -0.66, 0.01)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.65, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.06, -0.65, 0.10)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.11, -0.65, 0.18)
   Search Direction: (0.90, -0.06, -0.43)
@@ -8015,131 +8015,131 @@ VoronoiRegionsStress2
   Closest Point: (0.13, -0.56, 0.22)
   Search Direction: (0.96, -0.21, -0.16)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.45, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.07, -0.47, -0.16)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.45, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.02, -0.46, -0.07)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.45, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.02, -0.46, 0.00)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.45, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.07, -0.45, 0.09)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.45, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.11, -0.45, 0.18)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.45, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.16, -0.44, 0.26)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.18, -0.41, 0.30)
   Search Direction: (0.93, -0.10, -0.35)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.25, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.07, -0.27, -0.16)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.25, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.02, -0.26, -0.08)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.25, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.03, -0.26, 0.00)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.25, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.07, -0.25, 0.09)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.25, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.12, -0.25, 0.17)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.25, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.16, -0.24, 0.26)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.25, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.21, -0.24, 0.34)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.05, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.06, -0.07, -0.16)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.05, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.02, -0.06, -0.08)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.05, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.03, -0.06, 0.00)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.05, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.08, -0.05, 0.09)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.05, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.12, -0.05, 0.17)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.05, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.17, -0.04, 0.26)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, -0.05, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.21, -0.04, 0.34)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.15, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.06, 0.13, -0.17)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.15, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.01, 0.14, -0.08)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.15, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.03, 0.14, 0.00)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.15, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.08, 0.15, 0.09)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.15, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.13, 0.15, 0.17)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.15, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.17, 0.16, 0.25)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.15, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.22, 0.16, 0.34)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.35, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.05, 0.33, -0.17)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.35, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.00, 0.34, -0.08)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.35, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.04, 0.34, 0.00)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.35, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.08, 0.35, 0.08)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.35, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.13, 0.35, 0.17)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.35, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.18, 0.36, 0.25)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.35, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.22, 0.36, 0.34)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.55, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (-0.05, 0.53, -0.17)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.55, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.00, 0.54, -0.09)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.55, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.04, 0.54, 0.00)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.55, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.09, 0.55, 0.08)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.55, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.13, 0.55, 0.17)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.55, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.18, 0.56, 0.25)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.55, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.23, 0.56, 0.33)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge12
   Closest Point: (-0.04, 0.71, -0.17)
   Search Direction: (-0.88, 0.06, 0.47)
@@ -8147,20 +8147,20 @@ VoronoiRegionsStress2
   Closest Point: (0.00, 0.73, -0.09)
   Search Direction: (-0.88, 0.04, 0.47)
   Reduced to 2 indices: 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.75, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.05, 0.74, 0.00)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.75, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.09, 0.75, 0.08)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.75, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.14, 0.75, 0.16)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.75, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.18, 0.76, 0.25)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.75, 0.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.23, 0.76, 0.33)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge12
   Closest Point: (-0.02, 0.72, -0.13)
   Search Direction: (-0.86, 0.33, 0.39)
@@ -8246,8 +8246,8 @@ VoronoiRegionsStress2
   Closest Point: (0.07, -0.78, 0.11)
   Search Direction: (0.81, -0.44, 0.39)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.85, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.00, -0.87, 0.00)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.04, -0.86, 0.07)
   Search Direction: (-0.87, 0.00, 0.50)
@@ -8267,14 +8267,14 @@ VoronoiRegionsStress2
   Closest Point: (0.11, -0.63, 0.18)
   Search Direction: (0.85, -0.41, 0.31)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.65, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.00, -0.67, 0.00)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.65, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.05, -0.66, 0.08)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.65, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.10, -0.66, 0.17)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.12, -0.62, 0.19)
   Search Direction: (-0.69, -0.15, 0.71)
@@ -8288,17 +8288,17 @@ VoronoiRegionsStress2
   Closest Point: (0.16, -0.48, 0.26)
   Search Direction: (0.91, -0.37, 0.20)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.45, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.01, -0.47, 0.00)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.45, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.06, -0.46, 0.08)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.45, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.10, -0.46, 0.16)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.45, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.15, -0.46, 0.25)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.17, -0.42, 0.29)
   Search Direction: (-0.16, -0.40, 0.90)
@@ -8309,20 +8309,20 @@ VoronoiRegionsStress2
   Closest Point: (0.20, -0.33, 0.33)
   Search Direction: (0.95, -0.31, 0.04)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.25, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.02, -0.27, 0.00)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.25, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.06, -0.26, 0.08)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.25, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.11, -0.26, 0.16)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.25, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.15, -0.26, 0.25)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.25, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.20, -0.25, 0.33)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.23, -0.23, 0.39)
   Search Direction: (0.95, -0.16, -0.26)
@@ -8330,110 +8330,110 @@ VoronoiRegionsStress2
   Closest Point: (0.24, -0.18, 0.41)
   Search Direction: (0.96, -0.20, -0.18)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.05, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.02, -0.07, 0.00)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.05, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.07, -0.06, 0.08)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.05, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.11, -0.06, 0.16)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.05, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.16, -0.06, 0.24)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, -0.05, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.20, -0.05, 0.33)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, -0.05, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.25, -0.05, 0.41)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.29, -0.03, 0.48)
   Search Direction: (0.90, -0.05, -0.44)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.15, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.03, 0.13, -0.01)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.15, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.07, 0.14, 0.07)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.15, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.12, 0.14, 0.16)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.15, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.16, 0.14, 0.24)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.15, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.21, 0.15, 0.32)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.15, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.25, 0.15, 0.41)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.15, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.30, 0.16, 0.49)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.35, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.03, 0.33, -0.01)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.35, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.08, 0.34, 0.07)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.35, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.12, 0.34, 0.15)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.35, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.17, 0.34, 0.24)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.35, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.21, 0.35, 0.32)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.35, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.26, 0.35, 0.41)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.35, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.30, 0.36, 0.49)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.55, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.04, 0.53, -0.02)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.55, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.08, 0.54, 0.07)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.55, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.13, 0.54, 0.15)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.55, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.17, 0.54, 0.24)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.55, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.22, 0.55, 0.32)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.55, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.26, 0.55, 0.40)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.55, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.31, 0.56, 0.49)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.75, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.04, 0.73, -0.02)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.75, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.09, 0.74, 0.07)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.75, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.13, 0.74, 0.15)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.75, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.18, 0.74, 0.23)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.75, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.22, 0.75, 0.32)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.75, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.27, 0.75, 0.40)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.75, 0.35)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.31, 0.76, 0.49)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge12
   Closest Point: (0.06, 0.75, 0.02)
   Search Direction: (-0.87, 0.25, 0.42)
@@ -8540,8 +8540,8 @@ VoronoiRegionsStress2
   Closest Point: (0.13, -0.56, 0.22)
   Search Direction: (0.70, -0.48, 0.53)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.65, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.09, -0.67, 0.15)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.11, -0.63, 0.18)
   Search Direction: (-0.83, -0.03, 0.55)
@@ -8561,11 +8561,11 @@ VoronoiRegionsStress2
   Closest Point: (0.18, -0.41, 0.30)
   Search Direction: (0.74, -0.47, 0.49)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.45, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.10, -0.47, 0.15)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.45, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.14, -0.47, 0.23)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.17, -0.44, 0.28)
   Search Direction: (-0.83, -0.03, 0.55)
@@ -8582,14 +8582,14 @@ VoronoiRegionsStress2
   Closest Point: (0.22, -0.26, 0.37)
   Search Direction: (0.79, -0.45, 0.42)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.25, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.10, -0.27, 0.15)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.25, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.15, -0.27, 0.23)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.25, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.19, -0.26, 0.32)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.23, -0.24, 0.38)
   Search Direction: (-0.84, -0.02, 0.54)
@@ -8603,17 +8603,17 @@ VoronoiRegionsStress2
   Closest Point: (0.27, -0.11, 0.45)
   Search Direction: (0.86, -0.41, 0.30)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.05, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.11, -0.07, 0.15)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.05, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.15, -0.07, 0.23)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, -0.05, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.20, -0.06, 0.31)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, -0.05, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.24, -0.06, 0.40)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.29, -0.05, 0.48)
   Search Direction: (-0.85, 0.00, 0.52)
@@ -8624,89 +8624,89 @@ VoronoiRegionsStress2
   Closest Point: (0.31, 0.04, 0.52)
   Search Direction: (0.94, -0.34, 0.11)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.15, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.11, 0.13, 0.14)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.15, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.16, 0.13, 0.23)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.15, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.20, 0.14, 0.31)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.15, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.25, 0.14, 0.40)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.15, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.29, 0.15, 0.48)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.15, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.34, 0.15, 0.56)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.36, 0.19, 0.59)
   Search Direction: (0.96, -0.18, -0.21)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.35, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.11, 0.33, 0.14)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.35, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.16, 0.33, 0.23)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.35, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.21, 0.34, 0.31)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.35, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.25, 0.34, 0.39)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.35, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.30, 0.35, 0.48)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.35, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.34, 0.35, 0.56)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.35, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.39, 0.35, 0.64)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.55, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.12, 0.53, 0.14)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.55, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.16, 0.53, 0.22)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.55, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.21, 0.54, 0.31)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.55, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.26, 0.54, 0.39)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.55, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.30, 0.55, 0.47)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.55, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.35, 0.55, 0.56)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.55, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.39, 0.55, 0.64)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.75, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.12, 0.73, 0.14)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.75, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.17, 0.73, 0.22)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.75, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.21, 0.74, 0.30)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.75, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.26, 0.74, 0.39)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.75, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.31, 0.75, 0.47)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.75, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.35, 0.75, 0.56)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.75, 0.55)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.40, 0.75, 0.64)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge12
   Closest Point: (0.14, 0.79, 0.16)
   Search Direction: (-0.88, 0.18, 0.44)
@@ -8855,8 +8855,8 @@ VoronoiRegionsStress2
   Closest Point: (0.24, -0.18, 0.41)
   Search Direction: (0.59, -0.50, 0.64)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.25, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.19, -0.27, 0.30)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.22, -0.26, 0.37)
   Search Direction: (-0.87, 0.01, 0.50)
@@ -8876,11 +8876,11 @@ VoronoiRegionsStress2
   Closest Point: (0.29, -0.03, 0.48)
   Search Direction: (0.62, -0.49, 0.61)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.05, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.19, -0.07, 0.30)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, -0.05, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.24, -0.07, 0.38)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.28, -0.06, 0.47)
   Search Direction: (-0.88, 0.02, 0.48)
@@ -8897,17 +8897,17 @@ VoronoiRegionsStress2
   Closest Point: (0.33, 0.11, 0.56)
   Search Direction: (0.67, -0.48, 0.56)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.15, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.19, 0.13, 0.30)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.15, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.24, 0.13, 0.38)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.15, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.29, 0.14, 0.47)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.15, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.33, 0.14, 0.55)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.35, 0.17, 0.59)
   Search Direction: (-0.76, -0.10, 0.65)
@@ -8918,20 +8918,20 @@ VoronoiRegionsStress2
   Closest Point: (0.38, 0.26, 0.63)
   Search Direction: (0.75, -0.46, 0.48)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.35, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.20, 0.33, 0.30)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.35, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.24, 0.33, 0.38)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.35, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.29, 0.33, 0.46)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.35, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.34, 0.34, 0.55)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.35, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.38, 0.34, 0.63)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.41, 0.37, 0.68)
   Search Direction: (-0.58, -0.22, 0.79)
@@ -8939,47 +8939,47 @@ VoronoiRegionsStress2
   Closest Point: (0.42, 0.41, 0.71)
   Search Direction: (0.87, -0.40, 0.27)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.55, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.20, 0.53, 0.29)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.55, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.25, 0.53, 0.38)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.55, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.29, 0.53, 0.46)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.55, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.34, 0.54, 0.55)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.55, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.39, 0.54, 0.63)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.55, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.43, 0.55, 0.71)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.47, 0.56, 0.78)
   Search Direction: (0.94, -0.13, -0.31)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.75, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.21, 0.73, 0.29)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.75, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.25, 0.73, 0.38)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.75, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.30, 0.73, 0.46)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.75, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.34, 0.74, 0.54)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.75, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.39, 0.74, 0.63)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.75, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.44, 0.75, 0.71)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.75, 0.75)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.48, 0.75, 0.79)
+  Search Direction: (0.88, -0.03, -0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge12
   Closest Point: (0.22, 0.83, 0.31)
   Search Direction: (-0.88, 0.13, 0.45)
@@ -9149,8 +9149,8 @@ VoronoiRegionsStress2
   Closest Point: (0.31, 0.04, 0.52)
   Search Direction: (0.43, -0.50, 0.75)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, -0.05, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.27, -0.08, 0.46)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.29, -0.03, 0.48)
   Search Direction: (-0.84, -0.02, 0.54)
@@ -9170,11 +9170,11 @@ VoronoiRegionsStress2
   Closest Point: (0.36, 0.19, 0.59)
   Search Direction: (0.43, -0.50, 0.75)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.15, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.28, 0.12, 0.45)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.15, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.32, 0.13, 0.54)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.35, 0.16, 0.58)
   Search Direction: (-0.85, -0.01, 0.53)
@@ -9191,14 +9191,14 @@ VoronoiRegionsStress2
   Closest Point: (0.40, 0.34, 0.67)
   Search Direction: (0.43, -0.50, 0.75)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.35, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.28, 0.32, 0.45)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.35, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.33, 0.33, 0.53)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.35, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.37, 0.33, 0.62)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.41, 0.35, 0.68)
   Search Direction: (-0.85, 0.00, 0.52)
@@ -9212,17 +9212,17 @@ VoronoiRegionsStress2
   Closest Point: (0.45, 0.49, 0.74)
   Search Direction: (0.42, -0.50, 0.75)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.55, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.29, 0.52, 0.45)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.55, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.33, 0.53, 0.53)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.55, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.38, 0.53, 0.62)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.55, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.42, 0.54, 0.70)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.46, 0.55, 0.77)
   Search Direction: (-0.86, 0.00, 0.50)
@@ -9233,23 +9233,23 @@ VoronoiRegionsStress2
   Closest Point: (0.49, 0.64, 0.82)
   Search Direction: (0.41, -0.50, 0.76)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.75, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.29, 0.72, 0.45)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.75, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.34, 0.73, 0.53)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.75, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.38, 0.73, 0.61)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.75, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.43, 0.74, 0.70)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.75, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.47, 0.74, 0.78)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.75, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.52, 0.75, 0.86)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.54, 0.79, 0.89)
   Search Direction: (0.37, -0.50, 0.78)
@@ -9266,14 +9266,14 @@ VoronoiRegionsStress2
   Closest Point: (0.43, 0.92, 0.70)
   Search Direction: (-0.88, 0.05, 0.47)
   Reduced to 2 indices: 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.95, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.48, 0.94, 0.78)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.36, 0.95, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.52, 0.95, 0.86)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.56, 0.95, 0.95)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.57, 0.95, 0.95)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge12
   Closest Point: (0.32, 0.87, 0.49)
   Search Direction: (-0.87, 0.25, 0.42)
@@ -9464,8 +9464,8 @@ VoronoiRegionsStress2
   Closest Point: (0.42, 0.41, 0.71)
   Search Direction: (0.26, -0.49, 0.83)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.35, 1.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.37, 0.32, 0.61)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.40, 0.34, 0.67)
   Search Direction: (-0.87, 0.01, 0.50)
@@ -9485,11 +9485,11 @@ VoronoiRegionsStress2
   Closest Point: (0.47, 0.56, 0.78)
   Search Direction: (0.22, -0.49, 0.85)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.55, 1.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.37, 0.52, 0.60)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.55, 1.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.42, 0.53, 0.69)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.46, 0.53, 0.77)
   Search Direction: (-0.88, 0.02, 0.48)
@@ -9506,17 +9506,17 @@ VoronoiRegionsStress2
   Closest Point: (0.51, 0.71, 0.86)
   Search Direction: (0.14, -0.48, 0.87)
   Reduced to 2 indices: 0 2   Voronoi Region: Triangle012
-  Closest Point: (-0.64, 0.75, 1.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.38, 0.72, 0.60)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.44, 0.75, 1.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.42, 0.73, 0.68)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.75, 1.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.47, 0.73, 0.77)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.75, 1.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.51, 0.73, 0.85)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.53, 0.77, 0.89)
   Search Direction: (-0.81, -0.05, 0.58)
@@ -9533,14 +9533,14 @@ VoronoiRegionsStress2
   Closest Point: (0.43, 0.92, 0.68)
   Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 2 indices: 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.24, 0.95, 1.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.47, 0.93, 0.77)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (-0.04, 0.95, 1.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.52, 0.93, 0.85)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Triangle012
-  Closest Point: (0.16, 0.95, 1.15)
-  Search Direction: (0.00, 0.00, 0.00)
+  Closest Point: (0.56, 0.94, 0.93)
+  Search Direction: (-0.88, 0.03, 0.48)
   Reduced to 3 indices: 0 1 2   Voronoi Region: Edge02
   Closest Point: (0.59, 0.97, 0.98)
   Search Direction: (-0.80, -0.05, 0.59)
@@ -13260,3381 +13260,9 @@ SphereSupport5
 ObbSupport1
 ////////////////////////////////////////////////////////////
   SearchDir:(-1.37, -0.31, 1.44).
-  Distance:3.28
+  Distance:0.65
 
 
 ////////////////////////////////////////////////////////////
 ObbSupport2
-////////////////////////////////////////////////////////////
-  SearchDir:(-1.31, -2.54, 1.62).
-  Distance:-4.22
-
-
-////////////////////////////////////////////////////////////
-ObbSupport3
-////////////////////////////////////////////////////////////
-  SearchDir:(-1.17, -2.12, 0.29).
-  Distance:20.18
-
-
-////////////////////////////////////////////////////////////
-ObbSupport4
-////////////////////////////////////////////////////////////
-  SearchDir:(-1.62, -2.74, -0.85).
-  Distance:10.74
-
-
-////////////////////////////////////////////////////////////
-ObbSupport5
-////////////////////////////////////////////////////////////
-  SearchDir:(-1.02, -1.61, -1.56).
-  Distance:6.38
-
-
-////////////////////////////////////////////////////////////
-GjkTest1
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-4710967520369049600.00, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.00)
-  Distance: 0.00
-
-////////////////////////////////////////////////////////////
-GjkTest2
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-4710967520369049600.00, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.00)
-  Distance: 0.00
-
-////////////////////////////////////////////////////////////
-GjkTest3
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (0.00, -nan, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, -4710985112555094016.00, 0.00)
-  Distance: 4710985112555094016.00
-
-////////////////////////////////////////////////////////////
-GjkTest4
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (0.00, 0.00, 1.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.00)
-  Distance: 0.00
-
-////////////////////////////////////////////////////////////
-GjkTest5
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-107374176.00, -107374176.00, -107374176.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, -107374176.00, -107374176.00)
-  Distance: 151850016.00
-
-////////////////////////////////////////////////////////////
-GjkTest6
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (0.00, 0.15, -0.50)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.00)
-  Distance: 0.00
-
-////////////////////////////////////////////////////////////
-GjkTest8
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-107374176.00, -107374176.00, -107374176.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, -nan, -107374176.00)
-  Distance: -nan
-
-////////////////////////////////////////////////////////////
-GjkTest9
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-107374176.00, -107374176.00, -107374176.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, -107374176.00, -107374176.00)
-  Distance: 151850016.00
-
-////////////////////////////////////////////////////////////
-GjkStressTest1
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-107374176.00, -107374176.00, -107374176.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, -107374176.00, -107374176.00)
-  Distance: 151850016.00
-
-////////////////////////////////////////////////////////////
-GjkStressTest2
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-107374176.00, -107374176.00, -107374176.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, -107374176.00, -107374176.00)
-  Distance: 151850016.00
-
-////////////////////////////////////////////////////////////
-GjkStressTest3
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-107374176.00, -107374176.00, -107374176.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, -107374176.00, -107374176.00)
-  Distance: 151850016.00
-
-////////////////////////////////////////////////////////////
-GjkStressTest4
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-107374176.00, -107374176.00, -107374176.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, -107374176.00, -107374176.00)
-  Distance: 151850016.00
-
-////////////////////////////////////////////////////////////
-GjkStressTest5
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-107374176.00, -107374176.00, -107374176.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, -107374176.00, -107374176.00)
-  Distance: 151850016.00
-
-////////////////////////////////////////////////////////////
-ShapeFuzzTest1
-////////////////////////////////////////////////////////////
-  Center:(-2.89, 0.42, 0.44)
-
-  SearchDir:(0.00, 0.97, 0.22).
-  Distance:-0.11
-
-  SearchDir:(0.17, 0.97, 0.14).
-  Distance:-0.14
-
-  SearchDir:(0.22, 0.97, -0.05).
-  Distance:0.16
-
-  SearchDir:(0.10, 0.97, -0.20).
-  Distance:0.57
-
-  SearchDir:(-0.10, 0.97, -0.20).
-  Distance:0.78
-
-  SearchDir:(-0.22, 0.97, -0.05).
-  Distance:0.64
-
-  SearchDir:(-0.17, 0.97, 0.14).
-  Distance:0.24
-
-  SearchDir:(0.00, 0.78, 0.62).
-  Distance:2.18
-
-  SearchDir:(0.49, 0.78, 0.39).
-  Distance:-0.51
-
-  SearchDir:(0.61, 0.78, -0.14).
-  Distance:-0.17
-
-  SearchDir:(0.27, 0.78, -0.56).
-  Distance:0.98
-
-  SearchDir:(-0.27, 0.78, -0.56).
-  Distance:2.27
-
-  SearchDir:(-0.61, 0.78, -0.14).
-  Distance:4.81
-
-  SearchDir:(-0.49, 0.78, 0.39).
-  Distance:2.15
-
-  SearchDir:(0.00, 0.43, 0.90).
-  Distance:2.14
-
-  SearchDir:(0.70, 0.43, 0.56).
-  Distance:-1.60
-
-  SearchDir:(0.88, 0.43, -0.20).
-  Distance:-1.73
-
-  SearchDir:(0.39, 0.43, -0.81).
-  Distance:0.87
-
-  SearchDir:(-0.39, 0.43, -0.81).
-  Distance:3.20
-
-  SearchDir:(-0.88, 0.43, -0.20).
-  Distance:4.73
-
-  SearchDir:(-0.70, 0.43, 0.56).
-  Distance:2.90
-
-  SearchDir:(0.00, 0.00, 1.00).
-  Distance:1.67
-
-  SearchDir:(0.78, 0.00, 0.62).
-  Distance:0.49
-
-  SearchDir:(0.97, 0.00, -0.22).
-  Distance:-1.24
-
-  SearchDir:(0.43, 0.00, -0.90).
-  Distance:-1.22
-
-  SearchDir:(-0.43, 0.00, -0.90).
-  Distance:3.49
-
-  SearchDir:(-0.97, 0.00, -0.22).
-  Distance:3.72
-
-  SearchDir:(-0.78, 0.00, 0.62).
-  Distance:3.24
-
-  SearchDir:(0.00, -0.43, 0.90).
-  Distance:1.99
-
-  SearchDir:(0.70, -0.43, 0.56).
-  Distance:0.49
-
-  SearchDir:(0.88, -0.43, -0.20).
-  Distance:-2.22
-
-  SearchDir:(0.39, -0.43, -0.81).
-  Distance:-0.38
-
-  SearchDir:(-0.39, -0.43, -0.81).
-  Distance:1.59
-
-  SearchDir:(-0.88, -0.43, -0.20).
-  Distance:3.49
-
-  SearchDir:(-0.70, -0.43, 0.56).
-  Distance:1.85
-
-  SearchDir:(0.00, -0.78, 0.62).
-  Distance:1.11
-
-  SearchDir:(0.49, -0.78, 0.39).
-  Distance:-1.40
-
-  SearchDir:(0.61, -0.78, -0.14).
-  Distance:-0.74
-
-  SearchDir:(0.27, -0.78, -0.56).
-  Distance:-1.97
-
-  SearchDir:(-0.27, -0.78, -0.56).
-  Distance:0.88
-
-  SearchDir:(-0.61, -0.78, -0.14).
-  Distance:1.45
-
-  SearchDir:(-0.49, -0.78, 0.39).
-  Distance:2.19
-
-  SearchDir:(0.00, -0.97, 0.22).
-  Distance:-0.31
-
-  SearchDir:(0.17, -0.97, 0.14).
-  Distance:-1.21
-
-  SearchDir:(0.22, -0.97, -0.05).
-  Distance:-1.94
-
-  SearchDir:(0.10, -0.97, -0.20).
-  Distance:-1.01
-
-  SearchDir:(-0.10, -0.97, -0.20).
-  Distance:0.00
-
-  SearchDir:(-0.22, -0.97, -0.05).
-  Distance:-0.34
-
-  SearchDir:(-0.17, -0.97, 0.14).
-  Distance:0.08
-
-
-////////////////////////////////////////////////////////////
-ShapeFuzzTest2
-////////////////////////////////////////////////////////////
-  Center:(-0.24, 2.01, 0.59)
-
-  SearchDir:(0.00, 0.97, 0.22).
-  Distance:1.38
-
-  SearchDir:(0.17, 0.97, 0.14).
-  Distance:1.28
-
-  SearchDir:(0.22, 0.97, -0.05).
-  Distance:0.89
-
-  SearchDir:(0.10, 0.97, -0.20).
-  Distance:0.50
-
-  SearchDir:(-0.10, 0.97, -0.20).
-  Distance:0.40
-
-  SearchDir:(-0.22, 0.97, -0.05).
-  Distance:0.67
-
-  SearchDir:(-0.17, 0.97, 0.14).
-  Distance:1.11
-
-  SearchDir:(0.00, 0.78, 0.62).
-  Distance:2.09
-
-  SearchDir:(0.49, 0.78, 0.39).
-  Distance:1.82
-
-  SearchDir:(0.61, 0.78, -0.14).
-  Distance:0.72
-
-  SearchDir:(0.27, 0.78, -0.56).
-  Distance:0.98
-
-  SearchDir:(-0.27, 0.78, -0.56).
-  Distance:0.15
-
-  SearchDir:(-0.61, 0.78, -0.14).
-  Distance:1.42
-
-  SearchDir:(-0.49, 0.78, 0.39).
-  Distance:1.18
-
-  SearchDir:(0.00, 0.43, 0.90).
-  Distance:0.37
-
-  SearchDir:(0.70, 0.43, 0.56).
-  Distance:2.04
-
-  SearchDir:(0.88, 0.43, -0.20).
-  Distance:1.33
-
-  SearchDir:(0.39, 0.43, -0.81).
-  Distance:-0.38
-
-  SearchDir:(-0.39, 0.43, -0.81).
-  Distance:-0.99
-
-  SearchDir:(-0.88, 0.43, -0.20).
-  Distance:1.28
-
-  SearchDir:(-0.70, 0.43, 0.56).
-  Distance:1.47
-
-  SearchDir:(0.00, 0.00, 1.00).
-  Distance:0.05
-
-  SearchDir:(0.78, 0.00, 0.62).
-  Distance:0.29
-
-  SearchDir:(0.97, 0.00, -0.22).
-  Distance:0.24
-
-  SearchDir:(0.43, 0.00, -0.90).
-  Distance:-1.67
-
-  SearchDir:(-0.43, 0.00, -0.90).
-  Distance:-0.30
-
-  SearchDir:(-0.97, 0.00, -0.22).
-  Distance:1.68
-
-  SearchDir:(-0.78, 0.00, 0.62).
-  Distance:1.47
-
-  SearchDir:(0.00, -0.43, 0.90).
-  Distance:-1.29
-
-  SearchDir:(0.70, -0.43, 0.56).
-  Distance:-0.45
-
-  SearchDir:(0.88, -0.43, -0.20).
-  Distance:-0.85
-
-  SearchDir:(0.39, -0.43, -0.81).
-  Distance:-2.52
-
-  SearchDir:(-0.39, -0.43, -0.81).
-  Distance:-1.73
-
-  SearchDir:(-0.88, -0.43, -0.20).
-  Distance:0.80
-
-  SearchDir:(-0.70, -0.43, 0.56).
-  Distance:0.23
-
-  SearchDir:(0.00, -0.78, 0.62).
-  Distance:-2.15
-
-  SearchDir:(0.49, -0.78, 0.39).
-  Distance:-1.11
-
-  SearchDir:(0.61, -0.78, -0.14).
-  Distance:-2.30
-
-  SearchDir:(0.27, -0.78, -0.56).
-  Distance:-2.58
-
-  SearchDir:(-0.27, -0.78, -0.56).
-  Distance:-2.81
-
-  SearchDir:(-0.61, -0.78, -0.14).
-  Distance:-0.23
-
-  SearchDir:(-0.49, -0.78, 0.39).
-  Distance:-0.63
-
-  SearchDir:(0.00, -0.97, 0.22).
-  Distance:-2.19
-
-  SearchDir:(0.17, -0.97, 0.14).
-  Distance:-2.18
-
-  SearchDir:(0.22, -0.97, -0.05).
-  Distance:-2.95
-
-  SearchDir:(0.10, -0.97, -0.20).
-  Distance:-3.11
-
-  SearchDir:(-0.10, -0.97, -0.20).
-  Distance:-3.01
-
-  SearchDir:(-0.22, -0.97, -0.05).
-  Distance:-1.93
-
-  SearchDir:(-0.17, -0.97, 0.14).
-  Distance:-2.07
-
-
-////////////////////////////////////////////////////////////
-ShapeFuzzTest3
-////////////////////////////////////////////////////////////
-  Center:(-0.61, 2.42, 0.33)
-
-  SearchDir:(0.00, 0.97, 0.22).
-  Distance:2.54
-
-  SearchDir:(0.17, 0.97, 0.14).
-  Distance:2.59
-
-  SearchDir:(0.22, 0.97, -0.05).
-  Distance:2.58
-
-  SearchDir:(0.10, 0.97, -0.20).
-  Distance:2.52
-
-  SearchDir:(-0.10, 0.97, -0.20).
-  Distance:2.47
-
-  SearchDir:(-0.22, 0.97, -0.05).
-  Distance:2.45
-
-  SearchDir:(-0.17, 0.97, 0.14).
-  Distance:2.48
-
-  SearchDir:(0.00, 0.78, 0.62).
-  Distance:2.09
-
-  SearchDir:(0.49, 0.78, 0.39).
-  Distance:2.21
-
-  SearchDir:(0.61, 0.78, -0.14).
-  Distance:1.32
-
-  SearchDir:(0.27, 0.78, -0.56).
-  Distance:2.14
-
-  SearchDir:(-0.27, 0.78, -0.56).
-  Distance:2.49
-
-  SearchDir:(-0.61, 0.78, -0.14).
-  Distance:2.86
-
-  SearchDir:(-0.49, 0.78, 0.39).
-  Distance:2.94
-
-  SearchDir:(0.00, 0.43, 0.90).
-  Distance:2.15
-
-  SearchDir:(0.70, 0.43, 0.56).
-  Distance:0.70
-
-  SearchDir:(0.88, 0.43, -0.20).
-  Distance:0.65
-
-  SearchDir:(0.39, 0.43, -0.81).
-  Distance:1.33
-
-  SearchDir:(-0.39, 0.43, -0.81).
-  Distance:1.92
-
-  SearchDir:(-0.88, 0.43, -0.20).
-  Distance:2.12
-
-  SearchDir:(-0.70, 0.43, 0.56).
-  Distance:1.91
-
-  SearchDir:(0.00, 0.00, 1.00).
-  Distance:1.07
-
-  SearchDir:(0.78, 0.00, 0.62).
-  Distance:0.23
-
-  SearchDir:(0.97, 0.00, -0.22).
-  Distance:-0.15
-
-  SearchDir:(0.43, 0.00, -0.90).
-  Distance:0.26
-
-  SearchDir:(-0.43, 0.00, -0.90).
-  Distance:0.82
-
-  SearchDir:(-0.97, 0.00, -0.22).
-  Distance:0.73
-
-  SearchDir:(-0.78, 0.00, 0.62).
-  Distance:0.68
-
-  SearchDir:(0.00, -0.43, 0.90).
-  Distance:0.24
-
-  SearchDir:(0.70, -0.43, 0.56).
-  Distance:-0.60
-
-  SearchDir:(0.88, -0.43, -0.20).
-  Distance:-1.83
-
-  SearchDir:(0.39, -0.43, -0.81).
-  Distance:-1.56
-
-  SearchDir:(-0.39, -0.43, -0.81).
-  Distance:-0.94
-
-  SearchDir:(-0.88, -0.43, -0.20).
-  Distance:-0.81
-
-  SearchDir:(-0.70, -0.43, 0.56).
-  Distance:-0.56
-
-  SearchDir:(0.00, -0.78, 0.62).
-  Distance:-0.79
-
-  SearchDir:(0.49, -0.78, 0.39).
-  Distance:-1.41
-
-  SearchDir:(0.61, -0.78, -0.14).
-  Distance:-2.07
-
-  SearchDir:(0.27, -0.78, -0.56).
-  Distance:-1.89
-
-  SearchDir:(-0.27, -0.78, -0.56).
-  Distance:-2.08
-
-  SearchDir:(-0.61, -0.78, -0.14).
-  Distance:-1.61
-
-  SearchDir:(-0.49, -0.78, 0.39).
-  Distance:-0.75
-
-  SearchDir:(0.00, -0.97, 0.22).
-  Distance:-1.67
-
-  SearchDir:(0.17, -0.97, 0.14).
-  Distance:-1.90
-
-  SearchDir:(0.22, -0.97, -0.05).
-  Distance:-1.90
-
-  SearchDir:(0.10, -0.97, -0.20).
-  Distance:-1.83
-
-  SearchDir:(-0.10, -0.97, -0.20).
-  Distance:-1.61
-
-  SearchDir:(-0.22, -0.97, -0.05).
-  Distance:-1.86
-
-  SearchDir:(-0.17, -0.97, 0.14).
-  Distance:-1.66
-
-
-////////////////////////////////////////////////////////////
-ShapeFuzzTest4
-////////////////////////////////////////////////////////////
-  Center:(2.29, -0.45, 0.69)
-
-  SearchDir:(0.00, 0.97, 0.22).
-  Distance:-0.12
-
-  SearchDir:(0.17, 0.97, 0.14).
-  Distance:0.14
-
-  SearchDir:(0.22, 0.97, -0.05).
-  Distance:0.07
-
-  SearchDir:(0.10, 0.97, -0.20).
-  Distance:-0.27
-
-  SearchDir:(-0.10, 0.97, -0.20).
-  Distance:-0.62
-
-  SearchDir:(-0.22, 0.97, -0.05).
-  Distance:-0.73
-
-  SearchDir:(-0.17, 0.97, 0.14).
-  Distance:-0.50
-
-  SearchDir:(0.00, 0.78, 0.62).
-  Distance:0.26
-
-  SearchDir:(0.49, 0.78, 0.39).
-  Distance:1.01
-
-  SearchDir:(0.61, 0.78, -0.14).
-  Distance:0.91
-
-  SearchDir:(0.27, 0.78, -0.56).
-  Distance:-0.44
-
-  SearchDir:(-0.27, 0.78, -0.56).
-  Distance:-1.44
-
-  SearchDir:(-0.61, 0.78, -0.14).
-  Distance:-1.80
-
-  SearchDir:(-0.49, 0.78, 0.39).
-  Distance:-0.82
-
-  SearchDir:(0.00, 0.43, 0.90).
-  Distance:0.89
-
-  SearchDir:(0.70, 0.43, 0.56).
-  Distance:1.59
-
-  SearchDir:(0.88, 0.43, -0.20).
-  Distance:1.45
-
-  SearchDir:(0.39, 0.43, -0.81).
-  Distance:-0.11
-
-  SearchDir:(-0.39, 0.43, -0.81).
-  Distance:-1.55
-
-  SearchDir:(-0.88, 0.43, -0.20).
-  Distance:-2.07
-
-  SearchDir:(-0.70, 0.43, 0.56).
-  Distance:-1.16
-
-  SearchDir:(0.00, 0.00, 1.00).
-  Distance:1.01
-
-  SearchDir:(0.78, 0.00, 0.62).
-  Distance:2.55
-
-  SearchDir:(0.97, 0.00, -0.22).
-  Distance:1.70
-
-  SearchDir:(0.43, 0.00, -0.90).
-  Distance:0.50
-
-  SearchDir:(-0.43, 0.00, -0.90).
-  Distance:-1.48
-
-  SearchDir:(-0.97, 0.00, -0.22).
-  Distance:-2.33
-
-  SearchDir:(-0.78, 0.00, 0.62).
-  Distance:-1.00
-
-  SearchDir:(0.00, -0.43, 0.90).
-  Distance:0.94
-
-  SearchDir:(0.70, -0.43, 0.56).
-  Distance:2.34
-
-  SearchDir:(0.88, -0.43, -0.20).
-  Distance:2.43
-
-  SearchDir:(0.39, -0.43, -0.81).
-  Distance:0.86
-
-  SearchDir:(-0.39, -0.43, -0.81).
-  Distance:-0.93
-
-  SearchDir:(-0.88, -0.43, -0.20).
-  Distance:-1.73
-
-  SearchDir:(-0.70, -0.43, 0.56).
-  Distance:-1.27
-
-  SearchDir:(0.00, -0.78, 0.62).
-  Distance:0.94
-
-  SearchDir:(0.49, -0.78, 0.39).
-  Distance:1.77
-
-  SearchDir:(0.61, -0.78, -0.14).
-  Distance:1.83
-
-  SearchDir:(0.27, -0.78, -0.56).
-  Distance:0.83
-
-  SearchDir:(-0.27, -0.78, -0.56).
-  Distance:-0.21
-
-  SearchDir:(-0.61, -0.78, -0.14).
-  Distance:-1.36
-
-  SearchDir:(-0.49, -0.78, 0.39).
-  Distance:-0.60
-
-  SearchDir:(0.00, -0.97, 0.22).
-  Distance:0.74
-
-  SearchDir:(0.17, -0.97, 0.14).
-  Distance:0.84
-
-  SearchDir:(0.22, -0.97, -0.05).
-  Distance:0.86
-
-  SearchDir:(0.10, -0.97, -0.20).
-  Distance:0.67
-
-  SearchDir:(-0.10, -0.97, -0.20).
-  Distance:0.13
-
-  SearchDir:(-0.22, -0.97, -0.05).
-  Distance:-0.08
-
-  SearchDir:(-0.17, -0.97, 0.14).
-  Distance:0.18
-
-
-////////////////////////////////////////////////////////////
-ShapeFuzzTest5
-////////////////////////////////////////////////////////////
-  Center:(-2.51, 0.37, 1.16)
-
-  SearchDir:(0.00, 0.97, 0.22).
-  Distance:1.05
-
-  SearchDir:(0.17, 0.97, 0.14).
-  Distance:0.39
-
-  SearchDir:(0.22, 0.97, -0.05).
-  Distance:0.54
-
-  SearchDir:(0.10, 0.97, -0.20).
-  Distance:0.63
-
-  SearchDir:(-0.10, 0.97, -0.20).
-  Distance:1.07
-
-  SearchDir:(-0.22, 0.97, -0.05).
-  Distance:1.53
-
-  SearchDir:(-0.17, 0.97, 0.14).
-  Distance:1.66
-
-  SearchDir:(0.00, 0.78, 0.62).
-  Distance:1.43
-
-  SearchDir:(0.49, 0.78, 0.39).
-  Distance:-0.41
-
-  SearchDir:(0.61, 0.78, -0.14).
-  Distance:-0.68
-
-  SearchDir:(0.27, 0.78, -0.56).
-  Distance:-0.43
-
-  SearchDir:(-0.27, 0.78, -0.56).
-  Distance:0.81
-
-  SearchDir:(-0.61, 0.78, -0.14).
-  Distance:2.09
-
-  SearchDir:(-0.49, 0.78, 0.39).
-  Distance:2.66
-
-  SearchDir:(0.00, 0.43, 0.90).
-  Distance:1.53
-
-  SearchDir:(0.70, 0.43, 0.56).
-  Distance:-1.17
-
-  SearchDir:(0.88, 0.43, -0.20).
-  Distance:-1.95
-
-  SearchDir:(0.39, 0.43, -0.81).
-  Distance:-1.41
-
-  SearchDir:(-0.39, 0.43, -0.81).
-  Distance:0.39
-
-  SearchDir:(-0.88, 0.43, -0.20).
-  Distance:2.24
-
-  SearchDir:(-0.70, 0.43, 0.56).
-  Distance:3.30
-
-  SearchDir:(0.00, 0.00, 1.00).
-  Distance:1.32
-
-  SearchDir:(0.78, 0.00, 0.62).
-  Distance:-1.28
-
-  SearchDir:(0.97, 0.00, -0.22).
-  Distance:-3.02
-
-  SearchDir:(0.43, 0.00, -0.90).
-  Distance:-1.80
-
-  SearchDir:(-0.43, 0.00, -0.90).
-  Distance:-0.20
-
-  SearchDir:(-0.97, 0.00, -0.22).
-  Distance:2.30
-
-  SearchDir:(-0.78, 0.00, 0.62).
-  Distance:2.59
-
-  SearchDir:(0.00, -0.43, 0.90).
-  Distance:0.47
-
-  SearchDir:(0.70, -0.43, 0.56).
-  Distance:-1.14
-
-  SearchDir:(0.88, -0.43, -0.20).
-  Distance:-2.72
-
-  SearchDir:(0.39, -0.43, -0.81).
-  Distance:-1.84
-
-  SearchDir:(-0.39, -0.43, -0.81).
-  Distance:-0.40
-
-  SearchDir:(-0.88, -0.43, -0.20).
-  Distance:2.30
-
-  SearchDir:(-0.70, -0.43, 0.56).
-  Distance:2.24
-
-  SearchDir:(0.00, -0.78, 0.62).
-  Distance:0.30
-
-  SearchDir:(0.49, -0.78, 0.39).
-  Distance:-0.77
-
-  SearchDir:(0.61, -0.78, -0.14).
-  Distance:-1.55
-
-  SearchDir:(0.27, -0.78, -0.56).
-  Distance:-1.27
-
-  SearchDir:(-0.27, -0.78, -0.56).
-  Distance:-0.52
-
-  SearchDir:(-0.61, -0.78, -0.14).
-  Distance:1.57
-
-  SearchDir:(-0.49, -0.78, 0.39).
-  Distance:1.52
-
-  SearchDir:(0.00, -0.97, 0.22).
-  Distance:0.07
-
-  SearchDir:(0.17, -0.97, 0.14).
-  Distance:-0.46
-
-  SearchDir:(0.22, -0.97, -0.05).
-  Distance:-0.68
-
-  SearchDir:(0.10, -0.97, -0.20).
-  Distance:-0.43
-
-  SearchDir:(-0.10, -0.97, -0.20).
-  Distance:0.11
-
-  SearchDir:(-0.22, -0.97, -0.05).
-  Distance:0.52
-
-  SearchDir:(-0.17, -0.97, 0.14).
-  Distance:0.51
-
-
-////////////////////////////////////////////////////////////
-ShapeFuzzTest6
-////////////////////////////////////////////////////////////
-  Center:(0.74, -0.98, -8.00)
-
-  SearchDir:(0.00, 0.97, 0.22).
-  Distance:-1.33
-
-  SearchDir:(0.17, 0.97, 0.14).
-  Distance:-0.53
-
-  SearchDir:(0.22, 0.97, -0.05).
-  Distance:1.00
-
-  SearchDir:(0.10, 0.97, -0.20).
-  Distance:2.12
-
-  SearchDir:(-0.10, 0.97, -0.20).
-  Distance:1.98
-
-  SearchDir:(-0.22, 0.97, -0.05).
-  Distance:0.68
-
-  SearchDir:(-0.17, 0.97, 0.14).
-  Distance:-0.79
-
-  SearchDir:(0.00, 0.78, 0.62).
-  Distance:-4.35
-
-  SearchDir:(0.49, 0.78, 0.39).
-  Distance:-2.11
-
-  SearchDir:(0.61, 0.78, -0.14).
-  Distance:2.20
-
-  SearchDir:(0.27, 0.78, -0.56).
-  Distance:5.33
-
-  SearchDir:(-0.27, 0.78, -0.56).
-  Distance:4.93
-
-  SearchDir:(-0.61, 0.78, -0.14).
-  Distance:1.29
-
-  SearchDir:(-0.49, 0.78, 0.39).
-  Distance:-2.84
-
-  SearchDir:(0.00, 0.43, 0.90).
-  Distance:-6.23
-
-  SearchDir:(0.70, 0.43, 0.56).
-  Distance:-2.99
-
-  SearchDir:(0.88, 0.43, -0.20).
-  Distance:3.23
-
-  SearchDir:(0.39, 0.43, -0.81).
-  Distance:7.76
-
-  SearchDir:(-0.39, 0.43, -0.81).
-  Distance:7.18
-
-  SearchDir:(-0.88, 0.43, -0.20).
-  Distance:1.93
-
-  SearchDir:(-0.70, 0.43, 0.56).
-  Distance:-4.04
-
-  SearchDir:(0.00, 0.00, 1.00).
-  Distance:-6.60
-
-  SearchDir:(0.78, 0.00, 0.62).
-  Distance:-3.00
-
-  SearchDir:(0.97, 0.00, -0.22).
-  Distance:3.90
-
-  SearchDir:(0.43, 0.00, -0.90).
-  Distance:8.93
-
-  SearchDir:(-0.43, 0.00, -0.90).
-  Distance:8.28
-
-  SearchDir:(-0.97, 0.00, -0.22).
-  Distance:2.45
-
-  SearchDir:(-0.78, 0.00, 0.62).
-  Distance:-4.17
-
-  SearchDir:(0.00, -0.43, 0.90).
-  Distance:-5.38
-
-  SearchDir:(0.70, -0.43, 0.56).
-  Distance:-2.14
-
-  SearchDir:(0.88, -0.43, -0.20).
-  Distance:4.08
-
-  SearchDir:(0.39, -0.43, -0.81).
-  Distance:8.61
-
-  SearchDir:(-0.39, -0.43, -0.81).
-  Distance:8.02
-
-  SearchDir:(-0.88, -0.43, -0.20).
-  Distance:2.77
-
-  SearchDir:(-0.70, -0.43, 0.56).
-  Distance:-3.19
-
-  SearchDir:(0.00, -0.78, 0.62).
-  Distance:-2.82
-
-  SearchDir:(0.49, -0.78, 0.39).
-  Distance:-0.58
-
-  SearchDir:(0.61, -0.78, -0.14).
-  Distance:3.73
-
-  SearchDir:(0.27, -0.78, -0.56).
-  Distance:6.86
-
-  SearchDir:(-0.27, -0.78, -0.56).
-  Distance:6.46
-
-  SearchDir:(-0.61, -0.78, -0.14).
-  Distance:2.82
-
-  SearchDir:(-0.49, -0.78, 0.39).
-  Distance:-1.31
-
-  SearchDir:(0.00, -0.97, 0.22).
-  Distance:0.57
-
-  SearchDir:(0.17, -0.97, 0.14).
-  Distance:1.37
-
-  SearchDir:(0.22, -0.97, -0.05).
-  Distance:2.91
-
-  SearchDir:(0.10, -0.97, -0.20).
-  Distance:4.03
-
-  SearchDir:(-0.10, -0.97, -0.20).
-  Distance:3.88
-
-  SearchDir:(-0.22, -0.97, -0.05).
-  Distance:2.59
-
-  SearchDir:(-0.17, -0.97, 0.14).
-  Distance:1.11
-
-
-////////////////////////////////////////////////////////////
-ShapeFuzzTest7
-////////////////////////////////////////////////////////////
-  Center:(0.54, 4.65, -3.75)
-
-  SearchDir:(0.00, 0.97, 0.22).
-  Distance:5.93
-
-  SearchDir:(0.17, 0.97, 0.14).
-  Distance:6.33
-
-  SearchDir:(0.22, 0.97, -0.05).
-  Distance:7.06
-
-  SearchDir:(0.10, 0.97, -0.20).
-  Distance:7.56
-
-  SearchDir:(-0.10, 0.97, -0.20).
-  Distance:7.46
-
-  SearchDir:(-0.22, 0.97, -0.05).
-  Distance:6.83
-
-  SearchDir:(-0.17, 0.97, 0.14).
-  Distance:6.15
-
-  SearchDir:(0.00, 0.78, 0.62).
-  Distance:3.52
-
-  SearchDir:(0.49, 0.78, 0.39).
-  Distance:4.67
-
-  SearchDir:(0.61, 0.78, -0.14).
-  Distance:6.71
-
-  SearchDir:(0.27, 0.78, -0.56).
-  Distance:8.11
-
-  SearchDir:(-0.27, 0.78, -0.56).
-  Distance:7.82
-
-  SearchDir:(-0.61, 0.78, -0.14).
-  Distance:6.05
-
-  SearchDir:(-0.49, 0.78, 0.39).
-  Distance:4.14
-
-  SearchDir:(0.00, 0.43, 0.90).
-  Distance:0.86
-
-  SearchDir:(0.70, 0.43, 0.56).
-  Distance:2.52
-
-  SearchDir:(0.88, 0.43, -0.20).
-  Distance:5.47
-
-  SearchDir:(0.39, 0.43, -0.81).
-  Distance:7.50
-
-  SearchDir:(-0.39, 0.43, -0.81).
-  Distance:7.07
-
-  SearchDir:(-0.88, 0.43, -0.20).
-  Distance:4.52
-
-  SearchDir:(-0.70, 0.43, 0.56).
-  Distance:1.75
-
-  SearchDir:(0.00, 0.00, 1.00).
-  Distance:-1.53
-
-  SearchDir:(0.78, 0.00, 0.62).
-  Distance:0.31
-
-  SearchDir:(0.97, 0.00, -0.22).
-  Distance:3.59
-
-  SearchDir:(0.43, 0.00, -0.90).
-  Distance:5.84
-
-  SearchDir:(-0.43, 0.00, -0.90).
-  Distance:5.37
-
-  SearchDir:(-0.97, 0.00, -0.22).
-  Distance:2.53
-
-  SearchDir:(-0.78, 0.00, 0.62).
-  Distance:-0.54
-
-  SearchDir:(0.00, -0.43, 0.90).
-  Distance:-3.17
-
-  SearchDir:(0.70, -0.43, 0.56).
-  Distance:-1.52
-
-  SearchDir:(0.88, -0.43, -0.20).
-  Distance:1.43
-
-  SearchDir:(0.39, -0.43, -0.81).
-  Distance:3.46
-
-  SearchDir:(-0.39, -0.43, -0.81).
-  Distance:3.04
-
-  SearchDir:(-0.88, -0.43, -0.20).
-  Distance:0.48
-
-  SearchDir:(-0.70, -0.43, 0.56).
-  Distance:-2.28
-
-  SearchDir:(0.00, -0.78, 0.62).
-  Distance:-3.75
-
-  SearchDir:(0.49, -0.78, 0.39).
-  Distance:-2.61
-
-  SearchDir:(0.61, -0.78, -0.14).
-  Distance:-0.57
-
-  SearchDir:(0.27, -0.78, -0.56).
-  Distance:0.84
-
-  SearchDir:(-0.27, -0.78, -0.56).
-  Distance:0.54
-
-  SearchDir:(-0.61, -0.78, -0.14).
-  Distance:-1.22
-
-  SearchDir:(-0.49, -0.78, 0.39).
-  Distance:-3.14
-
-  SearchDir:(0.00, -0.97, 0.22).
-  Distance:-3.15
-
-  SearchDir:(0.17, -0.97, 0.14).
-  Distance:-2.74
-
-  SearchDir:(0.22, -0.97, -0.05).
-  Distance:-2.01
-
-  SearchDir:(0.10, -0.97, -0.20).
-  Distance:-1.51
-
-  SearchDir:(-0.10, -0.97, -0.20).
-  Distance:-1.61
-
-  SearchDir:(-0.22, -0.97, -0.05).
-  Distance:-2.25
-
-  SearchDir:(-0.17, -0.97, 0.14).
-  Distance:-2.93
-
-
-////////////////////////////////////////////////////////////
-ShapeFuzzTest8
-////////////////////////////////////////////////////////////
-  Center:(-4.76, -0.45, -6.88)
-
-  SearchDir:(0.00, 0.97, 0.22).
-  Distance:0.44
-
-  SearchDir:(0.17, 0.97, 0.14).
-  Distance:0.18
-
-  SearchDir:(0.22, 0.97, -0.05).
-  Distance:1.27
-
-  SearchDir:(0.10, 0.97, -0.20).
-  Distance:2.88
-
-  SearchDir:(-0.10, 0.97, -0.20).
-  Distance:3.80
-
-  SearchDir:(-0.22, 0.97, -0.05).
-  Distance:3.34
-
-  SearchDir:(-0.17, 0.97, 0.14).
-  Distance:1.84
-
-  SearchDir:(0.00, 0.78, 0.62).
-  Distance:-2.24
-
-  SearchDir:(0.49, 0.78, 0.39).
-  Distance:-2.94
-
-  SearchDir:(0.61, 0.78, -0.14).
-  Distance:0.11
-
-  SearchDir:(0.27, 0.78, -0.56).
-  Distance:4.63
-
-  SearchDir:(-0.27, 0.78, -0.56).
-  Distance:7.20
-
-  SearchDir:(-0.61, 0.78, -0.14).
-  Distance:5.90
-
-  SearchDir:(-0.49, 0.78, 0.39).
-  Distance:1.70
-
-  SearchDir:(0.00, 0.43, 0.90).
-  Distance:-3.99
-
-  SearchDir:(0.70, 0.43, 0.56).
-  Distance:-5.01
-
-  SearchDir:(0.88, 0.43, -0.20).
-  Distance:-0.60
-
-  SearchDir:(0.39, 0.43, -0.81).
-  Distance:5.93
-
-  SearchDir:(-0.39, 0.43, -0.81).
-  Distance:9.65
-
-  SearchDir:(-0.88, 0.43, -0.20).
-  Distance:7.77
-
-  SearchDir:(-0.70, 0.43, 0.56).
-  Distance:1.70
-
-  SearchDir:(0.00, 0.00, 1.00).
-  Distance:-4.48
-
-  SearchDir:(0.78, 0.00, 0.62).
-  Distance:-5.61
-
-  SearchDir:(0.97, 0.00, -0.22).
-  Distance:-0.71
-
-  SearchDir:(0.43, 0.00, -0.90).
-  Distance:6.53
-
-  SearchDir:(-0.43, 0.00, -0.90).
-  Distance:10.66
-
-  SearchDir:(-0.97, 0.00, -0.22).
-  Distance:8.57
-
-  SearchDir:(-0.78, 0.00, 0.62).
-  Distance:1.83
-
-  SearchDir:(0.00, -0.43, 0.90).
-  Distance:-3.60
-
-  SearchDir:(0.70, -0.43, 0.56).
-  Distance:-4.62
-
-  SearchDir:(0.88, -0.43, -0.20).
-  Distance:-0.21
-
-  SearchDir:(0.39, -0.43, -0.81).
-  Distance:6.32
-
-  SearchDir:(-0.39, -0.43, -0.81).
-  Distance:10.04
-
-  SearchDir:(-0.88, -0.43, -0.20).
-  Distance:8.16
-
-  SearchDir:(-0.70, -0.43, 0.56).
-  Distance:2.08
-
-  SearchDir:(0.00, -0.78, 0.62).
-  Distance:-1.54
-
-  SearchDir:(0.49, -0.78, 0.39).
-  Distance:-2.25
-
-  SearchDir:(0.61, -0.78, -0.14).
-  Distance:0.81
-
-  SearchDir:(0.27, -0.78, -0.56).
-  Distance:5.32
-
-  SearchDir:(-0.27, -0.78, -0.56).
-  Distance:7.90
-
-  SearchDir:(-0.61, -0.78, -0.14).
-  Distance:6.60
-
-  SearchDir:(-0.49, -0.78, 0.39).
-  Distance:2.40
-
-  SearchDir:(0.00, -0.97, 0.22).
-  Distance:1.30
-
-  SearchDir:(0.17, -0.97, 0.14).
-  Distance:1.05
-
-  SearchDir:(0.22, -0.97, -0.05).
-  Distance:2.14
-
-  SearchDir:(0.10, -0.97, -0.20).
-  Distance:3.75
-
-  SearchDir:(-0.10, -0.97, -0.20).
-  Distance:4.67
-
-  SearchDir:(-0.22, -0.97, -0.05).
-  Distance:4.21
-
-  SearchDir:(-0.17, -0.97, 0.14).
-  Distance:2.71
-
-
-////////////////////////////////////////////////////////////
-ShapeFuzzTest9
-////////////////////////////////////////////////////////////
-  Center:(-6.25, 0.75, -1.11)
-
-  SearchDir:(0.00, 0.97, 0.22).
-  Distance:4.99
-
-  SearchDir:(0.17, 0.97, 0.14).
-  Distance:3.99
-
-  SearchDir:(0.22, 0.97, -0.05).
-  Distance:3.94
-
-  SearchDir:(0.10, 0.97, -0.20).
-  Distance:4.86
-
-  SearchDir:(-0.10, 0.97, -0.20).
-  Distance:6.06
-
-  SearchDir:(-0.22, 0.97, -0.05).
-  Distance:6.65
-
-  SearchDir:(-0.17, 0.97, 0.14).
-  Distance:6.17
-
-  SearchDir:(0.00, 0.78, 0.62).
-  Distance:4.40
-
-  SearchDir:(0.49, 0.78, 0.39).
-  Distance:1.61
-
-  SearchDir:(0.61, 0.78, -0.14).
-  Distance:1.45
-
-  SearchDir:(0.27, 0.78, -0.56).
-  Distance:4.03
-
-  SearchDir:(-0.27, 0.78, -0.56).
-  Distance:7.41
-
-  SearchDir:(-0.61, 0.78, -0.14).
-  Distance:9.04
-
-  SearchDir:(-0.49, 0.78, 0.39).
-  Distance:7.70
-
-  SearchDir:(0.00, 0.43, 0.90).
-  Distance:3.82
-
-  SearchDir:(0.70, 0.43, 0.56).
-  Distance:-0.20
-
-  SearchDir:(0.88, 0.43, -0.20).
-  Distance:-0.44
-
-  SearchDir:(0.39, 0.43, -0.81).
-  Distance:3.29
-
-  SearchDir:(-0.39, 0.43, -0.81).
-  Distance:8.17
-
-  SearchDir:(-0.88, 0.43, -0.20).
-  Distance:10.54
-
-  SearchDir:(-0.70, 0.43, 0.56).
-  Distance:8.60
-
-  SearchDir:(0.00, 0.00, 1.00).
-  Distance:3.39
-
-  SearchDir:(0.78, 0.00, 0.62).
-  Distance:-1.08
-
-  SearchDir:(0.97, 0.00, -0.22).
-  Distance:-1.34
-
-  SearchDir:(0.43, 0.00, -0.90).
-  Distance:2.79
-
-  SearchDir:(-0.43, 0.00, -0.90).
-  Distance:8.21
-
-  SearchDir:(-0.97, 0.00, -0.22).
-  Distance:10.84
-
-  SearchDir:(-0.78, 0.00, 0.62).
-  Distance:8.69
-
-  SearchDir:(0.00, -0.43, 0.90).
-  Distance:3.17
-
-  SearchDir:(0.70, -0.43, 0.56).
-  Distance:-0.85
-
-  SearchDir:(0.88, -0.43, -0.20).
-  Distance:-1.09
-
-  SearchDir:(0.39, -0.43, -0.81).
-  Distance:2.63
-
-  SearchDir:(-0.39, -0.43, -0.81).
-  Distance:7.52
-
-  SearchDir:(-0.88, -0.43, -0.20).
-  Distance:9.88
-
-  SearchDir:(-0.70, -0.43, 0.56).
-  Distance:7.95
-
-  SearchDir:(0.00, -0.78, 0.62).
-  Distance:3.22
-
-  SearchDir:(0.49, -0.78, 0.39).
-  Distance:0.43
-
-  SearchDir:(0.61, -0.78, -0.14).
-  Distance:0.27
-
-  SearchDir:(0.27, -0.78, -0.56).
-  Distance:2.85
-
-  SearchDir:(-0.27, -0.78, -0.56).
-  Distance:6.23
-
-  SearchDir:(-0.61, -0.78, -0.14).
-  Distance:7.86
-
-  SearchDir:(-0.49, -0.78, 0.39).
-  Distance:6.52
-
-  SearchDir:(0.00, -0.97, 0.22).
-  Distance:3.52
-
-  SearchDir:(0.17, -0.97, 0.14).
-  Distance:2.52
-
-  SearchDir:(0.22, -0.97, -0.05).
-  Distance:2.46
-
-  SearchDir:(0.10, -0.97, -0.20).
-  Distance:3.38
-
-  SearchDir:(-0.10, -0.97, -0.20).
-  Distance:4.59
-
-  SearchDir:(-0.22, -0.97, -0.05).
-  Distance:5.17
-
-  SearchDir:(-0.17, -0.97, 0.14).
-  Distance:4.70
-
-
-////////////////////////////////////////////////////////////
-ShapeFuzzTest10
-////////////////////////////////////////////////////////////
-  Center:(-4.20, -5.51, 4.73)
-
-  SearchDir:(0.00, 0.97, 0.22).
-  Distance:-1.77
-
-  SearchDir:(0.17, 0.97, 0.14).
-  Distance:-2.90
-
-  SearchDir:(0.22, 0.97, -0.05).
-  Distance:-3.97
-
-  SearchDir:(0.10, 0.97, -0.20).
-  Distance:-4.18
-
-  SearchDir:(-0.10, 0.97, -0.20).
-  Distance:-3.37
-
-  SearchDir:(-0.22, 0.97, -0.05).
-  Distance:-2.15
-
-  SearchDir:(-0.17, 0.97, 0.14).
-  Distance:-1.44
-
-  SearchDir:(0.00, 0.78, 0.62).
-  Distance:1.19
-
-  SearchDir:(0.49, 0.78, 0.39).
-  Distance:-1.97
-
-  SearchDir:(0.61, 0.78, -0.14).
-  Distance:-4.97
-
-  SearchDir:(0.27, 0.78, -0.56).
-  Distance:-5.55
-
-  SearchDir:(-0.27, 0.78, -0.56).
-  Distance:-3.28
-
-  SearchDir:(-0.61, 0.78, -0.14).
-  Distance:0.14
-
-  SearchDir:(-0.49, 0.78, 0.39).
-  Distance:2.13
-
-  SearchDir:(0.00, 0.43, 0.90).
-  Distance:4.42
-
-  SearchDir:(0.70, 0.43, 0.56).
-  Distance:-0.14
-
-  SearchDir:(0.88, 0.43, -0.20).
-  Distance:-4.48
-
-  SearchDir:(0.39, 0.43, -0.81).
-  Distance:-5.32
-
-  SearchDir:(-0.39, 0.43, -0.81).
-  Distance:-2.04
-
-  SearchDir:(-0.88, 0.43, -0.20).
-  Distance:2.90
-
-  SearchDir:(-0.70, 0.43, 0.56).
-  Distance:5.78
-
-  SearchDir:(0.00, 0.00, 1.00).
-  Distance:7.28
-
-  SearchDir:(0.78, 0.00, 0.62).
-  Distance:2.22
-
-  SearchDir:(0.97, 0.00, -0.22).
-  Distance:-2.60
-
-  SearchDir:(0.43, 0.00, -0.90).
-  Distance:-3.53
-
-  SearchDir:(-0.43, 0.00, -0.90).
-  Distance:0.11
-
-  SearchDir:(-0.97, 0.00, -0.22).
-  Distance:5.60
-
-  SearchDir:(-0.78, 0.00, 0.62).
-  Distance:8.79
-
-  SearchDir:(0.00, -0.43, 0.90).
-  Distance:9.21
-
-  SearchDir:(0.70, -0.43, 0.56).
-  Distance:4.64
-
-  SearchDir:(0.88, -0.43, -0.20).
-  Distance:0.30
-
-  SearchDir:(0.39, -0.43, -0.81).
-  Distance:-0.54
-
-  SearchDir:(-0.39, -0.43, -0.81).
-  Distance:2.75
-
-  SearchDir:(-0.88, -0.43, -0.20).
-  Distance:7.69
-
-  SearchDir:(-0.70, -0.43, 0.56).
-  Distance:10.56
-
-  SearchDir:(0.00, -0.78, 0.62).
-  Distance:9.81
-
-  SearchDir:(0.49, -0.78, 0.39).
-  Distance:6.65
-
-  SearchDir:(0.61, -0.78, -0.14).
-  Distance:3.65
-
-  SearchDir:(0.27, -0.78, -0.56).
-  Distance:3.07
-
-  SearchDir:(-0.27, -0.78, -0.56).
-  Distance:5.34
-
-  SearchDir:(-0.61, -0.78, -0.14).
-  Distance:8.76
-
-  SearchDir:(-0.49, -0.78, 0.39).
-  Distance:10.75
-
-  SearchDir:(0.00, -0.97, 0.22).
-  Distance:8.98
-
-  SearchDir:(0.17, -0.97, 0.14).
-  Distance:7.85
-
-  SearchDir:(0.22, -0.97, -0.05).
-  Distance:6.78
-
-  SearchDir:(0.10, -0.97, -0.20).
-  Distance:6.57
-
-  SearchDir:(-0.10, -0.97, -0.20).
-  Distance:7.38
-
-  SearchDir:(-0.22, -0.97, -0.05).
-  Distance:8.60
-
-  SearchDir:(-0.17, -0.97, 0.14).
-  Distance:9.32
-
-
-////////////////////////////////////////////////////////////
-ShapeFuzzTest11
-////////////////////////////////////////////////////////////
-  Center:(-0.14, 7.54, -1.84)
-
-  SearchDir:(0.00, 0.97, 0.22).
-  Distance:10.89
-
-  SearchDir:(0.17, 0.97, 0.14).
-  Distance:10.53
-
-  SearchDir:(0.22, 0.97, -0.05).
-  Distance:10.52
-
-  SearchDir:(0.10, 0.97, -0.20).
-  Distance:10.99
-
-  SearchDir:(-0.10, 0.97, -0.20).
-  Distance:11.49
-
-  SearchDir:(-0.22, 0.97, -0.05).
-  Distance:11.63
-
-  SearchDir:(-0.17, 0.97, 0.14).
-  Distance:11.31
-
-  SearchDir:(0.00, 0.78, 0.62).
-  Distance:8.91
-
-  SearchDir:(0.49, 0.78, 0.39).
-  Distance:7.90
-
-  SearchDir:(0.61, 0.78, -0.14).
-  Distance:8.63
-
-  SearchDir:(0.27, 0.78, -0.56).
-  Distance:9.28
-
-  SearchDir:(-0.27, 0.78, -0.56).
-  Distance:10.16
-
-  SearchDir:(-0.61, 0.78, -0.14).
-  Distance:10.56
-
-  SearchDir:(-0.49, 0.78, 0.39).
-  Distance:9.74
-
-  SearchDir:(0.00, 0.43, 0.90).
-  Distance:5.16
-
-  SearchDir:(0.70, 0.43, 0.56).
-  Distance:4.46
-
-  SearchDir:(0.88, 0.43, -0.20).
-  Distance:7.45
-
-  SearchDir:(0.39, 0.43, -0.81).
-  Distance:8.24
-
-  SearchDir:(-0.39, 0.43, -0.81).
-  Distance:6.82
-
-  SearchDir:(-0.88, 0.43, -0.20).
-  Distance:7.54
-
-  SearchDir:(-0.70, 0.43, 0.56).
-  Distance:6.46
-
-  SearchDir:(0.00, 0.00, 1.00).
-  Distance:0.78
-
-  SearchDir:(0.78, 0.00, 0.62).
-  Distance:1.48
-
-  SearchDir:(0.97, 0.00, -0.22).
-  Distance:4.80
-
-  SearchDir:(0.43, 0.00, -0.90).
-  Distance:5.57
-
-  SearchDir:(-0.43, 0.00, -0.90).
-  Distance:2.98
-
-  SearchDir:(-0.97, 0.00, -0.22).
-  Distance:4.58
-
-  SearchDir:(-0.78, 0.00, 0.62).
-  Distance:3.49
-
-  SearchDir:(0.00, -0.43, 0.90).
-  Distance:-2.62
-
-  SearchDir:(0.70, -0.43, 0.56).
-  Distance:-1.47
-
-  SearchDir:(0.88, -0.43, -0.20).
-  Distance:1.19
-
-  SearchDir:(0.39, -0.43, -0.81).
-  Distance:2.20
-
-  SearchDir:(-0.39, -0.43, -0.81).
-  Distance:0.95
-
-  SearchDir:(-0.88, -0.43, -0.20).
-  Distance:0.71
-
-  SearchDir:(-0.70, -0.43, 0.56).
-  Distance:-0.18
-
-  SearchDir:(0.00, -0.78, 0.62).
-  Distance:-4.56
-
-  SearchDir:(0.49, -0.78, 0.39).
-  Distance:-2.84
-
-  SearchDir:(0.61, -0.78, -0.14).
-  Distance:-1.21
-
-  SearchDir:(0.27, -0.78, -0.56).
-  Distance:-0.40
-
-  SearchDir:(-0.27, -0.78, -0.56).
-  Distance:-1.27
-
-  SearchDir:(-0.61, -0.78, -0.14).
-  Distance:-3.30
-
-  SearchDir:(-0.49, -0.78, 0.39).
-  Distance:-3.81
-
-  SearchDir:(0.00, -0.97, 0.22).
-  Distance:-4.26
-
-  SearchDir:(0.17, -0.97, 0.14).
-  Distance:-3.64
-
-  SearchDir:(0.22, -0.97, -0.05).
-  Distance:-3.06
-
-  SearchDir:(0.10, -0.97, -0.20).
-  Distance:-2.93
-
-  SearchDir:(-0.10, -0.97, -0.20).
-  Distance:-3.24
-
-  SearchDir:(-0.22, -0.97, -0.05).
-  Distance:-4.05
-
-  SearchDir:(-0.17, -0.97, 0.14).
-  Distance:-4.44
-
-
-////////////////////////////////////////////////////////////
-ShapeFuzzTest12
-////////////////////////////////////////////////////////////
-  Center:(-4.25, 4.93, -2.70)
-
-  SearchDir:(0.00, 0.97, 0.22).
-  Distance:8.11
-
-  SearchDir:(0.17, 0.97, 0.14).
-  Distance:7.12
-
-  SearchDir:(0.22, 0.97, -0.05).
-  Distance:7.10
-
-  SearchDir:(0.10, 0.97, -0.20).
-  Distance:8.08
-
-  SearchDir:(-0.10, 0.97, -0.20).
-  Distance:9.31
-
-  SearchDir:(-0.22, 0.97, -0.05).
-  Distance:9.87
-
-  SearchDir:(-0.17, 0.97, 0.14).
-  Distance:9.33
-
-  SearchDir:(0.00, 0.78, 0.62).
-  Distance:5.89
-
-  SearchDir:(0.49, 0.78, 0.39).
-  Distance:3.11
-
-  SearchDir:(0.61, 0.78, -0.14).
-  Distance:3.75
-
-  SearchDir:(0.27, 0.78, -0.56).
-  Distance:7.87
-
-  SearchDir:(-0.27, 0.78, -0.56).
-  Distance:9.82
-
-  SearchDir:(-0.61, 0.78, -0.14).
-  Distance:10.91
-
-  SearchDir:(-0.49, 0.78, 0.39).
-  Distance:9.32
-
-  SearchDir:(0.00, 0.43, 0.90).
-  Distance:3.11
-
-  SearchDir:(0.70, 0.43, 0.56).
-  Distance:-0.52
-
-  SearchDir:(0.88, 0.43, -0.20).
-  Distance:0.99
-
-  SearchDir:(0.39, 0.43, -0.81).
-  Distance:6.95
-
-  SearchDir:(-0.39, 0.43, -0.81).
-  Distance:9.95
-
-  SearchDir:(-0.88, 0.43, -0.20).
-  Distance:9.98
-
-  SearchDir:(-0.70, 0.43, 0.56).
-  Distance:7.63
-
-  SearchDir:(0.00, 0.00, 1.00).
-  Distance:1.62
-
-  SearchDir:(0.78, 0.00, 0.62).
-  Distance:-2.41
-
-  SearchDir:(0.97, 0.00, -0.22).
-  Distance:-0.69
-
-  SearchDir:(0.43, 0.00, -0.90).
-  Distance:4.64
-
-  SearchDir:(-0.43, 0.00, -0.90).
-  Distance:8.12
-
-  SearchDir:(-0.97, 0.00, -0.22).
-  Distance:7.07
-
-  SearchDir:(-0.78, 0.00, 0.62).
-  Distance:4.76
-
-  SearchDir:(0.00, -0.43, 0.90).
-  Distance:-0.18
-
-  SearchDir:(0.70, -0.43, 0.56).
-  Distance:-3.82
-
-  SearchDir:(0.88, -0.43, -0.20).
-  Distance:-1.29
-
-  SearchDir:(0.39, -0.43, -0.81).
-  Distance:1.91
-
-  SearchDir:(-0.39, -0.43, -0.81).
-  Distance:4.69
-
-  SearchDir:(-0.88, -0.43, -0.20).
-  Distance:2.76
-
-  SearchDir:(-0.70, -0.43, 0.56).
-  Distance:2.77
-
-  SearchDir:(0.00, -0.78, 0.62).
-  Distance:-1.81
-
-  SearchDir:(0.49, -0.78, 0.39).
-  Distance:-3.49
-
-  SearchDir:(0.61, -0.78, -0.14).
-  Distance:-1.63
-
-  SearchDir:(0.27, -0.78, -0.56).
-  Distance:0.73
-
-  SearchDir:(-0.27, -0.78, -0.56).
-  Distance:1.88
-
-  SearchDir:(-0.61, -0.78, -0.14).
-  Distance:0.90
-
-  SearchDir:(-0.49, -0.78, 0.39).
-  Distance:0.24
-
-  SearchDir:(0.00, -0.97, 0.22).
-  Distance:-2.09
-
-  SearchDir:(0.17, -0.97, 0.14).
-  Distance:-2.13
-
-  SearchDir:(0.22, -0.97, -0.05).
-  Distance:-1.46
-
-  SearchDir:(0.10, -0.97, -0.20).
-  Distance:-0.59
-
-  SearchDir:(-0.10, -0.97, -0.20).
-  Distance:-0.18
-
-  SearchDir:(-0.22, -0.97, -0.05).
-  Distance:-0.53
-
-  SearchDir:(-0.17, -0.97, 0.14).
-  Distance:-1.39
-
-
-////////////////////////////////////////////////////////////
-ShapeFuzzTest13
-////////////////////////////////////////////////////////////
-  Center:(-1.03, 5.47, 3.30)
-
-  SearchDir:(0.00, 0.97, 0.22).
-  Distance:10.70
-
-  SearchDir:(0.17, 0.97, 0.14).
-  Distance:10.18
-
-  SearchDir:(0.22, 0.97, -0.05).
-  Distance:9.15
-
-  SearchDir:(0.10, 0.97, -0.20).
-  Distance:8.39
-
-  SearchDir:(-0.10, 0.97, -0.20).
-  Distance:8.47
-
-  SearchDir:(-0.22, 0.97, -0.05).
-  Distance:9.34
-
-  SearchDir:(-0.17, 0.97, 0.14).
-  Distance:10.33
-
-  SearchDir:(0.00, 0.78, 0.62).
-  Distance:10.97
-
-  SearchDir:(0.49, 0.78, 0.39).
-  Distance:9.50
-
-  SearchDir:(0.61, 0.78, -0.14).
-  Distance:6.61
-
-  SearchDir:(0.27, 0.78, -0.56).
-  Distance:4.94
-
-  SearchDir:(-0.27, 0.78, -0.56).
-  Distance:6.59
-
-  SearchDir:(-0.61, 0.78, -0.14).
-  Distance:7.26
-
-  SearchDir:(-0.49, 0.78, 0.39).
-  Distance:9.94
-
-  SearchDir:(0.00, 0.43, 0.90).
-  Distance:9.88
-
-  SearchDir:(0.70, 0.43, 0.56).
-  Distance:8.08
-
-  SearchDir:(0.88, 0.43, -0.20).
-  Distance:4.48
-
-  SearchDir:(0.39, 0.43, -0.81).
-  Distance:2.43
-
-  SearchDir:(-0.39, 0.43, -0.81).
-  Distance:4.81
-
-  SearchDir:(-0.88, 0.43, -0.20).
-  Distance:6.26
-
-  SearchDir:(-0.70, 0.43, 0.56).
-  Distance:9.20
-
-  SearchDir:(0.00, 0.00, 1.00).
-  Distance:7.45
-
-  SearchDir:(0.78, 0.00, 0.62).
-  Distance:5.84
-
-  SearchDir:(0.97, 0.00, -0.22).
-  Distance:1.85
-
-  SearchDir:(0.43, 0.00, -0.90).
-  Distance:0.93
-
-  SearchDir:(-0.43, 0.00, -0.90).
-  Distance:2.08
-
-  SearchDir:(-0.97, 0.00, -0.22).
-  Distance:4.81
-
-  SearchDir:(-0.78, 0.00, 0.62).
-  Distance:6.64
-
-  SearchDir:(0.00, -0.43, 0.90).
-  Distance:4.90
-
-  SearchDir:(0.70, -0.43, 0.56).
-  Distance:3.07
-
-  SearchDir:(0.88, -0.43, -0.20).
-  Distance:-0.90
-
-  SearchDir:(0.39, -0.43, -0.81).
-  Distance:-0.68
-
-  SearchDir:(-0.39, -0.43, -0.81).
-  Distance:-0.85
-
-  SearchDir:(-0.88, -0.43, -0.20).
-  Distance:2.40
-
-  SearchDir:(-0.70, -0.43, 0.56).
-  Distance:2.76
-
-  SearchDir:(0.00, -0.78, 0.62).
-  Distance:1.38
-
-  SearchDir:(0.49, -0.78, 0.39).
-  Distance:0.11
-
-  SearchDir:(0.61, -0.78, -0.14).
-  Distance:-2.09
-
-  SearchDir:(0.27, -0.78, -0.56).
-  Distance:-2.06
-
-  SearchDir:(-0.27, -0.78, -0.56).
-  Distance:-1.19
-
-  SearchDir:(-0.61, -0.78, -0.14).
-  Distance:-0.12
-
-  SearchDir:(-0.49, -0.78, 0.39).
-  Distance:0.34
-
-  SearchDir:(0.00, -0.97, 0.22).
-  Distance:-0.88
-
-  SearchDir:(0.17, -0.97, 0.14).
-  Distance:-1.27
-
-  SearchDir:(0.22, -0.97, -0.05).
-  Distance:-1.57
-
-  SearchDir:(0.10, -0.97, -0.20).
-  Distance:-1.56
-
-  SearchDir:(-0.10, -0.97, -0.20).
-  Distance:-1.25
-
-  SearchDir:(-0.22, -0.97, -0.05).
-  Distance:-0.87
-
-  SearchDir:(-0.17, -0.97, 0.14).
-  Distance:-0.71
-
-
-////////////////////////////////////////////////////////////
-ShapeFuzzTest14
-////////////////////////////////////////////////////////////
-  Center:(-6.70, -1.48, 6.15)
-
-  SearchDir:(0.00, 0.97, 0.22).
-  Distance:4.30
-
-  SearchDir:(0.17, 0.97, 0.14).
-  Distance:2.62
-
-  SearchDir:(0.22, 0.97, -0.05).
-  Distance:1.14
-
-  SearchDir:(0.10, 0.97, -0.20).
-  Distance:0.97
-
-  SearchDir:(-0.10, 0.97, -0.20).
-  Distance:2.24
-
-  SearchDir:(-0.22, 0.97, -0.05).
-  Distance:4.00
-
-  SearchDir:(-0.17, 0.97, 0.14).
-  Distance:4.91
-
-  SearchDir:(0.00, 0.78, 0.62).
-  Distance:6.65
-
-  SearchDir:(0.49, 0.78, 0.39).
-  Distance:1.58
-
-  SearchDir:(0.61, 0.78, -0.14).
-  Distance:-2.40
-
-  SearchDir:(0.27, 0.78, -0.56).
-  Distance:-2.97
-
-  SearchDir:(-0.27, 0.78, -0.56).
-  Distance:0.51
-
-  SearchDir:(-0.61, 0.78, -0.14).
-  Distance:5.45
-
-  SearchDir:(-0.49, 0.78, 0.39).
-  Distance:8.00
-
-  SearchDir:(0.00, 0.43, 0.90).
-  Distance:9.28
-
-  SearchDir:(0.70, 0.43, 0.56).
-  Distance:1.65
-
-  SearchDir:(0.88, 0.43, -0.20).
-  Distance:-3.55
-
-  SearchDir:(0.39, 0.43, -0.81).
-  Distance:-4.38
-
-  SearchDir:(-0.39, 0.43, -0.81).
-  Distance:0.16
-
-  SearchDir:(-0.88, 0.43, -0.20).
-  Distance:8.29
-
-  SearchDir:(-0.70, 0.43, 0.56).
-  Distance:10.55
-
-  SearchDir:(0.00, 0.00, 1.00).
-  Distance:10.07
-
-  SearchDir:(0.78, 0.00, 0.62).
-  Distance:2.71
-
-  SearchDir:(0.97, 0.00, -0.22).
-  Distance:-4.00
-
-  SearchDir:(0.43, 0.00, -0.90).
-  Distance:-4.92
-
-  SearchDir:(-0.43, 0.00, -0.90).
-  Distance:1.22
-
-  SearchDir:(-0.97, 0.00, -0.22).
-  Distance:9.49
-
-  SearchDir:(-0.78, 0.00, 0.62).
-  Distance:13.19
-
-  SearchDir:(0.00, -0.43, 0.90).
-  Distance:8.89
-
-  SearchDir:(0.70, -0.43, 0.56).
-  Distance:3.47
-
-  SearchDir:(0.88, -0.43, -0.20).
-  Distance:-2.79
-
-  SearchDir:(0.39, -0.43, -0.81).
-  Distance:-3.22
-
-  SearchDir:(-0.39, -0.43, -0.81).
-  Distance:2.59
-
-  SearchDir:(-0.88, -0.43, -0.20).
-  Distance:8.80
-
-  SearchDir:(-0.70, -0.43, 0.56).
-  Distance:13.22
-
-  SearchDir:(0.00, -0.78, 0.62).
-  Distance:8.31
-
-  SearchDir:(0.49, -0.78, 0.39).
-  Distance:3.60
-
-  SearchDir:(0.61, -0.78, -0.14).
-  Distance:-0.34
-
-  SearchDir:(0.27, -0.78, -0.56).
-  Distance:-0.55
-
-  SearchDir:(-0.27, -0.78, -0.56).
-  Distance:3.44
-
-  SearchDir:(-0.61, -0.78, -0.14).
-  Distance:7.94
-
-  SearchDir:(-0.49, -0.78, 0.39).
-  Distance:10.63
-
-  SearchDir:(0.00, -0.97, 0.22).
-  Distance:7.08
-
-  SearchDir:(0.17, -0.97, 0.14).
-  Distance:5.40
-
-  SearchDir:(0.22, -0.97, -0.05).
-  Distance:3.99
-
-  SearchDir:(0.10, -0.97, -0.20).
-  Distance:3.92
-
-  SearchDir:(-0.10, -0.97, -0.20).
-  Distance:5.24
-
-  SearchDir:(-0.22, -0.97, -0.05).
-  Distance:6.95
-
-  SearchDir:(-0.17, -0.97, 0.14).
-  Distance:7.77
-
-
-////////////////////////////////////////////////////////////
-ShapeFuzzTest15
-////////////////////////////////////////////////////////////
-  Center:(-8.81, -2.69, 2.09)
-
-  SearchDir:(0.00, 0.97, 0.22).
-  Distance:1.09
-
-  SearchDir:(0.17, 0.97, 0.14).
-  Distance:-0.28
-
-  SearchDir:(0.22, 0.97, -0.05).
-  Distance:-0.94
-
-  SearchDir:(0.10, 0.97, -0.20).
-  Distance:-0.39
-
-  SearchDir:(-0.10, 0.97, -0.20).
-  Distance:0.96
-
-  SearchDir:(-0.22, 0.97, -0.05).
-  Distance:2.09
-
-  SearchDir:(-0.17, 0.97, 0.14).
-  Distance:2.15
-
-  SearchDir:(0.00, 0.78, 0.62).
-  Distance:1.75
-
-  SearchDir:(0.49, 0.78, 0.39).
-  Distance:-2.10
-
-  SearchDir:(0.61, 0.78, -0.14).
-  Distance:-3.98
-
-  SearchDir:(0.27, 0.78, -0.56).
-  Distance:-2.42
-
-  SearchDir:(-0.27, 0.78, -0.56).
-  Distance:1.37
-
-  SearchDir:(-0.61, 0.78, -0.14).
-  Distance:4.52
-
-  SearchDir:(-0.49, 0.78, 0.39).
-  Distance:4.68
-
-  SearchDir:(0.00, 0.43, 0.90).
-  Distance:2.06
-
-  SearchDir:(0.70, 0.43, 0.56).
-  Distance:-3.51
-
-  SearchDir:(0.88, 0.43, -0.20).
-  Distance:-5.62
-
-  SearchDir:(0.39, 0.43, -0.81).
-  Distance:-3.50
-
-  SearchDir:(-0.39, 0.43, -0.81).
-  Distance:1.50
-
-  SearchDir:(-0.88, 0.43, -0.20).
-  Distance:8.66
-
-  SearchDir:(-0.70, 0.43, 0.56).
-  Distance:9.08
-
-  SearchDir:(0.00, 0.00, 1.00).
-  Distance:3.43
-
-  SearchDir:(0.78, 0.00, 0.62).
-  Distance:-3.61
-
-  SearchDir:(0.97, 0.00, -0.22).
-  Distance:-5.32
-
-  SearchDir:(0.43, 0.00, -0.90).
-  Distance:-2.97
-
-  SearchDir:(-0.43, 0.00, -0.90).
-  Distance:2.63
-
-  SearchDir:(-0.97, 0.00, -0.22).
-  Distance:11.28
-
-  SearchDir:(-0.78, 0.00, 0.62).
-  Distance:11.76
-
-  SearchDir:(0.00, -0.43, 0.90).
-  Distance:4.70
-
-  SearchDir:(0.70, -0.43, 0.56).
-  Distance:-2.42
-
-  SearchDir:(0.88, -0.43, -0.20).
-  Distance:-3.97
-
-  SearchDir:(0.39, -0.43, -0.81).
-  Distance:-1.86
-
-  SearchDir:(-0.39, -0.43, -0.81).
-  Distance:4.99
-
-  SearchDir:(-0.88, -0.43, -0.20).
-  Distance:11.67
-
-  SearchDir:(-0.70, -0.43, 0.56).
-  Distance:12.11
-
-  SearchDir:(0.00, -0.78, 0.62).
-  Distance:6.17
-
-  SearchDir:(0.49, -0.78, 0.39).
-  Distance:0.46
-
-  SearchDir:(0.61, -0.78, -0.14).
-  Distance:-1.83
-
-  SearchDir:(0.27, -0.78, -0.56).
-  Distance:0.61
-
-  SearchDir:(-0.27, -0.78, -0.56).
-  Distance:6.37
-
-  SearchDir:(-0.61, -0.78, -0.14).
-  Distance:10.90
-
-  SearchDir:(-0.49, -0.78, 0.39).
-  Distance:10.81
-
-  SearchDir:(0.00, -0.97, 0.22).
-  Distance:6.42
-
-  SearchDir:(0.17, -0.97, 0.14).
-  Distance:4.38
-
-  SearchDir:(0.22, -0.97, -0.05).
-  Distance:3.49
-
-  SearchDir:(0.10, -0.97, -0.20).
-  Distance:4.43
-
-  SearchDir:(-0.10, -0.97, -0.20).
-  Distance:6.48
-
-  SearchDir:(-0.22, -0.97, -0.05).
-  Distance:8.10
-
-  SearchDir:(-0.17, -0.97, 0.14).
-  Distance:8.08
-
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest1
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest2
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest3
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest4
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest5
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest6
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest7
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest8
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest9
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest10
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest11
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest12
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest13
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest14
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest15
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest16
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest17
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest18
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest19
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest20
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest21
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest22
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest23
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest24
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest25
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest26
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest27
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest28
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest29
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest30
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest31
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest32
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest33
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest34
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest35
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest36
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest37
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest38
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest39
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest40
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest41
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest42
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest43
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest44
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest45
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest46
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest47
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest48
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest49
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest50
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest51
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest52
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest53
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest54
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest55
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest56
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest57
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest58
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest59
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest60
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest61
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest62
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest63
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest64
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest65
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest66
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest67
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest68
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest69
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest70
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest71
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest72
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest73
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest74
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest75
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest76
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest77
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest79
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest80
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest81
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest82
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest83
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest84
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest85
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest86
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest87
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest88
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest89
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest90
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest91
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest92
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest93
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest94
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest95
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest96
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest97
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest98
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest99
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest100
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest101
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest102
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest103
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest104
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
-
-////////////////////////////////////////////////////////////
-GjkFuzzTest105
-////////////////////////////////////////////////////////////
-  Result: false
-  CsoPoint: (-0.97, 0.00, 0.00)
-  PointA: (0.00, 0.00, 0.00)
-  PointB: (0.00, 0.00, 0.14)
-  Distance: 0.14
+///////////

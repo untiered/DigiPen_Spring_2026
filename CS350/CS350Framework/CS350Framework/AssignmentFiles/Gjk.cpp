@@ -7,6 +7,8 @@
 #include "Precompiled.hpp"
 #include <limits>
 
+
+
 //-----------------------------------------------------------------------------SupportShape
 
 // For GetCenter just compute the centroid of the point set.
@@ -16,7 +18,9 @@ Vector3 SupportShape::GetCenter(const std::vector<Vector3>& localPoints, const M
 
 	Vector3 centroid = Vector3::cZero;
 	for (Vector3 const& point : localPoints) centroid += point;
-	return centroid / static_cast<float>(localPoints.size());
+	centroid /= static_cast<float>(localPoints.size());
+	Vector4 center = Math::Transform(transform, Vector4(centroid.x, centroid.y, centroid.z, 1.0f));
+	return Vector3(center.x, center.y, center.z);
 }
 
 // The Support function should just find the point furthest in the given direction with the applied transformation.
@@ -31,18 +35,19 @@ Vector3 SupportShape::Support(const Vector3& worldDirection, const std::vector<V
 	Vector3 result = Vector3::cZero;
 	/******Student:Assignment5******/
 
-	Vector4 localDir = Math::Transform(localToWorldTransform.Inverted(), Vector4(worldDirection.x, worldDirection.y, worldDirection.z, 0.0f));
+	Vector3 localDir = Math::Transform(Math::ToMatrix3(localToWorldTransform).Inverted(), worldDirection.Normalized());
 	float dist = std::numeric_limits<float>::lowest();
 	for (Vector3 const& point : localPoints)
 	{
-		float newDist = point.Dot(Vector3(localDir.x, localDir.y, localDir.z));
+		float newDist = point.Dot(localDir);
 		if (newDist > dist)
 		{
 			dist = newDist;
 			result = point;
 		}
 	}
-	return result;
+	Vector4 worldResult = Math::Transform(localToWorldTransform, Vector4(result.x, result.y, result.z, 1.0f));
+	return Vector3(worldResult.x, worldResult.y, worldResult.z);
 }
 
 // The DebugDraw function should draw the point set with the given transform applied.
@@ -136,17 +141,17 @@ Vector3 ObbSupportShape::Support(const Vector3& worldDirection) const
 {
 	/******Student:Assignment5******/
 
-	// bring direction to local space
+	// bring direction to local rotation
 	Vector3 localDir = Math::Transform(mRotation.Transposed(), worldDirection.Normalized());
 
 	// calculate point of local-space-aabb
 	Vector3 localPoint = Vector3::cZero;
-	localPoint.x = (localDir.x >= 0.0f) ? mScale.x : -mScale.x;
-	localPoint.y = (localDir.y >= 0.0f) ? mScale.y : -mScale.y;
-	localPoint.z = (localDir.z >= 0.0f) ? mScale.z : -mScale.z;
+	localPoint.x = (localDir.x >= 0.0f) ? 0.5f : -0.5f;
+	localPoint.y = (localDir.y >= 0.0f) ? 0.5f : -0.5f;
+	localPoint.z = (localDir.z >= 0.0f) ? 0.5f : -0.5f;
 
 	// bring that point back to world space
-	Matrix4 transform = Math::BuildTransform(mTranslation, mRotation, Vector3(1.0f, 1.0f, 1.0f)); // ALREADY SCALED
+	Matrix4 transform = Math::BuildTransform(mTranslation, mRotation, mScale);
 	Vector4 worldPoint = Math::Transform(transform, Vector4(localPoint.x, localPoint.y, localPoint.z, 1.0f));
 
 	return Vector3(worldPoint.x, worldPoint.y, worldPoint.z);
@@ -499,9 +504,60 @@ Gjk::Gjk()
 {
 }
 
-bool Gjk::Intersect(const SupportShape* shapeA, const SupportShape* shapeB, unsigned int maxIterations, CsoPoint& closestPoint, float epsilon, int debuggingIndex, bool debugDraw)
+bool Gjk::Intersect(
+	const SupportShape* shapeA,
+	const SupportShape* shapeB,
+	unsigned int maxIterations,
+	CsoPoint& closestPoint,
+	float epsilon,
+	
+	// debugging parameters
+	int debuggingIndex, bool debugDraw
+)
 {
-	Warn("Assignment5: Required function un-implemented");
+	// When computing the initial search direction I used the difference of shape A’s center and shape B’s center.
+	// If this produced the zero vector I used Vector3(-1, 0, 0) as the starting search direction.
+	Vector3 searchDir = shapeA->GetCenter() - shapeB->GetCenter();
+	if (searchDir == Vector3::cZero) searchDir = Vector3(-1.0f, 0.0f, 0.0f);
+
+	// step 1. Initialize the simplex(to one point for us) by searching in a random direction(difference of centers)
+	CsoPoint simplex[4] = {ComputeSupport(shapeA, shapeB, searchDir)};
+	size_t simplexSize = 1;
+
+	int newIndices[4] = {};
+	Vector3 closestP = {};
+	for (unsigned i = 0; i < maxIterations; ++i)
+	{
+		// a simplex exists, so check the closest point on the simplex:
+		// while we calculate the closest point:
+		//	1. determine voronoi region
+		//	2. determine reduced simplex size and indices if reduction is possible
+		//	3. update the search direction based on the closest point
+		switch (simplexSize)
+		{
+		case 1: { IdentifyVoronoiRegion(Vector3::cZero, simplex[0].mCsoPoint, simplexSize, newIndices, closestP, searchDir); break; }
+		case 2: { IdentifyVoronoiRegion(Vector3::cZero, simplex[0].mCsoPoint, simplex[1].mCsoPoint, simplexSize, newIndices, closestP, searchDir); break; }
+		case 3: { IdentifyVoronoiRegion(Vector3::cZero, simplex[0].mCsoPoint, simplex[1].mCsoPoint, simplex[2].mCsoPoint, simplexSize, newIndices, closestP, searchDir); break; }
+		case 4:   IdentifyVoronoiRegion(Vector3::cZero, simplex[0].mCsoPoint, simplex[1].mCsoPoint, simplex[2].mCsoPoint, simplex[3].mCsoPoint, simplexSize, newIndices, closestP, searchDir);
+		}
+		if (simplexSize >= 4 || closestP == Vector3::cZero) return true;
+
+		// if the we have not enclosed the origin and the closest point on the simplex is not equal to the origin, we search for a new point
+		//	1. search in the new search direction for another point to add to the simplex
+		//	2. based on the new point, determine if intersection is possible
+		//	3. if intersection is possible, reduce the simplex, add the new point to the simplex, and return to the top of the loop
+		CsoPoint newCsoP = ComputeSupport(shapeA, shapeB, searchDir);
+		if ((newCsoP.mCsoPoint - closestP).Dot(searchDir.Normalized()) <= epsilon) break;
+		
+ 		CsoPoint temp[4] = {};
+		for (unsigned j = 0; j < 4; ++j) temp[j] = simplex[j];
+		for (unsigned j = 0; j < simplexSize; ++j) simplex[j] = temp[newIndices[j]];
+
+		simplex[simplexSize++] = newCsoP;
+	}
+
+	// If the two shapes do not intersect, then you should fill out closestPoint with the closest features of the two shapes.
+	FilloutFinalCso(simplex, simplexSize, closestP, closestPoint);
 	return false;
 }
 
@@ -509,7 +565,11 @@ Gjk::CsoPoint Gjk::ComputeSupport(const SupportShape* shapeA, const SupportShape
 {
 	/******Student:Assignment5******/
 	CsoPoint result = {};
-	Warn("Assignment5: Required function un-implemented");
+
+	// cso point = Support(a,d) - Support(b,-d)
+	result.mPointA = shapeA->Support(direction);
+	result.mPointB = shapeB->Support(-direction);
+	result.mCsoPoint = result.mPointA - result.mPointB;
 
 	return result;
 }
@@ -521,4 +581,27 @@ Vector3 Gjk::FindClosestPoint(Vector3 q, Vector3 s0, Vector3 s1)
 	if (v <= 0) return s0;
 	else if (u <= 0) return s1;
 	return u * s0 + v * s1;
+}
+
+void Gjk::FilloutFinalCso(CsoPoint const simplex[4], size_t size, Vector3 const&closestSimplexPoint, CsoPoint &result)
+{
+	result.mCsoPoint = closestSimplexPoint;
+	if (size == 1)
+	{
+		result = simplex[0];
+	}
+	else if (size == 2)
+	{
+		float u, v;
+		BarycentricCoordinates(closestSimplexPoint, simplex[0].mCsoPoint, simplex[1].mCsoPoint, u, v);
+		result.mPointA = simplex[0].mPointA * u + simplex[1].mPointA * v;
+		result.mPointB = simplex[0].mPointB * u + simplex[1].mPointB * v;
+	}
+	else if (size == 3)
+	{
+		float u, v, w;
+		BarycentricCoordinates(closestSimplexPoint, simplex[0].mCsoPoint, simplex[1].mCsoPoint, simplex[2].mCsoPoint, u, v, w);
+		result.mPointA = simplex[0].mPointA * u + simplex[1].mPointA * v + simplex[2].mPointA * w;
+		result.mPointB = simplex[0].mPointB * u + simplex[1].mPointB * v + simplex[2].mPointB * w;
+	}
 }

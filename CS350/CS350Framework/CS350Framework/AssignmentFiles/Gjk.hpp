@@ -136,8 +136,8 @@ public:
   // Finds the point furthest in the given direction on the CSO (and the relevant points from each object)
   CsoPoint ComputeSupport(const SupportShape* shapeA, const SupportShape* shapeB, const Vector3& direction);
 
-  
-
   // Add your implementation here
   static Vector3 FindClosestPoint(Vector3 q, Vector3 s0, Vector3 s1);
+
+  void FilloutFinalCso(CsoPoint const simplex[4], size_t size, Vector3 const& closestSimplexPoint, CsoPoint& result);
 };

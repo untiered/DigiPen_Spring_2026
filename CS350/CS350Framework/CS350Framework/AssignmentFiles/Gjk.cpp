@@ -526,6 +526,7 @@ bool Gjk::Intersect(
 
 	int newIndices[4] = {};
 	Vector3 closestP = {};
+	CsoPoint newCsoP = {};
 	for (unsigned i = 0; i < maxIterations; ++i)
 	{
 		// a simplex exists, so check the closest point on the simplex:
@@ -541,18 +542,17 @@ bool Gjk::Intersect(
 		case 4:   IdentifyVoronoiRegion(Vector3::cZero, simplex[0].mCsoPoint, simplex[1].mCsoPoint, simplex[2].mCsoPoint, simplex[3].mCsoPoint, simplexSize, newIndices, closestP, searchDir);
 		}
 		if (simplexSize >= 4 || closestP == Vector3::cZero) return true;
-
-		// if the we have not enclosed the origin and the closest point on the simplex is not equal to the origin, we search for a new point
-		//	1. search in the new search direction for another point to add to the simplex
-		//	2. based on the new point, determine if intersection is possible
-		//	3. if intersection is possible, reduce the simplex, add the new point to the simplex, and return to the top of the loop
-		CsoPoint newCsoP = ComputeSupport(shapeA, shapeB, searchDir);
-		if ((newCsoP.mCsoPoint - closestP).Dot(searchDir.Normalized()) <= epsilon) break;
 		
  		CsoPoint temp[4] = {};
 		for (unsigned j = 0; j < 4; ++j) temp[j] = simplex[j];
 		for (unsigned j = 0; j < simplexSize; ++j) simplex[j] = temp[newIndices[j]];
 
+		// if the we have not enclosed the origin and the closest point on the simplex is not equal to the origin, we search for a new point
+		//	1. search in the new search direction for another point to add to the simplex
+		//	2. based on the new point, determine if intersection is possible
+		//	3. if intersection is possible, reduce the simplex, add the new point to the simplex, and return to the top of the loop
+		newCsoP = ComputeSupport(shapeA, shapeB, searchDir);
+		if ((newCsoP.mCsoPoint - closestP).Dot(searchDir.Normalized()) <= epsilon) break;
 		simplex[simplexSize++] = newCsoP;
 	}
 
@@ -583,24 +583,25 @@ Vector3 Gjk::FindClosestPoint(Vector3 q, Vector3 s0, Vector3 s1)
 	return u * s0 + v * s1;
 }
 
-void Gjk::FilloutFinalCso(CsoPoint const simplex[4], size_t size, Vector3 const&closestSimplexPoint, CsoPoint &result)
+void Gjk::FilloutFinalCso(CsoPoint const simplex[4], size_t size, Vector3 const& closestP, CsoPoint &result)
 {
-	result.mCsoPoint = closestSimplexPoint;
+	result.mCsoPoint = closestP;
 	if (size == 1)
 	{
-		result = simplex[0];
+		result.mPointA = simplex[0].mPointA;
+		result.mPointB = simplex[0].mPointB;
 	}
 	else if (size == 2)
 	{
 		float u, v;
-		BarycentricCoordinates(closestSimplexPoint, simplex[0].mCsoPoint, simplex[1].mCsoPoint, u, v);
+		BarycentricCoordinates(closestP, simplex[0].mCsoPoint, simplex[1].mCsoPoint, u, v);
 		result.mPointA = simplex[0].mPointA * u + simplex[1].mPointA * v;
 		result.mPointB = simplex[0].mPointB * u + simplex[1].mPointB * v;
 	}
 	else if (size == 3)
 	{
 		float u, v, w;
-		BarycentricCoordinates(closestSimplexPoint, simplex[0].mCsoPoint, simplex[1].mCsoPoint, simplex[2].mCsoPoint, u, v, w);
+		BarycentricCoordinates(closestP, simplex[0].mCsoPoint, simplex[1].mCsoPoint, simplex[2].mCsoPoint, u, v, w);
 		result.mPointA = simplex[0].mPointA * u + simplex[1].mPointA * v + simplex[2].mPointA * w;
 		result.mPointB = simplex[0].mPointB * u + simplex[1].mPointB * v + simplex[2].mPointB * w;
 	}

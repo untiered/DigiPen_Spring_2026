@@ -139,5 +139,5 @@ public:
   // Add your implementation here
   static Vector3 FindClosestPoint(Vector3 q, Vector3 s0, Vector3 s1);
 
-  void FilloutFinalCso(CsoPoint const simplex[4], size_t size, Vector3 const& closestSimplexPoint, CsoPoint& result);
+  void FilloutFinalCso(CsoPoint const simplex[4], size_t size, Vector3 const&closestP, CsoPoint& result);
 };

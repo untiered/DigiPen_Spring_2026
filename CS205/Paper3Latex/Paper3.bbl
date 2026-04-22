@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{0}
+\begin{thebibliography}{10}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -35,5 +35,165 @@
 \providecommand\bibinfo[2]{#2}
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Gaba et~al\mbox{.}(2025)]%
+        {(3)}
+\bibfield{author}{\bibinfo{person}{David~M. Gaba}, \bibinfo{person}{Robert
+  Gardner}, {and} \bibinfo{person}{Daniel~B. Raemer}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Artificial intelligence-assisted academic writing:
+  recommendations for ethical use}.
+\newblock \bibinfo{journal}{\emph{Advances in Simulation}}
+  \bibinfo{volume}{10}, \bibinfo{number}{1} (\bibinfo{date}{January}
+  \bibinfo{year}{2025}).
+\newblock
+\urldef\tempurl%
+\url{https://link.springer.com/article/10.1186/s41077-025-00350-6}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Gao et~al\mbox{.}(2025)]%
+        {(7)}
+\bibfield{author}{\bibinfo{person}{Yan Gao}, \bibinfo{person}{Haoxiang Wang},
+  \bibinfo{person}{Jiyuan Chen}, \bibinfo{person}{Lingxiao Zhang}, {and}
+  \bibinfo{person}{Yang Liu}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Defining Ethically Sourced Code Generation
+  ({ES-CodeGen})}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2507.19743}}
+  (\bibinfo{date}{July} \bibinfo{year}{2025}).
+\newblock
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2507.19743}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Harwell(2026)]%
+        {(10)}
+\bibfield{author}{\bibinfo{person}{Drew Harwell}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{{AI}-generated text is overwhelming institutions:
+  setting off a no-win arms race with {AI} detectors}.
+\newblock
+\urldef\tempurl%
+\url{https://www.washingtonpost.com/ripple/2026/02/05/ai-generated-text-is-overwhelming-institutions-setting-off-a-no-win-arms-race-with-ai-detectors/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{News Article}.
+
+
+\bibitem[Horton et~al\mbox{.}(2024)]%
+        {(5)}
+\bibfield{author}{\bibinfo{person}{William Horton}, \bibinfo{person}{Ali
+  Ghaheri}, {and} \bibinfo{person}{James Cooper}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Practical Considerations and Ethical Implications
+  of Using Artificial Intelligence in Writing Scientific Manuscripts}.
+\newblock \bibinfo{journal}{\emph{Journal of Surgical Research}}
+  \bibinfo{volume}{302} (\bibinfo{date}{December} \bibinfo{year}{2024}),
+  \bibinfo{pages}{528--533}.
+\newblock
+\urldef\tempurl%
+\url{https://pmc.ncbi.nlm.nih.gov/articles/PMC11838153/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Muthuvel et~al\mbox{.}(2024)]%
+        {(4)}
+\bibfield{author}{\bibinfo{person}{Gnanaraj Muthuvel},
+  \bibinfo{person}{Vasudevan Senthilvel}, {and} \bibinfo{person}{Karthikeyan
+  Ramasamy}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Publication Ethics in the Era of Artificial
+  Intelligence}.
+\newblock \bibinfo{journal}{\emph{Indian Journal of Orthopaedics}}
+  \bibinfo{volume}{58}, \bibinfo{number}{8} (\bibinfo{date}{August}
+  \bibinfo{year}{2024}), \bibinfo{pages}{863--865}.
+\newblock
+\urldef\tempurl%
+\url{https://pmc.ncbi.nlm.nih.gov/articles/PMC11347185/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[{Pace University}(2024)]%
+        {(11)}
+\bibfield{author}{\bibinfo{person}{{Pace University}}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{The Future of {AI} in Software Development}.
+\newblock
+\urldef\tempurl%
+\url{https://www.pace.edu/news/ai-software-development}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{University News Article}.
+
+
+\bibitem[Spadafora(2024)]%
+        {(9)}
+\bibfield{author}{\bibinfo{person}{Anthony Spadafora}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{The {AI} paradox: can {AI} and open source
+  development co-exist?}
+\newblock
+\urldef\tempurl%
+\url{https://www.techradar.com/pro/the-ai-paradox-can-ai-and-open-source-development-co-exist}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Online Article}.
+
+
+\bibitem[Stahl et~al\mbox{.}(2021)]%
+        {(8)}
+\bibfield{author}{\bibinfo{person}{Bernd~Carsten Stahl}, \bibinfo{person}{Doris
+  Schroeder}, {and} \bibinfo{person}{Rowena Rodrigues}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Ethics of {AI}: A Systematic Literature Review of
+  Principles and Challenges}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2109.07906}}
+  (\bibinfo{date}{September} \bibinfo{year}{2021}).
+\newblock
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2109.07906}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Vaswani et~al\mbox{.}(2017)]%
+        {(2)}
+\bibfield{author}{\bibinfo{person}{Ashish Vaswani}, \bibinfo{person}{Noam
+  Shazeer}, \bibinfo{person}{Niki Parmar}, \bibinfo{person}{Jakob Uszkoreit},
+  \bibinfo{person}{Llion Jones}, \bibinfo{person}{Aidan~N. Gomez},
+  \bibinfo{person}{{\L}ukasz Kaiser}, {and} \bibinfo{person}{Illia
+  Polosukhin}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Attention Is All You Need}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1706.03762}}
+  (\bibinfo{year}{2017}).
+\newblock
+\urldef\tempurl%
+\url{https://arxiv.org/abs/1706.03762}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Zhuo et~al\mbox{.}(2024)]%
+        {(6)}
+\bibfield{author}{\bibinfo{person}{Terry~Yue Zhuo}, \bibinfo{person}{Yujin
+  Huang}, \bibinfo{person}{Chunyang Chen}, {and} \bibinfo{person}{Zhenchang
+  Xing}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Research Integrity and {GenAI}: Ethical Challenges
+  Across Research Phases}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2412.10134}}
+  (\bibinfo{date}{December} \bibinfo{year}{2024}).
+\newblock
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2412.10134}
+\showURL{%
+\tempurl}
+
 
 \end{thebibliography}

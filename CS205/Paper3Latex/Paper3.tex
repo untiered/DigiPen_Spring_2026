@@ -1,7 +1,7 @@
 \documentclass[sigconf, 12pt]{acmart}
 \begin{document}
 
-\title{The Ethics of Pegasus Spyware and State-Sponsored Surveillance in the Interest of National Security}
+\title{The Ethics of Generative AI in Commercial Software Development}
 \author{Roman Marquez-Twisdale}
 \email{r.marqueztwisdale@digipen.edu}
 
@@ -9,29 +9,68 @@
 \maketitle
 
 \section{Introduction}
-Over the past few years, generative AI has started to become a normal part of software development. Tools that can generate code from simple prompts are now used by students, indie developers, and even large companies working on commercial software. On the surface, this seems like a huge improvement—developers can work faster and solve problems more efficiently. Because of this, it’s not surprising that more teams are starting to rely on AI-generated code in real-world applications. However, just because something is useful doesn’t automatically mean it’s ethical, especially when that code is being shipped in commercial products.
-One of the biggest issues isn’t just the existence of AI-generated code, but how it’s being used. In many cases, developers might not fully understand the code that the AI produces, yet still include it in finished products. This creates a situation where responsibility becomes unclear—if something breaks or introduces a security issue, it’s harder to know who is accountable. At the same time, there’s also the problem of transparency. If developers don’t acknowledge when or how AI was used, it raises concerns about authorship. These problems become more serious in commercial settings, where software affects real users.
-There are also broader concerns about where AI-generated code comes from. Since these systems are trained on large amounts of existing code, including open-source projects, it’s possible that they reproduce patterns or structures without proper acknowledgement to the original authors.
-This paper argues that using generative AI to generate code for commercial applications is only ethical under certain conditions. Specifically, developers need to understand the code they use and be transparent about how AI contributed to the final product.
+Over the past few years, generative AI has started to become a normal part of software development. Models capable of generating code from simple prompts are now used by students, developers, and large companies working on commercial software. In some ways this seems like a huge benefit. Developers can work more efficiently in a lot of cases. Due to this, it’s not surprising that many software companies would start to partially rely on AI-generated code in the development of their real-world applications. But just because something is useful doesn’t make it ethical, especially if that code is being shipped in commercial products.
+\subsubsection{Irresponsible Development}
+One of the biggest issues is how it’s being used. In many cases, developers might not fully understand the code that the AI produces, yet still include it in finished products. This makes is more likely that something will break or introduces a security issue. There’s also the problem of transparency. If developers don’t acknowledge when or how AI was used, how do we know who wrote a piece of software? How do we know who owns a piece of software? These problems are only amplified in commercial settings, where software affects real users.
+\subsubsection{Copyrighte Issues}
+There are larger concerns about where AI-generated code comes from. Since these systems are trained on large amounts of existing code, much of which was scraped from the internet, including open-source projects, they might reproduce patterns or structures without proper acknowledgement to the original authors.
+\subsubsection{Core Argument}
+This paper argues that using machine learning models to generate code for commercial applications is only ethical under certain conditions. Specifically, developers need to understand the code they use and be transparent about how AI contributed to the final product.
 
-\section{Background and Stakeholders}
-To understand the ethical issues around AI-generated code, it helps to clarify what is being discussed and who is affected. In this context, software engineers range from individual developers working on small projects to large teams building complex systems. Generative AI refers to tools that produce code from natural language prompts, often trained on large datasets that include publicly available code and documentation. Commercial applications include not just software sold directly, but also internal tools companies rely on.
-The ethical concern arises because AI-generated code exists in a gray area. It is not fully written by the developer, but it is also not clearly attributable to any single original source. Research has shown that generative AI systems can reproduce patterns from training data, raising concerns about copyright, ownership, and attribution [2], [7]. These systems are also known to produce inaccurate or misleading outputs, sometimes referred to as “hallucinations,” which can make their use risky in real-world applications [3], [5].
-Several key stakeholders are affected. Software engineers benefit from increased productivity but also face risks if they rely on outputs they do not fully understand. Studies show that users often overtrust AI-generated content, which can lead to errors being overlooked [3]. Companies gain efficiency but also take on legal and ethical risks, especially if AI-generated code incorporates copyrighted material without attribution [9].
-End users are also affected, even if indirectly. They depend on software to function correctly and securely, so bugs or vulnerabilities can directly impact them. The broader impact of unreliable AI-generated content has already been seen in other domains, where it creates challenges for maintaining quality and trust [10].
-The open-source community is another important stakeholder. Many AI systems are trained on publicly available repositories, often without explicit consent from contributors. This raises concerns about fairness and respect for intellectual labor, especially when outputs are used in commercial products [7], [9]. Finally, the organizations that develop AI systems also play a role, as ethical guidelines emphasize transparency, accountability, and fairness in system design [4], [8].
+\section{Background}
+To understand the ethical issues around AI-generated code in commercial software, lets clarify what is being discussed and who is affected. Software engineers range from individual developers working on small projects to large teams building complex systems. Generative AI refers to Large Language Models that produce code from natural language prompts, often trained on massive datasets containing publicly available code and documentation. Commercial applications includes software sold on the open market, and internal systems which play any role in the development of the software being sold.
+The ethical concern arises because LLMs are not currently held responsible for the code they generate and neither is their creators. The generated code is not fully written by the developer and not clearly belonging to any single original source.
+\subsubsection{Highlights}
+Research has shown that generative AI systems can reproduce patterns from training data. "According to the award-winning website Copyleaks, nearly 60\% of the responses provided by Defendants’ GPT-3.5 product in a study conducted by Copyleaks contained some form of plagiarized content, and over 45\% contained text that was identical to pre-existing content." [7]. These models are also known to produce inaccurate or misleading outputs, sometimes referred to as “hallucinations,” which can make their use risky in real-world applications [3].
+
+\section{Stakeholders}
+Software engineers benefit from increased productivity but if not careful, can end up with software they don't fully understand.
+Companies gain efficiency but weaken their legal and ethical security, especially if AI-generated code includes copyrighted material without. "researchers warn that black-box AI tools may blend code from multiple sources, risking inadvertent violations" [9].
+End users are also affected, even if indirectly. They depend on software to function as intended, bugs and vulnerabilities impact them directly. AI-generated content has already been seen in other domains, creating challenges for maintaining quality and trust in all communities. "It’s unlikely that any human editor or technology can sustain an ability to differentiate human from machine writing." [10].
+The open-source community is another important stakeholder. Many AI systems are trained on publicly available software, often without explicit consent from contributors. This raises concerns about respect for intellectual labor. [7].
+Finally, the organizations that develop AI systems also play a role. These organizations are at the forefront of ethical guidelines adoption. If they choose to emphasize transparency, and accountability, they could have a powerful impact on the emerging technology, but this may come at a cost. [4], [8].
 
 \section{Current State of Generative AI}
-Generative AI has quickly become a common tool in software development. Many developers now use these tools for tasks like writing boilerplate code, debugging, and documentation. Studies show that a large majority of developers use generative AI regularly, and that it can significantly reduce the time required for routine programming tasks [6].
-One of the biggest advantages is the productivity boost. Developers can generate functional code much faster than writing everything from scratch, especially for repetitive tasks. Research suggests these tools are particularly effective for documentation, testing, and basic implementation [6].
-However, these benefits come with limitations. AI-generated code is not always correct and can contain logical errors or subtle bugs. Even when it appears correct, it may include poor design choices. This is because generative AI predicts patterns rather than truly understanding the code [3], [5].
-Security is another concern. Research has found that AI-generated code can include unsafe practices, and many developers do not consistently review it before use [6]. There is also the issue of over-reliance—developers may use AI outputs without fully checking them, even if they don’t completely trust them. Over time, this can also affect skill development, as developers rely more on AI instead of problem-solving themselves [6].
-Overall, generative AI is powerful but still imperfect. It works well for simple tasks but often struggles with more complex problems, making human oversight necessary.
+Many developers now use LLMs for tasks like writing basic code, debugging, and documentation. Developers can generate functional code much faster than writing everything by hand. Research suggests these tools are particularly effective for documentation, testing, and basic implementation [6].
+However, these benefits come with a cost. AI-generated code is not always correct and can contain logical errors or subtle bugs. Even when it appears correct, it may include poor design choices. Security is another concern. Research has found that AI-generated code can include unsafe practices, and many developers do not consistently review it before use [6]. 
+There is also the issue of over-confidence. Developers might use AI outputs without fully checking them, even if they don’t completely trust them. Over time, this can also affect skill development, as developers rely more on AI instead of problem-solving themselves [6].
+Overall, generative AI is powerful but potentially dangerous. It works well for simple tasks but struggles with more complex problems, making human oversight essential for responsible development.
+
+
+
+
+
+
+
+
+
+
 
 \section{Technical Background}
-Most generative AI tools are based on large language models trained on massive datasets of text and code. These models generate output by predicting the next token in a sequence based on probability rather than true understanding [3], [6].
-Because of this, AI-generated code can look correct while still containing hidden issues. The output is influenced by training data, which raises concerns about originality and copyright [7]. The model is not intentionally copying code, but it also cannot ensure that its output is completely original.
-Another limitation is that the model cannot verify correctness or security. It may generate code that compiles but behaves incorrectly or includes vulnerabilities. Research has shown that AI-generated content can include inaccuracies or “hallucinations,” which can be especially risky in software development [5].
+To understand why AI-generated code can be risky, it helps to have a basic idea of how these models work. Most modern generative AI tools are based on large language models, which are trained on massive datasets. During training, the model learns patterns in how words and code are structured, but it is commonly believed that it doesn't actually “understand” what it is generating in a human sense [6].
+
+\subsubsection{High Level}
+These models work by breaking input text into smaller pieces called tokens and then predicting what token should come next based on a learned pattern. When a developer submits a prompt to a Large Language Model, the model processes it and generates code one token at a time using a Recurrent Neural Network (RNN), a type of neural network that feeds it's own outputs back into itself in order to remember and use previous states to help predict future states. "While the ‘meaning’ of these tokens is implicit to some extent within these associations, the model is not explicitly utilising this meaning, but is rather generating syntactically appropriate strings of text based on statistical associations" [3].
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{EncoderArchitecture}
+  \caption{The Encoder-Decoder Transformer Architecture.}
+  \Description{A graph of neural network.}
+\end{figure}
+ 
+One of the most common LLMs used today is ChatGPT. The acronym "GPT" stands for Generative Pre-Trained Transformer and represents one of the most common architectures used today. In 2017, the paper "Attention Is All You Need" was published describing this architecture.
+
+\subsubsection{Encoder}
+Within this model architecture, the inputs are encoded into value sequences and passed through a section of the network known as the Multi-Head Attention mechanism. They are then passed through a traditional feed forward neural network. After each of these steps there is a normalization process. Finally, the encoder produces an encodes sequence of values that can be passed through the decoder to produce the final result.
+
+\subsubsection{Decoder}
+The Decoder is fed all previous outputs along with the current encoded input. Both the previous outputs and the encoded input are passed through their own Multi-Head Attention mechanisms, and then combined to produce a final result for the next token in the sequence. It is the previous tokens which allow for this architecture to recognize patterns and adjust its behavior based on what came before. If we didn't pass in the previous token outputs during the computation of each subsequent token, we would essentially be stripping the model of any long term memory. very likely, the model wouldn't be able to produce text longer than a few sentences.
+
+\subsubsection{Attention}
+The Multi-Head Attention
+
+
 
 \section{Ethical Analysis}
 Social Contract Theory provides a useful framework for evaluating this issue. It is based on the idea that society functions through shared expectations like honesty, fairness, and accountability. In software development, there is an implicit agreement that developers understand and take responsibility for the code they produce.
